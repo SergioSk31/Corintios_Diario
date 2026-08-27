@@ -63,6 +63,17 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
+        const savedHighlights = localStorage.getItem('corinthians_custom_highlights');
+        if (savedHighlights) {
+            try {
+                state.customHighlights = JSON.parse(savedHighlights);
+            } catch (e) {
+                state.customHighlights = {};
+            }
+        } else {
+            state.customHighlights = {};
+        }
+
         state.streak = parseInt(localStorage.getItem('corinthians_streak_v2') || '0', 10);
         state.lastCompletedDate = localStorage.getItem('corinthians_last_date_v2') || null;
 
@@ -79,10 +90,45 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function saveState() {
         localStorage.setItem('corinthians_completed_days', JSON.stringify(Array.from(state.completedDays)));
+        localStorage.setItem('corinthians_custom_highlights', JSON.stringify(state.customHighlights));
         localStorage.setItem('corinthians_streak_v2', state.streak.toString());
         if (state.lastCompletedDate) {
             localStorage.setItem('corinthians_last_date_v2', state.lastCompletedDate);
         }
+    }
+
+    function isVerseHighlighted(bookNum, chapter, verseNum) {
+        const key = `${bookNum}_${chapter}`;
+        // Si el usuario personalizó este capítulo, revisar sus destacados
+        if (state.customHighlights[key]) {
+            return state.customHighlights[key].includes(verseNum);
+        }
+        // De lo contrario, usar los versículos clave predeterminados
+        return window.dailyChaptersManager.isDefaultHighlighted(bookNum, chapter, verseNum);
+    }
+
+    function toggleVerseHighlight(bookNum, chapter, verseNum) {
+        const key = `${bookNum}_${chapter}`;
+        if (!state.customHighlights[key]) {
+            // Inicializar con los predeterminados si aún no existía personalización
+            const defs = window.dailyChaptersManager.getDefaultHighlights()[key] || [];
+            state.customHighlights[key] = [...defs];
+        }
+
+        const list = state.customHighlights[key];
+        const idx = list.indexOf(verseNum);
+        let isNowHighlighted = false;
+
+        if (idx >= 0) {
+            list.splice(idx, 1);
+            isNowHighlighted = false;
+        } else {
+            list.push(verseNum);
+            isNowHighlighted = true;
+        }
+
+        saveState();
+        return isNowHighlighted;
     }
 
     // Renderizar barra de días (Día 1 a Día 8)
@@ -159,12 +205,22 @@ document.addEventListener('DOMContentLoaded', () => {
             versesList.className = 'chapter-verses-list';
 
             chapterData.verses.forEach(v => {
+                const isHl = isVerseHighlighted(chapterData.bookNum, chapterData.chapter, v.num);
                 const row = document.createElement('div');
-                row.className = 'verse-row';
+                row.className = `verse-row ${isHl ? 'highlighted' : ''}`;
+                row.title = "Haz clic para resaltar o quitar el resaltado de este versículo";
                 row.innerHTML = `
                     <span class="verse-num">${v.num}</span>
                     <span class="verse-text">${v.text}</span>
                 `;
+
+                // Clic interactivo para resaltar
+                row.addEventListener('click', () => {
+                    const nowHl = toggleVerseHighlight(chapterData.bookNum, chapterData.chapter, v.num);
+                    row.classList.toggle('highlighted', nowHl);
+                    showToast(nowHl ? `Versículo ${v.num} resaltado` : `Resaltado quitado de v. ${v.num}`);
+                });
+
                 versesList.appendChild(row);
             });
 

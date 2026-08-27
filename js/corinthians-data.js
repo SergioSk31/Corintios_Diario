@@ -1,7 +1,10 @@
-/**
- * Base de datos canónica completa de 1ª y 2ª de Corintios
- * Organizada en 4 capítulos diarios con contexto histórico-teológico y texto bíblico completo.
- */
+// Versículos clave destacados predeterminados para todos los visitantes
+const DEFAULT_HIGHLIGHTS = {
+    "1_1": [7, 9, 11, 14, 16, 17, 18, 19, 22, 23],
+    "1_2": [3, 5, 6, 10, 12, 14],
+    "1_3": [1, 3, 6, 8, 9, 11, 17],
+    "1_4": [1, 2, 5, 10, 11]
+};
 
 // 1 Corintios (16 capítulos) y 2 Corintios (13 capítulos) = 29 capítulos totales
 const ALL_CHAPTERS = [
@@ -582,6 +585,18 @@ class DailyChaptersManager {
         const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
         const dayIndex = ((diffDays % this.dailyPlans.length) + this.dailyPlans.length) % this.dailyPlans.length;
         return this.dailyPlans[dayIndex];
+    }
+
+    isDefaultHighlighted(bookNum, chapter, verseNum) {
+        const key = `${bookNum}_${chapter}`;
+        if (DEFAULT_HIGHLIGHTS[key] && DEFAULT_HIGHLIGHTS[key].includes(verseNum)) {
+            return true;
+        }
+        return false;
+    }
+
+    getDefaultHighlights() {
+        return DEFAULT_HIGHLIGHTS;
     }
 }
 
