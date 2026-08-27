@@ -1,11 +1,11 @@
 /**
- * Temporizador silencioso y minimalista de 15 minutos para la rutina de lectura diaria.
+ * Temporizador silencioso y minimalista de 30 minutos para la rutina de lectura diaria.
  * Sin sonidos ni fases complejas, enfocado 100% en la lectura serena.
  */
 
 class ReadingTimer {
     constructor() {
-        this.totalDuration = 15 * 60; // 15 minutos (900 segundos)
+        this.totalDuration = 30 * 60; // 30 minutos (1800 segundos)
         this.remainingSeconds = this.totalDuration;
         this.isRunning = false;
         this.interval = null;

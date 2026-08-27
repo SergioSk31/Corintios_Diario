@@ -1,6 +1,6 @@
 /**
  * Aplicación principal: Corintios Diario (4 Capítulos Diarios)
- * Lectura bíblica completa, contexto histórico-teológico y rutina de 15 minutos.
+ * Lectura bíblica completa, contexto histórico-teológico y rutina de 30 minutos.
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
         const dateString = new Date().toLocaleDateString('es-ES', dateOptions);
         
-        elements.dayMetaBadge.textContent = `RUTINA DIARIA (15 MIN) &bull; DÍA ${plan.day} DE ${totalDays}`;
+        elements.dayMetaBadge.textContent = `RUTINA DIARIA (30 MIN) &bull; DÍA ${plan.day} DE ${totalDays}`;
         elements.dayMainTitle.textContent = plan.title;
         elements.daySubtitle.textContent = plan.theme;
         elements.overviewContextText.textContent = plan.contextOverview;
@@ -310,7 +310,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 2800);
     }
 
-    // Configuración del Temporizador Silencioso de 15 Minutos en Cabecera
+    // Configuración del Temporizador Silencioso de 30 Minutos en Cabecera
     const timer = window.readingTimer;
 
     timer.callbacks.onTick = (data) => {
@@ -321,11 +321,11 @@ document.addEventListener('DOMContentLoaded', () => {
         elements.btnTimerToggleMini.innerHTML = isRunning
             ? `<svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>`
             : `<svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>`;
-        elements.btnTimerToggleMini.title = isRunning ? "Pausar tiempo" : "Iniciar 15 min de lectura";
+        elements.btnTimerToggleMini.title = isRunning ? "Pausar tiempo" : "Iniciar 30 min de lectura";
     };
 
     timer.callbacks.onComplete = () => {
-        showToast("Tiempo de lectura de 15 minutos concluido");
+        showToast("Tiempo de lectura de 30 minutos concluido");
     };
 
     elements.btnTimerToggleMini.addEventListener('click', () => {
@@ -334,7 +334,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     elements.btnTimerResetMini.addEventListener('click', () => {
         timer.reset();
-        showToast("Temporizador reiniciado a 15:00");
+        showToast("Temporizador reiniciado a 30:00");
     });
 
     // Inicializar
