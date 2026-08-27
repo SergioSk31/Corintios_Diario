@@ -208,7 +208,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 const isHl = isVerseHighlighted(chapterData.bookNum, chapterData.chapter, v.num);
                 const row = document.createElement('div');
                 row.className = `verse-row ${isHl ? 'highlighted' : ''}`;
-                row.title = "Haz clic para resaltar o quitar el resaltado de este versículo";
                 row.innerHTML = `
                     <span class="verse-num">${v.num}</span>
                     <span class="verse-text">${v.text}</span>
