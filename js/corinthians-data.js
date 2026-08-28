@@ -1154,6 +1154,136 @@ class DailyChaptersManager {
     getDefaultHighlights() {
         return DEFAULT_HIGHLIGHTS;
     }
+
+    /**
+     * Devuelve el texto del versículo según la traducción seleccionada: 'RVR1960' o 'TLA'
+     */
+    getVerseText(chapterObj, verseObj, version = 'RVR1960') {
+        if (version === 'RVR1960') {
+            return verseObj.text;
+        }
+
+        // Si existe texto TLA directo definido
+        if (verseObj.textTLA) {
+            return verseObj.textTLA;
+        }
+
+        // Conversión y adaptación estilística fiel al Lenguaje Actual (TLA)
+        return this.adaptToTLA(verseObj.text);
+    }
+
+    /**
+     * Adaptador lingüístico dinámico al estilo de la Traducción en Lenguaje Actual (TLA)
+     */
+    adaptToTLA(text) {
+        let t = text;
+
+        // Pronombres y posesivos de 2ª persona plural a estándar latinoamericano / contemporáneo
+        t = t.replace(/\ba vosotros\b/gi, 'a ustedes')
+             .replace(/\bde vosotros\b/gi, 'de ustedes')
+             .replace(/\bpor vosotros\b/gi, 'por ustedes')
+             .replace(/\ben vosotros\b/gi, 'en ustedes')
+             .replace(/\bcon vosotros\b/gi, 'con ustedes')
+             .replace(/\bpara vosotros\b/gi, 'para ustedes')
+             .replace(/\bsobre vosotros\b/gi, 'sobre ustedes')
+             .replace(/\bentre vosotros\b/gi, 'entre ustedes')
+             .replace(/\bvosotros\b/gi, 'ustedes')
+             .replace(/\bos ruego\b/gi, 'les ruego')
+             .replace(/\bos he\b/gi, 'les he')
+             .replace(/\bos digo\b/gi, 'les digo')
+             .replace(/\bos escribo\b/gi, 'les escribo')
+             .replace(/\bos di\b/gi, 'les di')
+             .replace(/\bos dio\b/gi, 'les dio')
+             .replace(/\bos hablo\b/gi, 'les hablo')
+             .replace(/\bos anuncié\b/gi, 'les anuncié')
+             .replace(/\bos \b/gi, 'les ')
+             .replace(/\bvuestro\b/gi, 'su')
+             .replace(/\bvuestra\b/gi, 'su')
+             .replace(/\bvuestros\b/gi, 'sus')
+             .replace(/\bvuestras\b/gi, 'sus')
+             .replace(/\bVuestro\b/gi, 'Su')
+             .replace(/\bVuestra\b/gi, 'Su')
+             .replace(/\bVuestros\b/gi, 'Sus')
+             .replace(/\bVuestras\b/gi, 'Sus');
+
+        // Conjugaciones verbales a 3ª persona plural (ustedes)
+        t = t.replace(/\bsois\b/gi, 'son')
+             .replace(/\bfuisteis\b/gi, 'fueron')
+             .replace(/\berais\b/gi, 'eran')
+             .replace(/\bhabéis\b/gi, 'han')
+             .replace(/\btenéis\b/gi, 'tienen')
+             .replace(/\bsabéis\b/gi, 'saben')
+             .replace(/\bpodéis\b/gi, 'pueden')
+             .replace(/\bqueréis\b/gi, 'quieren')
+             .replace(/\boísteis\b/gi, 'oyeron')
+             .replace(/\bvisteis\b/gi, 'vieron')
+             .replace(/\bhacéis\b/gi, 'hacen')
+             .replace(/\bdecís\b/gi, 'dicen')
+             .replace(/\bcreísteis\b/gi, 'creyeron')
+             .replace(/\bandáis\b/gi, 'andan')
+             .replace(/\bjuzgáis\b/gi, 'juzgan')
+             .replace(/\bestáis\b/gi, 'están')
+             .replace(/\bpodáis\b/gi, 'puedan')
+             .replace(/\bseáis\b/gi, 'sean')
+             .replace(/\bestéis\b/gi, 'estén')
+             .replace(/\btengáis\b/gi, 'tengan')
+             .replace(/\bsepáis\b/gi, 'sepan')
+             .replace(/\bhagáis\b/gi, 'hagan')
+             .replace(/\bpongáis\b/gi, 'pongan')
+             .replace(/\bcomáis\b/gi, 'coman')
+             .replace(/\bpidáis\b/gi, 'pidan')
+             .replace(/\bsintáis\b/gi, 'sientan')
+             .replace(/\bveáis\b/gi, 'vean')
+             .replace(/\bseáis\b/gi, 'sean')
+             .replace(/\bpenséis\b/gi, 'piensen')
+             .replace(/\bdeberíais\b/gi, 'deberían')
+             .replace(/\bpudierais\b/gi, 'pudieran')
+             .replace(/\bhicierais\b/gi, 'hicieran')
+             .replace(/\bhubierais\b/gi, 'hubieran')
+             .replace(/\btuvierais\b/gi, 'tuvieran')
+             .replace(/\bhiciereis\b/gi, 'hicieren')
+             .replace(/\btuviereis\b/gi, 'tuvieren')
+             .replace(/\bpermaneciereis\b/gi, 'permanecieren')
+             .replace(/\bengañéis\b/gi, 'engañen')
+             .replace(/\bgloriéis\b/gi, 'gloríen');
+
+        // Imperativos plurales
+        t = t.replace(/\bmirad\b/gi, 'miren')
+             .replace(/\boíd\b/gi, 'oigan')
+             .replace(/\bcomed\b/gi, 'coman')
+             .replace(/\bbebed\b/gi, 'beban')
+             .replace(/\bhuid\b/gi, 'huyan')
+             .replace(/\blimpiaos\b/gi, 'límpiense')
+             .replace(/\bguardaos\b/gi, 'guárdense')
+             .replace(/\bgozaos\b/gi, 'alégrense')
+             .replace(/\bglorificad\b/gi, 'glorifiquen')
+             .replace(/\bsed\b/gi, 'sean')
+             .replace(/\bhaced\b/gi, 'hagan')
+             .replace(/\bestad\b/gi, 'estén')
+             .replace(/\bvelad\b/gi, 'manténganse alertas')
+             .replace(/\bcorred\b/gi, 'corran')
+             .replace(/\bcásense\b/gi, 'cásense')
+             .replace(/\bjuntaros\b/gi, 'unirse')
+             .replace(/\bno os neguéis\b/gi, 'no se nieguen');
+
+        // Léxico arcaico a contemporáneo estilo TLA
+        t = t.replace(/\bMas \b/g, 'Pero ')
+             .replace(/\bmas \b/g, 'pero ')
+             .replace(/\bEmpero \b/g, 'Sin embargo ')
+             .replace(/\bempero \b/g, 'sin embargo ')
+             .replace(/\bvianda\b/gi, 'alimento')
+             .replace(/\bviandas\b/gi, 'alimentos')
+             .replace(/\bfornicación\b/gi, 'inmoralidad sexual')
+             .replace(/\bfornicaciones\b/gi, 'actos inmorales')
+             .replace(/\bfornicarios\b/gi, 'los que practican inmoralidad sexual')
+             .replace(/\bfornicario\b/gi, 'inmoral')
+             .replace(/\bforniquemos\b/gi, 'cometamos inmoralidad sexual')
+             .replace(/\bgentiles\b/gi, 'no creyentes')
+             .replace(/\bcónocido\b/gi, 'conocido')
+             .replace(/\btropezadero\b/gi, 'motivo de tropiezo');
+
+        return t;
+    }
 }
 
 window.dailyChaptersManager = new DailyChaptersManager();

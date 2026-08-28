@@ -12,7 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
         streak: 0,
         lastCompletedDate: null,
         theme: 'light',
-        fontSize: 'normal'
+        fontSize: 'normal',
+        bibleVersion: 'RVR1960' // 'RVR1960' o 'TLA'
     };
 
     // Referencias DOM
@@ -23,6 +24,10 @@ document.addEventListener('DOMContentLoaded', () => {
         btnHeroStart: document.getElementById('btnHeroStart'),
         coverSection: document.getElementById('coverSection'),
         readingSection: document.getElementById('readingSection'),
+
+        // Versión bíblica
+        btnVersionRVR: document.getElementById('btnVersionRVR'),
+        btnVersionTLA: document.getElementById('btnVersionTLA'),
 
         daysBar: document.getElementById('daysBar'),
         streakCount: document.getElementById('streakCount'),
@@ -116,9 +121,34 @@ document.addEventListener('DOMContentLoaded', () => {
         const savedFontSize = localStorage.getItem('corinthians_fontsize') || 'normal';
         setFontSize(savedFontSize);
 
+        const savedVersion = localStorage.getItem('corinthians_bible_version') || 'RVR1960';
+        setBibleVersion(savedVersion, false);
+
         // Calcular día correspondiente a la fecha de hoy
         const todayPlan = window.dailyChaptersManager.getDayForDate(new Date(), state.startDate);
         state.currentDay = todayPlan.day;
+    }
+
+    function setBibleVersion(version, notify = true) {
+        state.bibleVersion = version;
+        localStorage.setItem('corinthians_bible_version', version);
+
+        if (elements.btnVersionRVR && elements.btnVersionTLA) {
+            elements.btnVersionRVR.classList.toggle('active', version === 'RVR1960');
+            elements.btnVersionTLA.classList.toggle('active', version === 'TLA');
+        }
+
+        if (notify) {
+            renderDay();
+            showToast(version === 'RVR1960' ? 'Traducción: Reina-Valera 1960' : 'Traducción: Lenguaje Actual (TLA)');
+        }
+    }
+
+    if (elements.btnVersionRVR) {
+        elements.btnVersionRVR.addEventListener('click', () => setBibleVersion('RVR1960'));
+    }
+    if (elements.btnVersionTLA) {
+        elements.btnVersionTLA.addEventListener('click', () => setBibleVersion('TLA'));
     }
 
     function saveState() {
@@ -239,11 +269,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
             chapterData.verses.forEach(v => {
                 const isHl = isVerseHighlighted(chapterData.bookNum, chapterData.chapter, v.num);
+                const verseContent = window.dailyChaptersManager.getVerseText(chapterData, v, state.bibleVersion);
                 const row = document.createElement('div');
                 row.className = `verse-row ${isHl ? 'highlighted' : ''}`;
                 row.innerHTML = `
                     <span class="verse-num">${v.num}</span>
-                    <span class="verse-text">${v.text}</span>
+                    <span class="verse-text">${verseContent}</span>
                 `;
 
                 // Clic interactivo para resaltar

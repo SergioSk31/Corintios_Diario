@@ -235,6 +235,41 @@ body {
     border-color: var(--border-gold);
 }
 
+/* Selector de Versión Bíblica (RVR1960 / TLA) */
+.version-switcher {
+    display: inline-flex;
+    align-items: center;
+    background: var(--bg-card);
+    border: 1px solid var(--border-gold);
+    border-radius: var(--radius-full);
+    padding: 2px 3px;
+    box-shadow: var(--shadow-soft);
+}
+
+.btn-version-pill {
+    border: none;
+    background: transparent;
+    color: var(--text-secondary);
+    font-family: var(--font-heading);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 5px 11px;
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.btn-version-pill:hover {
+    color: var(--gold-primary);
+}
+
+.btn-version-pill.active {
+    background: var(--gold-primary);
+    color: #FFFFFF;
+    box-shadow: 0 2px 8px rgba(184, 134, 11, 0.35);
+}
+
 /* ==========================================================================
    Contenido Principal
    ========================================================================== */
