@@ -239,10 +239,279 @@ body {
    Contenido Principal
    ========================================================================== */
 
-.app-main {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 24px 20px 80px;
+/* Navegación de Vistas: Portada Histórica vs Plan de Lectura */
+.view-switcher-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+.btn-view-tab {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 20px;
+    border-radius: var(--radius-full);
+    border: 1px solid var(--border-subtle);
+    background: var(--bg-card);
+    color: var(--text-secondary);
+    font-family: var(--font-heading);
+    font-size: 0.84rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    box-shadow: var(--shadow-soft);
+}
+
+.btn-view-tab:hover {
+    background: var(--bg-accent);
+    color: var(--text-primary);
+    border-color: var(--border-gold);
+}
+
+.btn-view-tab.active {
+    background: var(--gold-primary);
+    color: #FFFFFF;
+    border-color: var(--gold-primary);
+    box-shadow: 0 4px 15px rgba(184, 134, 11, 0.3);
+}
+
+/* ==========================================================================
+   Portada Inicial e Introducción Histórica
+   ========================================================================== */
+
+.cover-section {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.cover-hero-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+    padding: 44px 36px;
+    text-align: center;
+    box-shadow: var(--shadow-card);
+    position: relative;
+    overflow: hidden;
+}
+
+.cover-hero-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, transparent, var(--border-gold), var(--gold-primary), var(--border-gold), transparent);
+}
+
+.cover-emblem {
+    width: 54px;
+    height: 54px;
+    margin: 0 auto 16px;
+    border-radius: var(--radius-md);
+    background: linear-gradient(135deg, var(--gold-subtle), var(--border-gold));
+    color: var(--gold-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border-gold);
+    box-shadow: 0 4px 15px rgba(216, 196, 157, 0.4);
+}
+
+.cover-title {
+    font-family: var(--font-heading);
+    font-size: 2.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.cover-subtitle {
+    font-family: var(--font-verse);
+    font-size: 1.35rem;
+    font-style: italic;
+    color: var(--sand-accent);
+    max-width: 680px;
+    margin: 0 auto 24px;
+    line-height: 1.5;
+}
+
+.btn-start-plan {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 36px;
+    background: linear-gradient(135deg, var(--gold-primary), #996F00);
+    color: #FFFFFF;
+    font-family: var(--font-heading);
+    font-size: 0.92rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    border: none;
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(184, 134, 11, 0.35);
+    transition: var(--transition-smooth);
+}
+
+.btn-start-plan:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(184, 134, 11, 0.5);
+}
+
+/* Rejilla de Contexto Histórico */
+.history-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+@media (max-width: 768px) {
+    .history-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.history-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+    padding: 28px 30px;
+    box-shadow: var(--shadow-card);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.history-card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid var(--border-subtle);
+    padding-bottom: 12px;
+}
+
+.history-card-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: var(--radius-sm);
+    background: var(--gold-subtle);
+    color: var(--gold-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--border-gold);
+}
+
+.history-card-title {
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.history-card-text {
+    font-size: 0.92rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+}
+
+.history-meta-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.76rem;
+    font-weight: 600;
+    color: var(--sage-accent);
+    background: var(--sage-light);
+    padding: 4px 12px;
+    border-radius: var(--radius-full);
+    margin-top: 4px;
+    align-self: flex-start;
+}
+
+/* Línea de Tiempo Cronológica */
+.timeline-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+    padding: 32px 34px;
+    box-shadow: var(--shadow-card);
+}
+
+.timeline-title {
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 22px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.timeline-list {
+    position: relative;
+    padding-left: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.timeline-list::before {
+    content: '';
+    position: absolute;
+    left: 8px;
+    top: 6px;
+    bottom: 6px;
+    width: 2px;
+    background: var(--border-gold);
+}
+
+.timeline-item {
+    position: relative;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -28px;
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    border-radius: var(--radius-full);
+    background: var(--gold-primary);
+    border: 3px solid var(--bg-card);
+    box-shadow: 0 0 0 1px var(--border-gold);
+}
+
+.timeline-period {
+    font-family: var(--font-heading);
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--gold-primary);
+    letter-spacing: 0.5px;
+    margin-bottom: 2px;
+}
+
+.timeline-desc {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
 }
 
 /* Navegador de Días (Día 1 a Día 8) */

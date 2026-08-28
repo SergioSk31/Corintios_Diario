@@ -17,6 +17,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Referencias DOM
     const elements = {
+        // Vistas
+        btnTabCover: document.getElementById('btnTabCover'),
+        btnTabReading: document.getElementById('btnTabReading'),
+        btnHeroStart: document.getElementById('btnHeroStart'),
+        coverSection: document.getElementById('coverSection'),
+        readingSection: document.getElementById('readingSection'),
+
         daysBar: document.getElementById('daysBar'),
         streakCount: document.getElementById('streakCount'),
         themeToggle: document.getElementById('themeToggle'),
@@ -34,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Botón de completado
         btnCompleteDay: document.getElementById('btnCompleteDay'),
         
-        // Temporizador de 15 min en cabecera
+        // Temporizador de 30 min en cabecera
         timerDigitsMini: document.getElementById('timerDigitsMini'),
         btnTimerToggleMini: document.getElementById('btnTimerToggleMini'),
         btnTimerResetMini: document.getElementById('btnTimerResetMini'),
@@ -42,6 +49,32 @@ document.addEventListener('DOMContentLoaded', () => {
         // Toast
         toast: document.getElementById('toast')
     };
+
+    // Función para cambiar de vista (Portada vs Lectura)
+    function switchView(view) {
+        if (view === 'cover') {
+            elements.coverSection.style.display = 'flex';
+            elements.readingSection.style.display = 'none';
+            elements.btnTabCover.classList.add('active');
+            elements.btnTabReading.classList.remove('active');
+        } else {
+            elements.coverSection.style.display = 'none';
+            elements.readingSection.style.display = 'block';
+            elements.btnTabCover.classList.remove('active');
+            elements.btnTabReading.classList.add('active');
+        }
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    elements.btnTabCover.addEventListener('click', () => switchView('cover'));
+    elements.btnTabReading.addEventListener('click', () => switchView('reading'));
+    if (elements.btnHeroStart) {
+        elements.btnHeroStart.addEventListener('click', () => {
+            state.currentDay = 1;
+            renderDay();
+            switchView('reading');
+        });
+    }
 
     // Cargar estado desde localStorage
     function loadState() {

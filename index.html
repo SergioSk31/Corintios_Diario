@@ -62,43 +62,184 @@
     <!-- Contenido Principal -->
     <main class="app-main">
 
-        <!-- Selector Rápido de Días del Plan (Día 1 a Día 8) -->
-        <nav id="daysBar" class="days-bar" aria-label="Selector de día"></nav>
+        <!-- Selector de Vistas: Portada Histórica vs Plan de Lectura -->
+        <nav class="view-switcher-bar" aria-label="Navegación principal">
+            <button id="btnTabCover" class="btn-view-tab active">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                Portada &amp; Historia
+            </button>
+            <button id="btnTabReading" class="btn-view-tab">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                Plan de Lectura (30 min)
+            </button>
+        </nav>
 
-        <!-- Encabezado del Día Actual -->
-        <section class="day-header-card">
-            <div id="dayMetaBadge" class="day-meta-badge">RUTINA DIARIA (30 MIN) &bull; DÍA 1 DE 8</div>
-            <h2 id="dayMainTitle" class="day-main-title">Día 1: 1ª de Corintios 1 al 4</h2>
-            <p id="daySubtitle" class="day-subtitle">La Sabiduría de la Cruz, el Espíritu y los Siervos de Dios</p>
+        <!-- SECCIÓN 1: Portada Inicial e Introducción Histórica -->
+        <section id="coverSection" class="cover-section">
+            
+            <!-- Hero Principal de Portada -->
+            <div class="cover-hero-card">
+                <div class="cover-emblem">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="12" y1="3" x2="12" y2="21"></line>
+                        <line x1="6" y1="8" x2="18" y2="8"></line>
+                    </svg>
+                </div>
+                <h2 class="cover-title">CORINTIOS DIARIO</h2>
+                <p class="cover-subtitle">Las Cartas del Apóstol Pablo a la Iglesia de Corinto: Historia, Época de Redacción y Trasfondo Espiritual</p>
+                <button id="btnHeroStart" class="btn-start-plan">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                    Comenzar Plan de Lectura (Día 1)
+                </button>
+            </div>
 
-            <!-- Contexto y Resumen de la Jornada -->
-            <div class="overview-context-box">
-                <span class="context-tag">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
-                    Contexto y Eje Temático del Día
-                </span>
-                <p id="overviewContextText" class="overview-context-text"></p>
-                <div style="margin-top:14px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
-                    <span class="highlight-guide-badge">
-                        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"></circle></svg>
-                        Versículos clave resaltados
-                    </span>
+            <!-- Rejilla de Contexto Histórico -->
+            <div class="history-grid">
+                
+                <!-- Tarjeta 1: Saulo de Tarso (Pablo) -->
+                <article class="history-card">
+                    <div class="history-card-header">
+                        <div class="history-card-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                        </div>
+                        <h3 class="history-card-title">El Apóstol Pablo</h3>
+                    </div>
+                    <p class="history-card-text">
+                        Nacido en Tarso de Cilicia y educado bajo el maestro Gamaliel, Saulo fue un riguroso fariseo que perseguía a la iglesia primitiva. Alrededor del año 33-35 d.C., tras un encuentro sobrenatural con Jesucristo camino a Damasco, fue transformado y comisionado como el apóstol de los gentiles, llevando la luz del Evangelio por todo el mundo grecorromano.
+                    </p>
+                    <span class="history-meta-pill">Misión Apostólica a las Naciones</span>
+                </article>
+
+                <!-- Tarjeta 2: La Ciudad de Corinto -->
+                <article class="history-card">
+                    <div class="history-card-header">
+                        <div class="history-card-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                        </div>
+                        <h3 class="history-card-title">La Ciudad de Corinto</h3>
+                    </div>
+                    <p class="history-card-text">
+                        Ubicada estratégicamente en el istmo que conecta el Peloponeso con la Grecia continental, Corinto era la capital comercial de la provincia romana de Acaya. Con sus dos puertos (Lequeo y Cencrea), era una metrópolis próspera, multicultural y cosmopolita, célebre por sus Juegos Ístmicos y desafiada por marcadas corrientes idolátricas y morales.
+                    </p>
+                    <span class="history-meta-pill">Provincia Romana de Acaya</span>
+                </article>
+
+                <!-- Tarjeta 3: 1ª de Corintios (Lugar y Año) -->
+                <article class="history-card">
+                    <div class="history-card-header">
+                        <div class="history-card-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                        </div>
+                        <h3 class="history-card-title">1ª de Corintios (54-55 d.C.)</h3>
+                    </div>
+                    <p class="history-card-text">
+                        <strong>Lugar de Redacción:</strong> Escrita desde <em>Éfeso</em> (Asia Menor) durante el tercer viaje misionero de Pablo.<br>
+                        <strong>Motivo:</strong> Pablo fundó la iglesia en el año 50-52 d.C. (Hechos 18). Al enterarse por los sirvientes de Cloé de divisiones internas y recibir una carta con preguntas doctrinales, escribe para restaurar la unidad en la Cruz, la pureza, el amor ágape y la esperanza de la Resurrección.
+                    </p>
+                    <span class="history-meta-pill">Escrita desde Éfeso &bull; c. 54-55 d.C.</span>
+                </article>
+
+                <!-- Tarjeta 4: 2ª de Corintios (Lugar y Año) -->
+                <article class="history-card">
+                    <div class="history-card-header">
+                        <div class="history-card-icon">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path></svg>
+                        </div>
+                        <h3 class="history-card-title">2ª de Corintios (55-56 d.C.)</h3>
+                    </div>
+                    <p class="history-card-text">
+                        <strong>Lugar de Redacción:</strong> Escrita desde <em>Macedonia</em> (Filipos/Tesalónica) tras reencontrarse con Tito.<br>
+                        <strong>Motivo:</strong> Es la carta más íntima y transparente de Pablo. Al recibir noticias del arrepentimiento de la iglesia, abre su corazón sobre el consuelo divino en medio de las tribulaciones, defiende su ministerio apostólico y proclama cómo el poder de Dios se perfecciona en la debilidad humana.
+                    </p>
+                    <span class="history-meta-pill">Escrita desde Macedonia &bull; c. 55-56 d.C.</span>
+                </article>
+
+            </div>
+
+            <!-- Línea de Tiempo Cronológica -->
+            <div class="timeline-card">
+                <h3 class="timeline-title">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    Cronología Apostólica: Pablo y la Iglesia de Corinto
+                </h3>
+                <div class="timeline-list">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-period">c. 50 - 52 d.C.</div>
+                        <div class="timeline-desc">Pablo llega a Corinto en su 2º viaje misionero, trabaja junto a Aquila y Priscila como fabricante de tiendas y funda la comunidad cristiana durante 18 meses (Hechos 18).</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-period">c. 52 - 55 d.C.</div>
+                        <div class="timeline-desc">Pablo se traslada a Éfeso y establece allí su centro ministerial durante casi tres años en su 3er viaje misionero.</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-period">c. 54 - 55 d.C.</div>
+                        <div class="timeline-desc"><strong>Redacción de 1ª de Corintios</strong> desde Éfeso tras los informes de la familia de Cloé y la carta de consultas enviada por la iglesia.</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-period">c. 55 d.C.</div>
+                        <div class="timeline-desc">Visita dolorosa de Pablo a Corinto para resolver tensiones y posterior envío de Tito portando una carta escrita con lágrimas.</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-period">c. 55 - 56 d.C.</div>
+                        <div class="timeline-desc"><strong>Redacción de 2ª de Corintios</strong> desde Macedonia al recibir el reconfortante informe de Tito sobre la restauración fraternal en Corinto.</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-period">c. 56 - 57 d.C.</div>
+                        <div class="timeline-desc">Tercera estancia de Pablo en Corinto durante el invierno (3 meses), desde donde redacta la magna Epístola a los Romanos (Hechos 20:2-3).</div>
+                    </div>
                 </div>
             </div>
+
         </section>
 
-        <!-- Contenedor Dinámico de los 4 Capítulos del Día -->
-        <section id="chaptersContainer" class="chapters-stream">
-            <!-- Cada capítulo con su contexto y versículos se inyecta aquí -->
-        </section>
+        <!-- SECCIÓN 2: Plan de Lectura Diaria (30 min) -->
+        <section id="readingSection" class="reading-section" style="display: none;">
 
-        <!-- Botón de Completar Día -->
-        <div class="day-footer-action">
-            <button id="btnCompleteDay" class="btn-complete-day">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                Completar lectura de los 4 capítulos de hoy
-            </button>
-        </div>
+            <!-- Selector Rápido de Días del Plan (Día 1 a Día 8) -->
+            <nav id="daysBar" class="days-bar" aria-label="Selector de día"></nav>
+
+            <!-- Encabezado del Día Actual -->
+            <section class="day-header-card">
+                <div id="dayMetaBadge" class="day-meta-badge">RUTINA DIARIA (30 MIN) &bull; DÍA 1 DE 8</div>
+                <h2 id="dayMainTitle" class="day-main-title">Día 1: 1ª de Corintios 1 al 4</h2>
+                <p id="daySubtitle" class="day-subtitle">La Sabiduría de la Cruz, el Espíritu y los Siervos de Dios</p>
+
+                <!-- Contexto y Resumen de la Jornada -->
+                <div class="overview-context-box">
+                    <span class="context-tag">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                        Contexto y Eje Temático del Día
+                    </span>
+                    <p id="overviewContextText" class="overview-context-text"></p>
+                    <div style="margin-top:14px; display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+                        <span class="highlight-guide-badge">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"></circle></svg>
+                            Versículos clave resaltados
+                        </span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contenedor Dinámico de los 4 Capítulos del Día -->
+            <section id="chaptersContainer" class="chapters-stream">
+                <!-- Cada capítulo con su contexto y versículos se inyecta aquí -->
+            </section>
+
+            <!-- Botón de Completar Día -->
+            <div class="day-footer-action">
+                <button id="btnCompleteDay" class="btn-complete-day">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                    Completar lectura de los 4 capítulos de hoy
+                </button>
+            </div>
+
+        </section>
 
     </main>
 
