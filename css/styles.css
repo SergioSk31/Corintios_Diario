@@ -775,26 +775,54 @@ body {
     background-color: rgba(216, 196, 157, 0.12);
 }
 
+/* Versículos Resaltados por Defecto (Esgrima Bíblico - Oro Divino, Fijo) */
+.verse-row.highlighted-default,
 .verse-row.highlighted {
-    background: linear-gradient(90deg, rgba(216, 196, 157, 0.25) 0%, rgba(246, 241, 229, 0.45) 100%);
+    background: linear-gradient(90deg, rgba(216, 196, 157, 0.28) 0%, rgba(246, 241, 229, 0.5) 100%);
     border-left: 3.5px solid var(--gold-primary);
     padding-left: 40px;
     margin: 3px 0;
 }
 
+.verse-row.highlighted-default .verse-num,
 .verse-row.highlighted .verse-num {
     color: var(--gold-primary);
     font-weight: 800;
 }
 
+.verse-row.highlighted-default .verse-text,
 .verse-row.highlighted .verse-text {
     font-weight: 500;
     color: var(--text-primary);
 }
 
+[data-theme="candlelight"] .verse-row.highlighted-default,
 [data-theme="candlelight"] .verse-row.highlighted {
-    background: linear-gradient(90deg, rgba(229, 195, 120, 0.18) 0%, rgba(43, 38, 34, 0.6) 100%);
+    background: linear-gradient(90deg, rgba(229, 195, 120, 0.2) 0%, rgba(43, 38, 34, 0.6) 100%);
     border-left: 3.5px solid var(--gold-primary);
+}
+
+/* Versículos Resaltados Personalmente por el Usuario (Verde Salvia / Esmeralda) */
+.verse-row.highlighted-custom {
+    background: linear-gradient(90deg, rgba(95, 116, 100, 0.2) 0%, rgba(235, 240, 236, 0.55) 100%);
+    border-left: 3.5px solid var(--sage-accent);
+    padding-left: 40px;
+    margin: 3px 0;
+}
+
+.verse-row.highlighted-custom .verse-num {
+    color: var(--sage-accent);
+    font-weight: 800;
+}
+
+.verse-row.highlighted-custom .verse-text {
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+[data-theme="candlelight"] .verse-row.highlighted-custom {
+    background: linear-gradient(90deg, rgba(142, 170, 149, 0.22) 0%, rgba(45, 58, 48, 0.55) 100%);
+    border-left: 3.5px solid var(--sage-accent);
 }
 
 .highlight-guide-badge {
@@ -810,6 +838,19 @@ body {
     border: 1px solid var(--border-gold);
 }
 
+.highlight-custom-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--sage-accent);
+    background: var(--sage-light);
+    padding: 3px 10px;
+    border-radius: var(--radius-full);
+    border: 1px solid rgba(95, 116, 100, 0.3);
+}
+
 .verse-num {
     position: absolute;
     left: 8px;
@@ -819,6 +860,266 @@ body {
     font-weight: 700;
     color: var(--gold-primary);
     opacity: 0.85;
+}
+
+/* ==========================================================================
+   Módulo de Esgrima Bíblico (Quiz de Versículos Resaltados)
+   ========================================================================== */
+
+.quiz-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+    padding: 32px 36px;
+    box-shadow: var(--shadow-card);
+    margin-top: 32px;
+    position: relative;
+    overflow: hidden;
+}
+
+@media (max-width: 600px) {
+    .quiz-card {
+        padding: 22px 18px;
+    }
+}
+
+.quiz-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--gold-primary), var(--sage-accent), var(--border-gold));
+}
+
+.quiz-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    border-bottom: 1px solid var(--border-subtle);
+    padding-bottom: 16px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.quiz-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-family: var(--font-heading);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--gold-primary);
+    background: var(--gold-subtle);
+    padding: 3px 10px;
+    border-radius: var(--radius-full);
+    border: 1px solid var(--border-gold);
+    margin-bottom: 4px;
+}
+
+.quiz-title {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.quiz-score-pill {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--sage-accent);
+    background: var(--sage-light);
+    padding: 5px 14px;
+    border-radius: var(--radius-full);
+    border: 1px solid rgba(95, 116, 100, 0.25);
+}
+
+.quiz-body {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.quiz-reference-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-heading);
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--gold-primary);
+    background: var(--gold-subtle);
+    border: 1px solid var(--border-gold);
+    padding: 4px 12px;
+    border-radius: var(--radius-full);
+    align-self: flex-start;
+}
+
+.quiz-question-text {
+    font-family: var(--font-verse);
+    font-size: 1.35rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--text-primary);
+}
+
+.quiz-options-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.btn-quiz-option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 13px 18px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-subtle);
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    text-align: left;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    line-height: 1.5;
+}
+
+.btn-quiz-option:hover:not(:disabled) {
+    background: var(--bg-accent);
+    border-color: var(--border-gold);
+    transform: translateX(4px);
+}
+
+.option-letter {
+    width: 26px;
+    height: 26px;
+    border-radius: var(--radius-full);
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-heading);
+    font-size: 0.76rem;
+    font-weight: 700;
+    color: var(--gold-primary);
+    flex-shrink: 0;
+}
+
+.btn-quiz-option.correct {
+    background: rgba(95, 116, 100, 0.16) !important;
+    border-color: var(--sage-accent) !important;
+    color: var(--text-primary) !important;
+}
+
+.btn-quiz-option.correct .option-letter {
+    background: var(--sage-accent);
+    color: #FFFFFF;
+    border-color: var(--sage-accent);
+}
+
+.btn-quiz-option.incorrect {
+    background: rgba(185, 28, 28, 0.1) !important;
+    border-color: #B91C1C !important;
+    color: var(--text-primary) !important;
+}
+
+.btn-quiz-option.incorrect .option-letter {
+    background: #B91C1C;
+    color: #FFFFFF;
+    border-color: #B91C1C;
+}
+
+.btn-quiz-option:disabled {
+    cursor: default;
+    opacity: 0.92;
+}
+
+/* Feedback de Respuesta */
+.quiz-feedback-box {
+    border-radius: var(--radius-md);
+    padding: 16px 20px;
+    margin-top: 8px;
+    border-left: 4px solid var(--gold-primary);
+    background: var(--bg-primary);
+    animation: fadeIn 0.3s ease;
+}
+
+.feedback-status {
+    font-family: var(--font-heading);
+    font-size: 0.88rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.feedback-status.correct-text {
+    color: var(--sage-accent);
+}
+
+.feedback-status.incorrect-text {
+    color: #B91C1C;
+}
+
+.feedback-explanation {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.55;
+}
+
+/* Controles del Quiz */
+.quiz-controls {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.btn-quiz-skip {
+    background: transparent;
+    border: 1px solid var(--border-subtle);
+    color: var(--text-muted);
+    font-family: var(--font-heading);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 8px 18px;
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.btn-quiz-skip:hover {
+    background: var(--bg-accent);
+    color: var(--text-primary);
+    border-color: var(--border-gold);
+}
+
+.btn-quiz-next {
+    background: var(--gold-primary);
+    color: #FFFFFF;
+    border: none;
+    font-family: var(--font-heading);
+    font-size: 0.84rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 10px 24px;
+    border-radius: var(--radius-full);
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(184, 134, 11, 0.3);
+    transition: var(--transition-smooth);
+}
+
+.btn-quiz-next:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(184, 134, 11, 0.45);
 }
 
 /* ==========================================================================

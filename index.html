@@ -237,6 +237,47 @@
                 <!-- Cada capítulo con su contexto y versículos se inyecta aquí -->
             </section>
 
+            <!-- Módulo de Esgrima Bíblico (Entrenamiento de Preguntas del Día) -->
+            <section id="esgrimaQuizCard" class="quiz-card">
+                <div class="quiz-header">
+                    <div class="quiz-title-wrap">
+                        <span class="quiz-badge">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 10"></polyline></svg>
+                            Esgrima Bíblico
+                        </span>
+                        <h3 class="quiz-title">Quiz de Versículos Resaltados</h3>
+                    </div>
+                    <div class="quiz-stats">
+                        <span id="quizScoreText" class="quiz-score-pill" title="Aciertos en esta sesión">Aciertos: 0</span>
+                    </div>
+                </div>
+
+                <div class="quiz-body">
+                    <div class="quiz-reference-tag" id="quizRefTag">1 Corintios 1:18</div>
+                    <div class="quiz-question-text" id="quizQuestionText">Cargando pregunta...</div>
+
+                    <div class="quiz-options-list" id="quizOptionsList">
+                        <!-- Opciones A, B, C, D inyectadas dinámicamente -->
+                    </div>
+
+                    <!-- Caja de retroalimentación / respuesta correcta -->
+                    <div class="quiz-feedback-box" id="quizFeedbackBox" style="display: none;">
+                        <div class="feedback-status" id="feedbackStatus"></div>
+                        <div class="feedback-explanation" id="feedbackExplanation"></div>
+                    </div>
+
+                    <!-- Controles del Quiz -->
+                    <div class="quiz-controls">
+                        <button id="btnSkipQuestion" class="btn-quiz-skip" title="Ver respuesta correcta y pasar a la siguiente">
+                            Saltar pregunta
+                        </button>
+                        <button id="btnNextQuestion" class="btn-quiz-next" style="display: none;">
+                            Siguiente pregunta →
+                        </button>
+                    </div>
+                </div>
+            </section>
+
             <!-- Botón de Completar Día -->
             <div class="day-footer-action">
                 <button id="btnCompleteDay" class="btn-complete-day">
@@ -254,6 +295,7 @@
 
     <!-- Scripts -->
     <script src="js/corinthians-data.js"></script>
+    <script src="js/quiz-data.js"></script>
     <script src="js/timer.js"></script>
     <script src="js/app.js"></script>
 </body>

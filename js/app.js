@@ -42,6 +42,18 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Contenedor de los 4 Capítulos
         chaptersContainer: document.getElementById('chaptersContainer'),
+
+        // Esgrima Bíblico Quiz
+        esgrimaQuizCard: document.getElementById('esgrimaQuizCard'),
+        quizScoreText: document.getElementById('quizScoreText'),
+        quizRefTag: document.getElementById('quizRefTag'),
+        quizQuestionText: document.getElementById('quizQuestionText'),
+        quizOptionsList: document.getElementById('quizOptionsList'),
+        quizFeedbackBox: document.getElementById('quizFeedbackBox'),
+        feedbackStatus: document.getElementById('feedbackStatus'),
+        feedbackExplanation: document.getElementById('feedbackExplanation'),
+        btnSkipQuestion: document.getElementById('btnSkipQuestion'),
+        btnNextQuestion: document.getElementById('btnNextQuestion'),
         
         // Botón de completado
         btnCompleteDay: document.getElementById('btnCompleteDay'),
@@ -53,6 +65,15 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Toast
         toast: document.getElementById('toast')
+    };
+
+    // Estado del Quiz de Esgrima Bíblico
+    const quizState = {
+        currentDay: null,
+        questions: [],
+        currentIndex: 0,
+        score: 0,
+        answered: false
     };
 
     // Función para cambiar de vista (Portada vs Lectura)
@@ -160,22 +181,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    function isVerseHighlighted(bookNum, chapter, verseNum) {
-        const key = `${bookNum}_${chapter}`;
-        // Si el usuario personalizó este capítulo, revisar sus destacados
-        if (state.customHighlights[key]) {
-            return state.customHighlights[key].includes(verseNum);
-        }
-        // De lo contrario, usar los versículos clave predeterminados
-        return window.dailyChaptersManager.isDefaultHighlighted(bookNum, chapter, verseNum);
-    }
-
-    function toggleVerseHighlight(bookNum, chapter, verseNum) {
+    function toggleCustomHighlight(bookNum, chapter, verseNum) {
         const key = `${bookNum}_${chapter}`;
         if (!state.customHighlights[key]) {
-            // Inicializar con los predeterminados si aún no existía personalización
-            const defs = window.dailyChaptersManager.getDefaultHighlights()[key] || [];
-            state.customHighlights[key] = [...defs];
+            state.customHighlights[key] = [];
         }
 
         const list = state.customHighlights[key];
@@ -192,6 +201,141 @@ document.addEventListener('DOMContentLoaded', () => {
 
         saveState();
         return isNowHighlighted;
+    }
+
+    // =========================================================================
+    // Motor de Esgrima Bíblico (Quiz)
+    // =========================================================================
+    function shuffleArray(arr) {
+        const shuffled = [...arr];
+        for (let i = shuffled.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+        }
+        return shuffled;
+    }
+
+    function loadQuizForDay(dayNumber) {
+        if (!window.esgrimaQuizData || !window.esgrimaQuizData[dayNumber]) {
+            quizState.questions = [];
+            return;
+        }
+
+        const rawQuestions = window.esgrimaQuizData[dayNumber];
+        quizState.currentDay = dayNumber;
+        quizState.questions = shuffleArray(rawQuestions);
+        quizState.currentIndex = 0;
+        quizState.score = 0;
+        quizState.answered = false;
+
+        if (elements.quizScoreText) {
+            elements.quizScoreText.textContent = `Aciertos: 0`;
+        }
+
+        renderQuizQuestion();
+    }
+
+    function renderQuizQuestion() {
+        if (!quizState.questions || quizState.questions.length === 0) {
+            if (elements.esgrimaQuizCard) elements.esgrimaQuizCard.style.display = 'none';
+            return;
+        }
+
+        if (elements.esgrimaQuizCard) elements.esgrimaQuizCard.style.display = 'block';
+
+        // Si se llegó al final de todas las preguntas del día, reiniciar y reordenar al azar (Ilimitado)
+        if (quizState.currentIndex >= quizState.questions.length) {
+            quizState.questions = shuffleArray(quizState.questions);
+            quizState.currentIndex = 0;
+            showToast("¡Has repasado todas las preguntas! Reiniciando preguntas al azar...");
+        }
+
+        const currentQ = quizState.questions[quizState.currentIndex];
+        quizState.answered = false;
+
+        // Ocultar feedback y alternar botones
+        elements.quizFeedbackBox.style.display = 'none';
+        elements.btnSkipQuestion.style.display = 'inline-flex';
+        elements.btnNextQuestion.style.display = 'none';
+
+        // Renderizar referencia y enunciado
+        elements.quizRefTag.textContent = currentQ.reference;
+        elements.quizQuestionText.textContent = currentQ.question;
+
+        // Renderizar opciones A, B, C, D
+        elements.quizOptionsList.innerHTML = '';
+        const letters = ['A', 'B', 'C', 'D'];
+
+        currentQ.options.forEach((optText, idx) => {
+            const btn = document.createElement('button');
+            btn.className = 'btn-quiz-option';
+            btn.innerHTML = `
+                <span class="option-letter">${letters[idx]}</span>
+                <span class="option-text">${optText}</span>
+            `;
+            btn.addEventListener('click', () => handleQuizOptionClick(idx, currentQ));
+            elements.quizOptionsList.appendChild(btn);
+        });
+    }
+
+    function handleQuizOptionClick(selectedIndex, currentQ) {
+        if (quizState.answered) return;
+        quizState.answered = true;
+
+        const optionButtons = elements.quizOptionsList.querySelectorAll('.btn-quiz-option');
+        optionButtons.forEach(btn => btn.disabled = true);
+
+        const isCorrect = (selectedIndex === currentQ.correctIndex);
+
+        if (isCorrect) {
+            quizState.score++;
+            if (elements.quizScoreText) {
+                elements.quizScoreText.textContent = `Aciertos: ${quizState.score}`;
+            }
+            optionButtons[selectedIndex].classList.add('correct');
+            elements.feedbackStatus.className = 'feedback-status correct-text';
+            elements.feedbackStatus.textContent = '¡Correcto! Excelente dominio de la Palabra.';
+        } else {
+            optionButtons[selectedIndex].classList.add('incorrect');
+            optionButtons[currentQ.correctIndex].classList.add('correct');
+            elements.feedbackStatus.className = 'feedback-status incorrect-text';
+            elements.feedbackStatus.textContent = `Respuesta correcta: Opción ${['A','B','C','D'][currentQ.correctIndex]} (${currentQ.options[currentQ.correctIndex]})`;
+        }
+
+        elements.feedbackExplanation.textContent = currentQ.explanation;
+        elements.quizFeedbackBox.style.display = 'block';
+
+        elements.btnSkipQuestion.style.display = 'none';
+        elements.btnNextQuestion.style.display = 'inline-flex';
+    }
+
+    function handleQuizSkip() {
+        if (quizState.answered) return;
+        quizState.answered = true;
+
+        const currentQ = quizState.questions[quizState.currentIndex];
+        const optionButtons = elements.quizOptionsList.querySelectorAll('.btn-quiz-option');
+        optionButtons.forEach(btn => btn.disabled = true);
+
+        optionButtons[currentQ.correctIndex].classList.add('correct');
+
+        elements.feedbackStatus.className = 'feedback-status incorrect-text';
+        elements.feedbackStatus.textContent = `Respuesta correcta: Opción ${['A','B','C','D'][currentQ.correctIndex]} (${currentQ.options[currentQ.correctIndex]})`;
+        elements.feedbackExplanation.textContent = currentQ.explanation;
+        elements.quizFeedbackBox.style.display = 'block';
+
+        elements.btnSkipQuestion.style.display = 'none';
+        elements.btnNextQuestion.style.display = 'inline-flex';
+    }
+
+    if (elements.btnSkipQuestion) {
+        elements.btnSkipQuestion.addEventListener('click', handleQuizSkip);
+    }
+    if (elements.btnNextQuestion) {
+        elements.btnNextQuestion.addEventListener('click', () => {
+            quizState.currentIndex++;
+            renderQuizQuestion();
+        });
     }
 
     // Renderizar barra de días (Día 1 a Día 8)
@@ -212,7 +356,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Renderizar los 4 capítulos del día actual
+    // Renderizar los 4 capítulos del día actual y cargar Quiz
     function renderDay() {
         const plan = window.dailyChaptersManager.getDayPlan(state.currentDay);
         if (!plan) return;
@@ -222,8 +366,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Encabezado
         const totalDays = window.dailyChaptersManager.getTotalDays();
-        const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-        const dateString = new Date().toLocaleDateString('es-ES', dateOptions);
         
         elements.dayMetaBadge.textContent = `RUTINA DIARIA (30 MIN) &bull; DÍA ${plan.day} DE ${totalDays}`;
         elements.dayMainTitle.textContent = plan.title;
@@ -267,21 +409,37 @@ document.addEventListener('DOMContentLoaded', () => {
             const versesList = document.createElement('div');
             versesList.className = 'chapter-verses-list';
 
+            const key = `${chapterData.bookNum}_${chapterData.chapter}`;
+
             chapterData.verses.forEach(v => {
-                const isHl = isVerseHighlighted(chapterData.bookNum, chapterData.chapter, v.num);
+                const isDefault = window.dailyChaptersManager.isDefaultHighlighted(chapterData.bookNum, chapterData.chapter, v.num);
+                const isCustom = state.customHighlights[key] && state.customHighlights[key].includes(v.num);
+
+                let hlClass = '';
+                if (isDefault) {
+                    hlClass = 'highlighted-default';
+                } else if (isCustom) {
+                    hlClass = 'highlighted-custom';
+                }
+
                 const verseContent = window.dailyChaptersManager.getVerseText(chapterData, v, state.bibleVersion);
                 const row = document.createElement('div');
-                row.className = `verse-row ${isHl ? 'highlighted' : ''}`;
+                row.className = `verse-row ${hlClass}`;
                 row.innerHTML = `
                     <span class="verse-num">${v.num}</span>
                     <span class="verse-text">${verseContent}</span>
                 `;
 
-                // Clic interactivo para resaltar
+                // Clic interactivo: Los predeterminados son fijos; los no predeterminados se marcan personalmente
                 row.addEventListener('click', () => {
-                    const nowHl = toggleVerseHighlight(chapterData.bookNum, chapterData.chapter, v.num);
-                    row.classList.toggle('highlighted', nowHl);
-                    showToast(nowHl ? `Versículo ${v.num} resaltado` : `Resaltado quitado de v. ${v.num}`);
+                    if (isDefault) {
+                        showToast("Versículo clave de Esgrima Bíblico (resaltado fijo)");
+                        return;
+                    }
+
+                    const nowHl = toggleCustomHighlight(chapterData.bookNum, chapterData.chapter, v.num);
+                    row.classList.toggle('highlighted-custom', nowHl);
+                    showToast(nowHl ? `Versículo ${v.num} marcado personalmente` : `Marca personal quitada de v. ${v.num}`);
                 });
 
                 versesList.appendChild(row);
@@ -290,6 +448,9 @@ document.addEventListener('DOMContentLoaded', () => {
             card.appendChild(versesList);
             elements.chaptersContainer.appendChild(card);
         });
+
+        // Inicializar / Cargar Quiz de Esgrima Bíblico del Día
+        loadQuizForDay(state.currentDay);
 
         // Actualizar botón de completar día
         const isCompleted = state.completedDays.has(state.currentDay);
