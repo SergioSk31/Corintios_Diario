@@ -237,7 +237,7 @@
                 <!-- Cada capítulo con su contexto y versículos se inyecta aquí -->
             </section>
 
-            <!-- Módulo de Esgrima Bíblico (Entrenamiento de Preguntas del Día) -->
+            <!-- Módulo de Esgrima Bíblico (Entrenamiento de Respuesta Escrita y Autoevaluación) -->
             <section id="esgrimaQuizCard" class="quiz-card">
                 <div class="quiz-header">
                     <div class="quiz-title-wrap">
@@ -245,10 +245,11 @@
                             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 10"></polyline></svg>
                             Esgrima Bíblico
                         </span>
-                        <h3 class="quiz-title">Quiz de Versículos Resaltados</h3>
+                        <h3 class="quiz-title">Práctica de Respuesta Escrita &amp; Memorización</h3>
                     </div>
                     <div class="quiz-stats">
                         <span id="quizScoreText" class="quiz-score-pill" title="Aciertos en esta sesión">Aciertos: 0</span>
+                        <span id="quizTotalText" class="quiz-total-pill" title="Total practicadas">Practicadas: 0</span>
                     </div>
                 </div>
 
@@ -256,25 +257,53 @@
                     <div class="quiz-reference-tag" id="quizRefTag">1 Corintios 1:18</div>
                     <div class="quiz-question-text" id="quizQuestionText">Cargando pregunta...</div>
 
-                    <div class="quiz-options-list" id="quizOptionsList">
-                        <!-- Opciones A, B, C, D inyectadas dinámicamente -->
+                    <!-- Área de Entrada de Texto -->
+                    <div class="quiz-input-wrap" id="quizInputWrap">
+                        <textarea id="quizAnswerInput" class="quiz-textarea" placeholder="Escribe aquí tu respuesta para practicar (o responde mentalmente)..." rows="3"></textarea>
+                        
+                        <div class="quiz-input-actions">
+                            <button id="btnSkipQuestion" class="btn-quiz-skip" title="Saltar y ver la respuesta correcta">
+                                Saltar / Revelar
+                            </button>
+                            <button id="btnVerifyAnswer" class="btn-quiz-verify">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                                Verificar respuesta
+                            </button>
+                        </div>
                     </div>
 
-                    <!-- Caja de retroalimentación / respuesta correcta -->
-                    <div class="quiz-feedback-box" id="quizFeedbackBox" style="display: none;">
-                        <div class="feedback-status" id="feedbackStatus"></div>
-                        <div class="feedback-explanation" id="feedbackExplanation"></div>
+                    <!-- Caja de Verificación y Autoevaluación -->
+                    <div class="quiz-reveal-box" id="quizRevealBox" style="display: none;">
+                        <div class="user-answer-summary" id="userAnswerSummary" style="display: none;">
+                            <span class="summary-label">Tu respuesta escrita:</span>
+                            <p class="summary-text" id="userAnswerText"></p>
+                        </div>
+
+                        <div class="correct-answer-card">
+                            <span class="correct-answer-tag">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                Respuesta Bíblica Oficial
+                            </span>
+                            <div class="correct-answer-text" id="correctAnswerText"></div>
+                            <div class="correct-answer-explanation" id="correctAnswerExplanation"></div>
+                        </div>
+
+                        <!-- Sección de Autoevaluación del Usuario -->
+                        <div class="self-grading-prompt">
+                            <span class="self-grading-label">¿Cómo fue tu respuesta?</span>
+                            <div class="self-grading-buttons">
+                                <button id="btnMarkCorrect" class="btn-self-check correct">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    La tuve correcta (+1)
+                                </button>
+                                <button id="btnMarkIncorrect" class="btn-self-check incorrect">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                                    La tuve incorrecta
+                                </button>
+                            </div>
+                        </div>
                     </div>
 
-                    <!-- Controles del Quiz -->
-                    <div class="quiz-controls">
-                        <button id="btnSkipQuestion" class="btn-quiz-skip" title="Ver respuesta correcta y pasar a la siguiente">
-                            Saltar pregunta
-                        </button>
-                        <button id="btnNextQuestion" class="btn-quiz-next" style="display: none;">
-                            Siguiente pregunta →
-                        </button>
-                    </div>
                 </div>
             </section>
 

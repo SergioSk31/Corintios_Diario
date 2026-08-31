@@ -43,17 +43,23 @@ document.addEventListener('DOMContentLoaded', () => {
         // Contenedor de los 4 Capítulos
         chaptersContainer: document.getElementById('chaptersContainer'),
 
-        // Esgrima Bíblico Quiz
+        // Esgrima Bíblico Quiz (Respuesta Escrita y Autoevaluación)
         esgrimaQuizCard: document.getElementById('esgrimaQuizCard'),
         quizScoreText: document.getElementById('quizScoreText'),
+        quizTotalText: document.getElementById('quizTotalText'),
         quizRefTag: document.getElementById('quizRefTag'),
         quizQuestionText: document.getElementById('quizQuestionText'),
-        quizOptionsList: document.getElementById('quizOptionsList'),
-        quizFeedbackBox: document.getElementById('quizFeedbackBox'),
-        feedbackStatus: document.getElementById('feedbackStatus'),
-        feedbackExplanation: document.getElementById('feedbackExplanation'),
+        quizInputWrap: document.getElementById('quizInputWrap'),
+        quizAnswerInput: document.getElementById('quizAnswerInput'),
+        btnVerifyAnswer: document.getElementById('btnVerifyAnswer'),
         btnSkipQuestion: document.getElementById('btnSkipQuestion'),
-        btnNextQuestion: document.getElementById('btnNextQuestion'),
+        quizRevealBox: document.getElementById('quizRevealBox'),
+        userAnswerSummary: document.getElementById('userAnswerSummary'),
+        userAnswerText: document.getElementById('userAnswerText'),
+        correctAnswerText: document.getElementById('correctAnswerText'),
+        correctAnswerExplanation: document.getElementById('correctAnswerExplanation'),
+        btnMarkCorrect: document.getElementById('btnMarkCorrect'),
+        btnMarkIncorrect: document.getElementById('btnMarkIncorrect'),
         
         // Botón de completado
         btnCompleteDay: document.getElementById('btnCompleteDay'),
@@ -73,7 +79,8 @@ document.addEventListener('DOMContentLoaded', () => {
         questions: [],
         currentIndex: 0,
         score: 0,
-        answered: false
+        totalAnswered: 0,
+        verified: false
     };
 
     // Función para cambiar de vista (Portada vs Lectura)
@@ -204,7 +211,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // =========================================================================
-    // Motor de Esgrima Bíblico (Quiz)
+    // Motor de Esgrima Bíblico (Quiz de Respuesta Escrita y Autoevaluación)
     // =========================================================================
     function shuffleArray(arr) {
         const shuffled = [...arr];
@@ -226,13 +233,20 @@ document.addEventListener('DOMContentLoaded', () => {
         quizState.questions = shuffleArray(rawQuestions);
         quizState.currentIndex = 0;
         quizState.score = 0;
-        quizState.answered = false;
+        quizState.totalAnswered = 0;
+        quizState.verified = false;
 
-        if (elements.quizScoreText) {
-            elements.quizScoreText.textContent = `Aciertos: 0`;
-        }
-
+        updateQuizScoreDisplay();
         renderQuizQuestion();
+    }
+
+    function updateQuizScoreDisplay() {
+        if (elements.quizScoreText) {
+            elements.quizScoreText.textContent = `Aciertos: ${quizState.score}`;
+        }
+        if (elements.quizTotalText) {
+            elements.quizTotalText.textContent = `Practicadas: ${quizState.totalAnswered}`;
+        }
     }
 
     function renderQuizQuestion() {
@@ -247,94 +261,85 @@ document.addEventListener('DOMContentLoaded', () => {
         if (quizState.currentIndex >= quizState.questions.length) {
             quizState.questions = shuffleArray(quizState.questions);
             quizState.currentIndex = 0;
-            showToast("¡Has repasado todas las preguntas! Reiniciando preguntas al azar...");
+            showToast("¡Has completado la ronda! Reiniciando preguntas al azar...");
         }
 
         const currentQ = quizState.questions[quizState.currentIndex];
-        quizState.answered = false;
+        quizState.verified = false;
 
-        // Ocultar feedback y alternar botones
-        elements.quizFeedbackBox.style.display = 'none';
-        elements.btnSkipQuestion.style.display = 'inline-flex';
-        elements.btnNextQuestion.style.display = 'none';
-
-        // Renderizar referencia y enunciado
+        // Limpiar y preparar interfaz
         elements.quizRefTag.textContent = currentQ.reference;
         elements.quizQuestionText.textContent = currentQ.question;
-
-        // Renderizar opciones A, B, C, D
-        elements.quizOptionsList.innerHTML = '';
-        const letters = ['A', 'B', 'C', 'D'];
-
-        currentQ.options.forEach((optText, idx) => {
-            const btn = document.createElement('button');
-            btn.className = 'btn-quiz-option';
-            btn.innerHTML = `
-                <span class="option-letter">${letters[idx]}</span>
-                <span class="option-text">${optText}</span>
-            `;
-            btn.addEventListener('click', () => handleQuizOptionClick(idx, currentQ));
-            elements.quizOptionsList.appendChild(btn);
-        });
+        elements.quizAnswerInput.value = '';
+        elements.quizAnswerInput.disabled = false;
+        elements.quizRevealBox.style.display = 'none';
+        elements.quizInputWrap.style.display = 'flex';
+        elements.userAnswerSummary.style.display = 'none';
     }
 
-    function handleQuizOptionClick(selectedIndex, currentQ) {
-        if (quizState.answered) return;
-        quizState.answered = true;
-
-        const optionButtons = elements.quizOptionsList.querySelectorAll('.btn-quiz-option');
-        optionButtons.forEach(btn => btn.disabled = true);
-
-        const isCorrect = (selectedIndex === currentQ.correctIndex);
-
-        if (isCorrect) {
-            quizState.score++;
-            if (elements.quizScoreText) {
-                elements.quizScoreText.textContent = `Aciertos: ${quizState.score}`;
-            }
-            optionButtons[selectedIndex].classList.add('correct');
-            elements.feedbackStatus.className = 'feedback-status correct-text';
-            elements.feedbackStatus.textContent = '¡Correcto! Excelente dominio de la Palabra.';
-        } else {
-            optionButtons[selectedIndex].classList.add('incorrect');
-            optionButtons[currentQ.correctIndex].classList.add('correct');
-            elements.feedbackStatus.className = 'feedback-status incorrect-text';
-            elements.feedbackStatus.textContent = `Respuesta correcta: Opción ${['A','B','C','D'][currentQ.correctIndex]} (${currentQ.options[currentQ.correctIndex]})`;
-        }
-
-        elements.feedbackExplanation.textContent = currentQ.explanation;
-        elements.quizFeedbackBox.style.display = 'block';
-
-        elements.btnSkipQuestion.style.display = 'none';
-        elements.btnNextQuestion.style.display = 'inline-flex';
-    }
-
-    function handleQuizSkip() {
-        if (quizState.answered) return;
-        quizState.answered = true;
+    function handleVerifyAnswer() {
+        if (quizState.verified) return;
+        quizState.verified = true;
 
         const currentQ = quizState.questions[quizState.currentIndex];
-        const optionButtons = elements.quizOptionsList.querySelectorAll('.btn-quiz-option');
-        optionButtons.forEach(btn => btn.disabled = true);
+        const userTyped = elements.quizAnswerInput.value.trim();
 
-        optionButtons[currentQ.correctIndex].classList.add('correct');
+        // Mostrar lo que el usuario escribió si hubo texto
+        if (userTyped.length > 0) {
+            elements.userAnswerText.textContent = `"${userTyped}"`;
+            elements.userAnswerSummary.style.display = 'block';
+        } else {
+            elements.userAnswerSummary.style.display = 'none';
+        }
 
-        elements.feedbackStatus.className = 'feedback-status incorrect-text';
-        elements.feedbackStatus.textContent = `Respuesta correcta: Opción ${['A','B','C','D'][currentQ.correctIndex]} (${currentQ.options[currentQ.correctIndex]})`;
-        elements.feedbackExplanation.textContent = currentQ.explanation;
-        elements.quizFeedbackBox.style.display = 'block';
+        // Obtener la respuesta exacta esperada
+        const canonicalAnswer = currentQ.options ? currentQ.options[currentQ.correctIndex] : currentQ.explanation;
+        elements.correctAnswerText.textContent = canonicalAnswer;
+        elements.correctAnswerExplanation.textContent = currentQ.explanation;
 
-        elements.btnSkipQuestion.style.display = 'none';
-        elements.btnNextQuestion.style.display = 'inline-flex';
+        elements.quizAnswerInput.disabled = true;
+        elements.quizRevealBox.style.display = 'flex';
+    }
+
+    function handleSelfGrading(isCorrect) {
+        if (isCorrect) {
+            quizState.score++;
+            showToast("¡Excelente! Registrado como acierto (+1)");
+        } else {
+            showToast("Registrado. ¡A seguir repasando la Palabra!");
+        }
+
+        quizState.totalAnswered++;
+        updateQuizScoreDisplay();
+
+        // Avanzar a la siguiente pregunta
+        quizState.currentIndex++;
+        renderQuizQuestion();
+    }
+
+    if (elements.btnVerifyAnswer) {
+        elements.btnVerifyAnswer.addEventListener('click', handleVerifyAnswer);
     }
 
     if (elements.btnSkipQuestion) {
-        elements.btnSkipQuestion.addEventListener('click', handleQuizSkip);
+        elements.btnSkipQuestion.addEventListener('click', handleVerifyAnswer);
     }
-    if (elements.btnNextQuestion) {
-        elements.btnNextQuestion.addEventListener('click', () => {
-            quizState.currentIndex++;
-            renderQuizQuestion();
+
+    if (elements.btnMarkCorrect) {
+        elements.btnMarkCorrect.addEventListener('click', () => handleSelfGrading(true));
+    }
+
+    if (elements.btnMarkIncorrect) {
+        elements.btnMarkIncorrect.addEventListener('click', () => handleSelfGrading(false));
+    }
+
+    // Atajo de teclado: presionar Ctrl+Enter en el textarea para verificar rápido
+    if (elements.quizAnswerInput) {
+        elements.quizAnswerInput.addEventListener('keydown', (e) => {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+                e.preventDefault();
+                handleVerifyAnswer();
+            }
         });
     }
 
