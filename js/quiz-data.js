@@ -8,6 +8,30 @@ const ESGRIMA_QUIZ_DATA = {
     // DÍA 1: 1ª de Corintios 1 al 4
     1: [
         {
+            reference: "1 Corintios 1:1",
+            question: "Según 1 Corintios 1:1, ¿por qué voluntad fue llamado Pablo a ser apóstol de Jesucristo y qué hermano lo acompañaba?",
+            options: [
+                "Por la voluntad de Dios, y el hermano Sóstenes",
+                "Por nombramiento del concilio de Jerusalén, y el hermano Bernabé",
+                "Por elección de los magistrados de Acaya, y el hermano Silas",
+                "Por voluntad de los ancianos de Tarso, y el hermano Timoteo"
+            ],
+            correctIndex: 0,
+            explanation: "1 Corintios 1:1: «Pablo, llamado a ser apóstol de Jesucristo por la voluntad de Dios, y el hermano Sóstenes»."
+        },
+        {
+            reference: "1 Corintios 1:5",
+            question: "Según 1 Corintios 1:5, ¿en qué cosas fueron enriquecidos los corintios en Cristo?",
+            options: [
+                "En todas las cosas fuisteis enriquecidos en él, en toda palabra y en toda ciencia",
+                "En riquezas materiales y tierras en la provincia de Acaya",
+                "En tributos comerciales y cargos públicos en la ciudad",
+                "En honores imperiales y renombre militar romano"
+            ],
+            correctIndex: 0,
+            explanation: "1 Corintios 1:5: «porque en todas las cosas fuisteis enriquecidos en él, en toda palabra y en toda ciencia»."
+        },
+        {
             reference: "1 Corintios 1:7",
             question: "Según 1 Corintios 1:7, ¿de qué manera se encontraba la iglesia de Corinto respecto a los dones?",
             options: [
@@ -126,6 +150,78 @@ const ESGRIMA_QUIZ_DATA = {
             ],
             correctIndex: 0,
             explanation: "1 Corintios 1:23: «pero nosotros predicamos a Cristo crucificado, para los judíos ciertamente tropezadero, y para los gentiles locura»."
+        },
+        {
+            reference: "1 Corintios 1:27-29",
+            question: "Según 1 Corintios 1:27-29, ¿qué cosas escogió Dios para avergonzar a los sabios y a lo fuerte, y con qué propósito?",
+            options: [
+                "Lo necio, lo débil, lo vil y lo menospreciado del mundo, a fin de que nadie se jacte en su presencia",
+                "A los ejércitos más poderosos de Roma para conquistar los pueblos",
+                "A los filósofos más reconocidos de Atenas para debatir la ley",
+                "A los reyes y sacerdotes más ricos de la tierra para honrar su nombre"
+            ],
+            correctIndex: 0,
+            explanation: "1 Corintios 1:27-29: «sino que lo necio del mundo escogió Dios, para avergonzar a los sabios; y lo débil del mundo escogió Dios, para avergonzar a lo fuerte; y lo vil del mundo y lo menospreciado escogió Dios... a fin de que nadie se jacte en su presencia»."
+        },
+        {
+            reference: "1 Corintios 1:30",
+            question: "Según 1 Corintios 1:30, ¿qué cuatro cosas nos ha sido hecho Cristo Jesús por Dios?",
+            options: [
+                "Sabiduría, justificación, santificación y redención",
+                "Riqueza, poder terrenal, honor y victoria militar",
+                "Ley, juicio, condenación y autoridad humana",
+                "Fama, elocuencia, filosofía y dominio político"
+            ],
+            correctIndex: 0,
+            explanation: "1 Corintios 1:30: «Mas por él estáis vosotros en Cristo Jesús, el cual nos ha sido hecho por Dios sabiduría, justificación, santificación y redención»."
+        },
+        {
+            reference: "1 Corintios 2:1",
+            question: "Según 1 Corintios 2:1, ¿cómo no fue Pablo a anunciar el testimonio de Dios cuando llegó a Corinto?",
+            options: [
+                "No fui con excelencia de palabras o de sabiduría",
+                "No fui con vestiduras sacerdotales judías",
+                "No fui con cartas de escolta militar romana",
+                "No fui con provisiones de alimentos de Macedonia"
+            ],
+            correctIndex: 0,
+            explanation: "1 Corintios 2:1: «Así que, hermanos, cuando fui a vosotros para anunciaros el testimonio de Dios, no fui con excelencia de palabras o de sabiduría»."
+        },
+        {
+            reference: "1 Corintios 2:4",
+            question: "Según 1 Corintios 2:4, ¿cómo fue la palabra y predicación de Pablo a los corintios?",
+            options: [
+                "No con palabras persuasivas de humana sabiduría, sino con demostración del Espíritu y de poder",
+                "Con retórica de los filósofos de la academia griega",
+                "Con decretos formales y amenazas de la ley de Moisés",
+                "Con fábulas y genealogías interminables"
+            ],
+            correctIndex: 0,
+            explanation: "1 Corintios 2:4: «y ni mi palabra ni mi predicación fue con palabras persuasivas de humana sabiduría, sino con demostración del Espíritu y de poder»."
+        },
+        {
+            reference: "1 Corintios 3:12-13",
+            question: "Según 1 Corintios 3:12-13, ¿qué materiales pueden edificarse sobre el fundamento y cómo será probada la obra de cada uno?",
+            options: [
+                "Oro, plata, piedras preciosas, madera, heno, hojarasca; y la obra será probada y revelada por el fuego",
+                "Bronce, hierro y barro probados por el agua del diluvio",
+                "Piedras de cantera probadas por el peso de los siglos",
+                "Ladrillos y paja probados por los tribunales civiles"
+            ],
+            correctIndex: 0,
+            explanation: "1 Corintios 3:12-13: «Y si sobre este fundamento alguno edificare oro, plata, piedras preciosas, madera, heno, hojarasca, la obra de cada uno se hará manifiesta; porque el día la declarará, pues por el fuego será revelada; y la obra de cada uno cuál sea, el fuego la probará»."
+        },
+        {
+            reference: "1 Corintios 3:19",
+            question: "Según 1 Corintios 3:19, ¿qué es la sabiduría de este mundo para con Dios?",
+            options: [
+                "La sabiduría de este mundo es insensatez para con Dios; pues Él prende a los sabios en la astucia de ellos",
+                "Es el camino principal para alcanzar la santidad perfecta",
+                "Es igual de valiosa que la revelación profética",
+                "Es el fundamento sobre el cual edificar la iglesia"
+            ],
+            correctIndex: 0,
+            explanation: "1 Corintios 3:19: «Porque la sabiduría de este mundo es insensatez para con Dios; pues escrito está: El prende a los sabios en la astucia de ellos»."
         },
         {
             reference: "1 Corintios 2:3",
@@ -408,6 +504,18 @@ const ESGRIMA_QUIZ_DATA = {
             explanation: "1 Corintios 5:8: «Así que celebremos la fiesta, no con la vieja levadura, ni con la levadura de malicia y de maldad, sino con panes sin levadura, de sinceridad y de verdad»."
         },
         {
+            reference: "1 Corintios 6:1",
+            question: "Según 1 Corintios 6:1, ¿delante de quiénes reprende Pablo que no deben ir a juicio los creyentes cuando tienen pleito entre sí?",
+            options: [
+                "Delante de los injustos (incrédulos), sino que deben resolverse delante de los santos",
+                "Delante de los magistrados romanos en las plazas públicas",
+                "Delante de los filósofos de la academia de Acaya",
+                "Delante de los sacerdotes de los templos paganos"
+            ],
+            correctIndex: 0,
+            explanation: "1 Corintios 6:1: «¿Osa alguno de vosotros, cuando tiene algo con otro, ir a juicio delante de los injustos, y no delante de los santos?»."
+        },
+        {
             reference: "1 Corintios 6:4",
             question: "Según 1 Corintios 6:4, en cuanto a litigios cotidianos, ¿a quiénes ponían erróneamente para juzgar?",
             options: [
@@ -456,6 +564,18 @@ const ESGRIMA_QUIZ_DATA = {
             explanation: "1 Corintios 6:9-10 declara enfáticamente que los injustos y pecadores impenitentes no heredarán el reino de Dios."
         },
         {
+            reference: "1 Corintios 6:11",
+            question: "Según 1 Corintios 6:11, ¿cuáles tres cosas han ocurrido con los creyentes en el nombre del Señor Jesús y por el Espíritu de Dios?",
+            options: [
+                "Ya habéis sido lavados, ya habéis sido santificados, ya habéis sido justificados",
+                "Ya habéis sido examinados, probados y coronados reyes en la tierra",
+                "Ya habéis sido enriquecidos en oro, plata y bienes temporales",
+                "Ya habéis recibido títulos, honores y autoridad política"
+            ],
+            correctIndex: 0,
+            explanation: "1 Corintios 6:11: «Y esto erais algunos; mas ya habéis sido lavados, ya habéis sido santificados, ya habéis sido justificados en el nombre del Señor Jesús, y por el Espíritu de nuestro Dios»."
+        },
+        {
             reference: "1 Corintios 6:12",
             question: "Según 1 Corintios 6:12, ¿cuál es el principio cristiano sobre la libertad y el dominio propio?",
             options: [
@@ -480,6 +600,18 @@ const ESGRIMA_QUIZ_DATA = {
             explanation: "1 Corintios 6:13: «Pero el cuerpo no es para la fornicación, sino para el Señor, y el Señor para el cuerpo»."
         },
         {
+            reference: "1 Corintios 6:14",
+            question: "Según 1 Corintios 6:14, ¿qué hará Dios con nosotros así como levantó al Señor?",
+            options: [
+                "Y Dios, que levantó al Señor, también a nosotros nos levantará con su poder",
+                "Nos librará de todo sufrimiento en esta vida terrenal",
+                "Nos otorgará coronas corruptibles de gloria humana",
+                "Nos establecerá como gobernadores de las provincias"
+            ],
+            correctIndex: 0,
+            explanation: "1 Corintios 6:14: «Y Dios, que levantó al Señor, también a nosotros nos levantará con su poder»."
+        },
+        {
             reference: "1 Corintios 6:15",
             question: "Según 1 Corintios 6:15, ¿de quién son miembros nuestros cuerpos?",
             options: [
@@ -490,6 +622,18 @@ const ESGRIMA_QUIZ_DATA = {
             ],
             correctIndex: 0,
             explanation: "1 Corintios 6:15: «¿No sabéis que vuestros cuerpos son miembros de Cristo? ¿Quitaré, pues, los miembros de Cristo y los haré miembros de una ramera? De ningún modo»."
+        },
+        {
+            reference: "1 Corintios 6:17",
+            question: "Según 1 Corintios 6:17, ¿qué llega a ser el que se une al Señor?",
+            options: [
+                "Un espíritu es con él",
+                "Un sabio en la filosofía de este siglo",
+                "Un maestro superior a los ángeles",
+                "Un siervo de las opiniones humanas"
+            ],
+            correctIndex: 0,
+            explanation: "1 Corintios 6:17: «Pero el que se une al Señor, un espíritu es con él»."
         },
         {
             reference: "1 Corintios 6:18",
@@ -516,6 +660,30 @@ const ESGRIMA_QUIZ_DATA = {
             explanation: "1 Corintios 6:19: «¿O ignoráis que vuestro cuerpo es templo del Espíritu Santo, el cual está en vosotros, el cual tenéis de Dios, y que no sois vuestros?»."
         },
         {
+            reference: "1 Corintios 6:20",
+            question: "Según 1 Corintios 6:20, ¿por qué debemos glorificar a Dios en nuestro cuerpo y en nuestro espíritu?",
+            options: [
+                "Porque habéis sido comprados por precio; glorificad, pues, a Dios en vuestro cuerpo y en vuestro espíritu, los cuales son de Dios",
+                "Porque así obtendremos la admiración y el respeto de los magistrados",
+                "Para evitar las sanciones civiles de los tribunales de Corinto",
+                "Porque el cuerpo pertenece a las costumbres y leyes de Acaya"
+            ],
+            correctIndex: 0,
+            explanation: "1 Corintios 6:20: «Porque habéis sido comprados por precio; glorificad, pues, a Dios en vuestro cuerpo y en vuestro espíritu, los cuales son de Dios»."
+        },
+        {
+            reference: "1 Corintios 7:1",
+            question: "Según 1 Corintios 7:1, ¿qué responde Pablo en cuanto a las cosas que le consultaron por carta?",
+            options: [
+                "Bueno le sería al hombre no tocar mujer",
+                "Es obligatorio que todos se casen inmediatamente",
+                "Nadie debe formar matrimonio bajo ninguna circunstancia",
+                "El celibato está prohibido para los siervos de Dios"
+            ],
+            correctIndex: 0,
+            explanation: "1 Corintios 7:1: «En cuanto a las cosas de que me escribisteis, bueno le sería al hombre no tocar mujer»."
+        },
+        {
             reference: "1 Corintios 7:2",
             question: "Según 1 Corintios 7:2, a causa de las fornicaciones, ¿qué instrucción da el apóstol?",
             options: [
@@ -526,6 +694,30 @@ const ESGRIMA_QUIZ_DATA = {
             ],
             correctIndex: 0,
             explanation: "1 Corintios 7:2: «pero a causa de las fornicaciones, cada uno tenga su propia mujer, y cada una tenga su propio marido»."
+        },
+        {
+            reference: "1 Corintios 7:7",
+            question: "Según 1 Corintios 7:7, ¿qué desearía Pablo respecto a todos los hombres y qué aclara sobre el don de cada uno?",
+            options: [
+                "Quisiera más bien que todos los hombres fuesen como yo; pero cada uno tiene su propio don de Dios, uno a la verdad de un modo, y otro de otro",
+                "Quisiera que todos estuviesen casados sin excepción",
+                "Que nadie reciba dones espirituales para el celibato",
+                "Que todos adopten las costumbres conyugales romanas"
+            ],
+            correctIndex: 0,
+            explanation: "1 Corintios 7:7: «Quisiera más bien que todos los hombres fuesen como yo; pero cada uno tiene su propio don de Dios, uno a la verdad de un modo, y otro de otro»."
+        },
+        {
+            reference: "1 Corintios 7:17",
+            question: "Según 1 Corintios 7:17, ¿cuál es la regla que Pablo ordena en todas las iglesias sobre el llamamiento?",
+            options: [
+                "Cada uno como el Señor le repartió, y como Dios llamó a cada uno, así haga; esto ordeno en todas las iglesias",
+                "Que todos cambien de profesión y estado al convertirse",
+                "Que abandonen sus familias y ciudades de origen",
+                "Que se sometan a los ritos ceremoniales de Jerusalén"
+            ],
+            correctIndex: 0,
+            explanation: "1 Corintios 7:17: «Pero cada uno como el Señor le repartió, y como Dios llamó a cada uno, así haga; esto ordeno en todas las iglesias»."
         },
         {
             reference: "1 Corintios 7:22",
@@ -552,6 +744,42 @@ const ESGRIMA_QUIZ_DATA = {
             explanation: "1 Corintios 7:23: «Por precio fuisteis comprados; no os hagáis esclavos de los hombres»."
         },
         {
+            reference: "1 Corintios 7:24",
+            question: "Según 1 Corintios 7:24, ¿cómo debe permanecer cada creyente para con Dios?",
+            options: [
+                "Cada uno, hermanos, en el estado en que fue llamado, así permanezca para con Dios",
+                "Buscando cambiar desesperadamente su condición social",
+                "Trasladándose de inmediato a otra provincia",
+                "Exigiendo ser reconocido como maestro público"
+            ],
+            correctIndex: 0,
+            explanation: "1 Corintios 7:24: «Cada uno, hermanos, en el estado en que fue llamado, así permanezca para con Dios»."
+        },
+        {
+            reference: "1 Corintios 7:25",
+            question: "Según 1 Corintios 7:25, ¿qué aclara Pablo respecto a las instrucciones sobre las vírgenes?",
+            options: [
+                "De las vírgenes no tengo mandamiento del Señor; mas doy mi parecer, como quien ha alcanzado misericordia del Señor para ser fiel",
+                "Tengo un mandamiento estricto e inmutable del Señor para todas",
+                "Las vírgenes tienen prohibido consagrarse a la obra",
+                "Solo los apóstoles de Judea pueden legislar sobre el matrimonio"
+            ],
+            correctIndex: 0,
+            explanation: "1 Corintios 7:25: «De las vírgenes no tengo mandamiento del Señor; mas doy mi parecer, como quien ha alcanzado misericordia del Señor para ser fiel»."
+        },
+        {
+            reference: "1 Corintios 7:34-35",
+            question: "Según 1 Corintios 7:34-35, ¿de qué tiene cuidado la doncella no casada y cuál es el propósito de Pablo al aconsejar esto?",
+            options: [
+                "Tiene cuidado de las cosas del Señor, para ser santa en cuerpo y espíritu; para que sin impedimento os acerquéis al Señor",
+                "Tiene cuidado de las fiestas y diversiones de la ciudad",
+                "Para imponerles una carga pesada e innecesaria",
+                "Para que se aparten de toda comunión con la iglesia"
+            ],
+            correctIndex: 0,
+            explanation: "1 Corintios 7:34-35: «La doncella tiene cuidado de las cosas del Señor, para ser santa así en el cuerpo como en el espíritu... para lo que es honesto y decente, y para que sin impedimento os acerquéis al Señor»."
+        },
+        {
             reference: "1 Corintios 8:1",
             question: "Según 1 Corintios 8:1, ¿cuál es el contraste entre el conocimiento y el amor?",
             options: [
@@ -562,6 +790,18 @@ const ESGRIMA_QUIZ_DATA = {
             ],
             correctIndex: 0,
             explanation: "1 Corintios 8:1: «El conocimiento envanece, pero el amor edifica»."
+        },
+        {
+            reference: "1 Corintios 8:2",
+            question: "Según 1 Corintios 8:2, ¿qué dice Pablo sobre el que se imagina que sabe algo?",
+            options: [
+                "Y si alguno se imagina que sabe algo, aún no sabe nada como debe saberlo",
+                "Demuestra que ha alcanzado la madurez espiritual perfecta",
+                "Debe ser nombrado de inmediato maestro de la congregación",
+                "Posee la sabiduría más sublime de toda Acaya"
+            ],
+            correctIndex: 0,
+            explanation: "1 Corintios 8:2: «Y si alguno se imagina que sabe algo, aún no sabe nada como debe saberlo»."
         },
         {
             reference: "1 Corintios 8:3",
@@ -588,6 +828,18 @@ const ESGRIMA_QUIZ_DATA = {
             explanation: "1 Corintios 8:4: «sabemos que un ídolo nada es en el mundo, y que no hay más que un Dios»."
         },
         {
+            reference: "1 Corintios 8:6",
+            question: "Según 1 Corintios 8:6, ¿cuál es la confesión de fe cristiana respecto a Dios el Padre y al Señor Jesucristo?",
+            options: [
+                "Para nosotros sólo hay un Dios, el Padre, del cual proceden todas las cosas; y un Señor, Jesucristo, por medio del cual son todas las cosas",
+                "Existen múltiples deidades intermediarias en el universo",
+                "El Padre y el Hijo son dioses separados con diferentes propósitos",
+                "Las cosas proceden de la naturaleza y no del Creador"
+            ],
+            correctIndex: 0,
+            explanation: "1 Corintios 8:6: «para nosotros, sin embargo, sólo hay un Dios, el Padre, del cual proceden todas las cosas, y nosotros somos para él; y un Señor, Jesucristo, por medio del cual son todas las cosas, y nosotros por medio de él»."
+        },
+        {
             reference: "1 Corintios 8:9",
             question: "Según 1 Corintios 8:9, ¿qué cuidado debemos tener con nuestra libertad?",
             options: [
@@ -598,6 +850,18 @@ const ESGRIMA_QUIZ_DATA = {
             ],
             correctIndex: 0,
             explanation: "1 Corintios 8:9: «Pero mirad que esta libertad vuestra no venga a ser tropezadero para los débiles»."
+        },
+        {
+            reference: "1 Corintios 8:12",
+            question: "Según 1 Corintios 8:12, cuando pecamos contra los hermanos hiriendo su débil conciencia, ¿contra quién pecamos en realidad?",
+            options: [
+                "Contra Cristo pecáis",
+                "Únicamente contra las costumbres de la asamblea",
+                "Contra la ley civil de los magistrados",
+                "Contra nosotros mismos sin ofender al Señor"
+            ],
+            correctIndex: 0,
+            explanation: "1 Corintios 8:12: «De esta manera, pues, pecando contra los hermanos e hiriendo su débil conciencia, contra Cristo pecáis»."
         },
         {
             reference: "1 Corintios 8:13",
@@ -808,6 +1072,18 @@ const ESGRIMA_QUIZ_DATA = {
             explanation: "1 Corintios 10:31: «Si, pues, coméis o bebéis, o hacéis otra cosa, hacedlo todo para la gloria de Dios»."
         },
         {
+            reference: "1 Corintios 11:2",
+            question: "Según 1 Corintios 11:2, ¿por qué motivos alaba Pablo a los corintios?",
+            options: [
+                "Porque en todo se acordaban de él y retenían las instrucciones tal como se las entregó",
+                "Porque habían recaudado grandes ofrendas para Macedonia",
+                "Porque todos hablaban en lenguas con perfección",
+                "Porque habían edificado un gran templo en Acaya"
+            ],
+            correctIndex: 0,
+            explanation: "1 Corintios 11:2: «Os alabo, hermanos, porque en todo os acordáis de mí, y retenéis las instrucciones tal como os las entregué»."
+        },
+        {
             reference: "1 Corintios 11:3",
             question: "Según 1 Corintios 11:3, ¿cuál es el orden divino de autoridad espiritual establecido?",
             options: [
@@ -818,6 +1094,30 @@ const ESGRIMA_QUIZ_DATA = {
             ],
             correctIndex: 0,
             explanation: "1 Corintios 11:3: «Pero quiero que sepáis que Cristo es la cabeza de todo varón, y el varón es la cabeza de la mujer, y Dios la cabeza de Cristo»."
+        },
+        {
+            reference: "1 Corintios 11:4-5",
+            question: "Según 1 Corintios 11:4-5, ¿quién afrenta su cabeza al orar o profetizar con la cabeza cubierta y quién con la cabeza descubierta?",
+            options: [
+                "El varón afrenta su cabeza si ora cubierto; la mujer afrenta su cabeza si ora descubierta",
+                "Ambos deben orar siempre con la cabeza cubierta",
+                "Ninguno debe cubrirse la cabeza bajo ninguna circunstancia",
+                "La mujer afrenta su cabeza si ora en silencio"
+            ],
+            correctIndex: 0,
+            explanation: "1 Corintios 11:4-5: «Todo varón que ora o profetiza con la cabeza cubierta, afrenta su cabeza. Pero toda mujer que ora o profetiza con la cabeza descubierta, afrenta su cabeza»."
+        },
+        {
+            reference: "1 Corintios 11:7",
+            question: "Según 1 Corintios 11:7, ¿de quién es imagen y gloria el varón, y de quién es gloria la mujer?",
+            options: [
+                "El varón es imagen y gloria de Dios; pero la mujer es gloria del varón",
+                "Ambos son exclusivamente gloria de los ángeles",
+                "El varón es gloria del sacerdote y la mujer de la asamblea",
+                "La mujer es imagen de los profetas y el varón de la ley"
+            ],
+            correctIndex: 0,
+            explanation: "1 Corintios 11:7: «Porque el varón no debe cubrirse la cabeza, pues él es imagen y gloria de Dios; pero la mujer es gloria del varón»."
         },
         {
             reference: "1 Corintios 11:14",
@@ -890,6 +1190,18 @@ const ESGRIMA_QUIZ_DATA = {
             ],
             correctIndex: 0,
             explanation: "1 Corintios 12:18: «Mas ahora Dios ha colocado los miembros cada uno de ellos en el cuerpo, como él quiso»."
+        },
+        {
+            reference: "1 Corintios 12:22-23",
+            question: "Según 1 Corintios 12:22-23, ¿cómo describe Pablo a los miembros del cuerpo que parecen más débiles o menos dignos?",
+            options: [
+                "Los que parecen más débiles son los más necesarios; y a los menos dignos vestimos con mayor dignidad y decoro",
+                "Son desechables y deben ser apartados de la congregación",
+                "No tienen ninguna función útil en la iglesia",
+                "Deben ser tratados con severidad y desprecio"
+            ],
+            correctIndex: 0,
+            explanation: "1 Corintios 12:22-23: «Antes bien los miembros del cuerpo que parecen más débiles, son los más necesarios; y a aquellos del cuerpo que nos parecen menos dignos, a éstos vestimos más dignamente; y los que en nosotros son menos decorosos, se tratan con más decoro»."
         },
         {
             reference: "1 Corintios 12:26",
@@ -1016,6 +1328,18 @@ const ESGRIMA_QUIZ_DATA = {
             explanation: "1 Corintios 13:8: «El amor nunca deja de ser; pero las profecías se acabarán, y cesarán las lenguas, y la ciencia acabará»."
         },
         {
+            reference: "1 Corintios 13:10",
+            question: "Según 1 Corintios 13:10, ¿qué sucederá con lo que es en parte cuando venga lo perfecto?",
+            options: [
+                "Cuando venga lo perfecto, entonces lo que es en parte se acabará",
+                "Lo que es en parte permanecerá junto con lo perfecto",
+                "Se renovarán las señales terrenales para siempre",
+                "Lo perfecto será destruido por el fuego"
+            ],
+            correctIndex: 0,
+            explanation: "1 Corintios 13:10: «mas cuando venga lo perfecto, entonces lo que es en parte se acabará»."
+        },
+        {
             reference: "1 Corintios 13:11",
             question: "Según 1 Corintios 13:11, ¿qué hizo Pablo cuando llegó a ser hombre hecho?",
             options: [
@@ -1050,6 +1374,18 @@ const ESGRIMA_QUIZ_DATA = {
             ],
             correctIndex: 0,
             explanation: "1 Corintios 14:1: «Seguid el amor; y procurad los dones espirituales, pero sobre todo que profeticéis»."
+        },
+        {
+            reference: "1 Corintios 14:2",
+            question: "Según 1 Corintios 14:2, ¿a quién habla el que habla en lenguas y qué habla por el Espíritu?",
+            options: [
+                "No habla a los hombres, sino a Dios; pues nadie le entiende, aunque por el Espíritu habla misterios",
+                "Habla a los magistrados para convencerlos con sabiduría",
+                "Habla a los gentiles para debatir la filosofía",
+                "Habla a los ángeles para recibir revelaciones secretas"
+            ],
+            correctIndex: 0,
+            explanation: "1 Corintios 14:2: «Porque el que habla en lenguas no habla a los hombres, sino a Dios; pues nadie le entiende, aunque por el Espíritu habla misterios»."
         },
         {
             reference: "1 Corintios 14:3",
@@ -1146,6 +1482,18 @@ const ESGRIMA_QUIZ_DATA = {
             ],
             correctIndex: 0,
             explanation: "1 Corintios 15:5-6: «y que apareció a Cefas, y después a los doce. Después apareció a más de quinientos hermanos a la vez...»."
+        },
+        {
+            reference: "1 Corintios 15:7",
+            question: "According to 1 Corintios 15:7, ¿a quién apareció Cristo resucitado después de los quinientos hermanos y antes de Pablo?",
+            options: [
+                "Después apareció a Jacobo; después a todos los apóstoles",
+                "A Nicodemo y luego a José de Arimatea",
+                "A los sacerdotes del Sanedrín de Jerusalén",
+                "A Pilato y a los centuriones romanos"
+            ],
+            correctIndex: 0,
+            explanation: "1 Corintios 15:7: «Después apareció a Jacobo; después a todos los apóstoles»."
         },
         {
             reference: "1 Corintios 15:8",
@@ -1280,6 +1628,18 @@ const ESGRIMA_QUIZ_DATA = {
             explanation: "1 Corintios 16:1: «En cuanto a la ofrenda para los santos, haced vosotros también de la manera que ordené en las iglesias de Galacia»."
         },
         {
+            reference: "1 Corintios 16:10",
+            question: "Según 1 Corintios 16:10, ¿cómo pide Pablo que reciban a Timoteo y por qué razón?",
+            options: [
+                "Mirad que esté con vosotros sin temor, porque él hace la obra del Señor asimismo como yo",
+                "Recibidle con tributos y honores imperiales",
+                "Examinadle con debates filosóficos antes de escucharle",
+                "Impedidle hablar en la asamblea por ser joven"
+            ],
+            correctIndex: 0,
+            explanation: "1 Corintios 16:10: «Y si llega Timoteo, mirad que esté con vosotros sin temor, porque él hace la obra del Señor asimismo como yo»."
+        },
+        {
             reference: "1 Corintios 16:13-14",
             question: "Según 1 Corintios 16:13-14, ¿cuáles son las cinco exhortaciones clave de cierre de Pablo?",
             options: [
@@ -1290,6 +1650,18 @@ const ESGRIMA_QUIZ_DATA = {
             ],
             correctIndex: 0,
             explanation: "1 Corintios 16:13-14: «Velad, estad firmes en la fe; portaos varonilmente, y esforzaos. Todas vuestras cosas sean hechas con amor»."
+        },
+        {
+            reference: "1 Corintios 16:16",
+            question: "Según 1 Corintios 16:16, ¿hacia quiénes exhorta Pablo a los creyentes a sujetarse?",
+            options: [
+                "Que os sujetéis a personas como ellos (la familia de Estéfanas), y a todos los que ayudan y trabajan",
+                "A los recaudadores y gobernadores romanos de la ciudad",
+                "A los filósofos y sabios más reconocidos de Grecia",
+                "A cualquiera que traiga novedades y nuevas doctrinas"
+            ],
+            correctIndex: 0,
+            explanation: "1 Corintios 16:16: «que os sujetéis a personas como ellos, y a todos los que ayudan y trabajan»."
         },
         {
             reference: "1 Corintios 16:19-20",
@@ -1307,6 +1679,18 @@ const ESGRIMA_QUIZ_DATA = {
 
     // DÍA 5: 2ª de Corintios 1 al 4
     5: [
+        {
+            reference: "2 Corintios 1:3",
+            question: "Según 2 Corintios 1:3, ¿con qué dos títulos alaba Pablo a Dios?",
+            options: [
+                "Padre de misericordias y Dios de toda consolación",
+                "Juez de las naciones y Señor de los ejércitos",
+                "Creador del universo y Legislador de Israel",
+                "Rey de reyes y Señor de señores"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 1:3: «Bendito sea el Dios y Padre de nuestro Señor Jesucristo, Padre de misericordias y Dios de toda consolación»."
+        },
         {
             reference: "2 Corintios 1:4",
             question: "Según 2 Corintios 1:4, ¿para qué nos consuela Dios en todas nuestras tribulaciones?",
@@ -1344,6 +1728,30 @@ const ESGRIMA_QUIZ_DATA = {
             explanation: "2 Corintios 1:9: «Pero tuvimos en nosotros mismos sentencia de muerte, para que no confiásemos en nosotros mismos, sino en Dios que resucita a los muertos»."
         },
         {
+            reference: "2 Corintios 1:16",
+            question: "Según 2 Corintios 1:16, ¿cuál era el itinerario original de viaje que Pablo planeaba realizar pasando por Corinto?",
+            options: [
+                "Pasar por ellos a Macedonia, volver de Macedonia a Corinto, y ser encaminado a Judea",
+                "Navegar directo a Roma y luego a España",
+                "Permanecer en Éfeso y no volver jamás a Acaya",
+                "Viajar a Galacia y luego a Antioquía"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 1:16: «y por vosotros pasar a Macedonia, y desde Macedonia venir otra vez a vosotros, y ser encaminado por vosotros a Judea»."
+        },
+        {
+            reference: "2 Corintios 1:20",
+            question: "Según 2 Corintios 1:20, ¿cómo son todas las promesas de Dios en Cristo?",
+            options: [
+                "Son en él Sí, y en él Amén, por medio de nosotros, para la gloria de Dios",
+                "Son dudosas y dependen del mérito humano",
+                "Son temporales y solo para la nación de Israel",
+                "Son difíciles de entender y sin cumplimiento seguro"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 1:20: «porque todas las promesas de Dios son en él Sí, y en él Amén, por medio de nosotros, para la gloria de Dios»."
+        },
+        {
             reference: "2 Corintios 1:22",
             question: "Según 2 Corintios 1:22, ¿qué ha puesto Dios en nuestros corazones como sello y garantía?",
             options: [
@@ -1366,6 +1774,18 @@ const ESGRIMA_QUIZ_DATA = {
             ],
             correctIndex: 0,
             explanation: "2 Corintios 2:4: «Porque por la mucha tribulación y angustia del corazón os escribí con muchas lágrimas...»."
+        },
+        {
+            reference: "2 Corintios 2:7",
+            question: "Según 2 Corintios 2:7, ¿qué debían hacer con el hermano arrepentido para que no sea consumido de tristeza?",
+            options: [
+                "Más bien debéis perdonarle y consolarle, para que no sea consumido de demasiada tristeza",
+                "Expulsarle permanentemente de la asamblea sin misericordia",
+                "Exigirle un tributo monetario como restitución",
+                "Hacer pública su falta en toda la provincia de Acaya"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 2:7: «así que, al contrario, vosotros más bien debéis perdonarle y consolarle, para que no sea consumido de demasiada tristeza»."
         },
         {
             reference: "2 Corintios 2:14",
@@ -1404,6 +1824,18 @@ const ESGRIMA_QUIZ_DATA = {
             explanation: "2 Corintios 3:2: «Nuestras cartas sois vosotros, escritas en nuestros corazones, conocidas y leídas por todos los hombres»."
         },
         {
+            reference: "2 Corintios 3:3",
+            question: "Según 2 Corintios 3:3, ¿cómo y dónde está escrita la carta de Cristo que son los creyentes?",
+            options: [
+                "Escrita no con tinta, sino con el Espíritu del Dios vivo; no en tablas de piedra, sino en tablas de carne del corazón",
+                "Grabada en columnas de mármol del templo de Corinto",
+                "Escrita en pergaminos por los escribas de Jerusalén",
+                "Sellada con sellos imperiales en los registros de Acaya"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 3:3: «siendo manifiesto que sois carta de Cristo expedida por nosotros, escrita no con tinta, sino con el Espíritu del Dios vivo; no en tablas de piedra, sino en tablas de carne del corazón»."
+        },
+        {
             reference: "2 Corintios 3:5-6",
             question: "According to 2 Corintios 3:5-6, ¿de dónde proviene nuestra suficiencia como ministros de un nuevo pacto?",
             options: [
@@ -1416,6 +1848,30 @@ const ESGRIMA_QUIZ_DATA = {
             explanation: "2 Corintios 3:5-6: «nuestra competencia proviene de Dios... porque la letra mata, mas el espíritu vivifica»."
         },
         {
+            reference: "2 Corintios 3:9",
+            question: "Según 2 Corintios 3:9, ¿qué ministerio abundará mucho más en gloria en comparación con el ministerio de condenación?",
+            options: [
+                "Mucho más abundará en gloria el ministerio de justificación",
+                "El ministerio de los sacerdotes levitas",
+                "El ministerio de los jueces terrenales",
+                "El ministerio de los reyes de Judá"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 3:9: «Porque si el ministerio de condenación fue con gloria, mucho más abundará en gloria el ministerio de justificación»."
+        },
+        {
+            reference: "2 Corintios 3:11",
+            question: "Según 2 Corintios 3:11, ¿qué comparación hace Pablo entre lo que perece y lo que permanece?",
+            options: [
+                "Porque si lo que perece tuvo gloria, mucho más glorioso será lo que permanece",
+                "Lo que perece tiene mayor gloria que lo eterno",
+                "Ambos pactos tienen la misma duración y gloria",
+                "Lo que permanece no tiene gloria visible"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 3:11: «Porque si lo que perece tuvo gloria, mucho más glorioso será lo que permanece»."
+        },
+        {
             reference: "2 Corintios 3:17",
             question: "Según 2 Corintios 3:17, ¿qué bendición hay donde está el Espíritu del Señor?",
             options: [
@@ -1426,6 +1882,18 @@ const ESGRIMA_QUIZ_DATA = {
             ],
             correctIndex: 0,
             explanation: "2 Corintios 3:17: «Porque el Señor es el Espíritu; y donde está el Espíritu del Señor, allí hay libertad»."
+        },
+        {
+            reference: "2 Corintios 4:3",
+            question: "Según 2 Corintios 4:3, ¿entre quiénes está encubierto el evangelio si llega a estar encubierto?",
+            options: [
+                "Entre los que se pierden está encubierto",
+                "Entre los apóstoles y profetas",
+                "Entre los que buscan la salvación con fe",
+                "Entre los ángeles en los cielos"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 4:3: «Pero si nuestro evangelio está aún encubierto, entre los que se pierden está encubierto»."
         },
         {
             reference: "2 Corintios 4:5",
@@ -1462,6 +1930,30 @@ const ESGRIMA_QUIZ_DATA = {
             ],
             correctIndex: 0,
             explanation: "2 Corintios 4:8-9: «atribulados en todo, mas no angustiados; en apuros, mas no desesperados...»."
+        },
+        {
+            reference: "2 Corintios 4:10",
+            question: "Según 2 Corintios 4:10, ¿para qué llevaban los apóstoles la muerte de Jesús siempre en el cuerpo?",
+            options: [
+                "Llevando en el cuerpo siempre por todas partes la muerte de Jesús, para que también la vida de Jesús se manifieste en nuestros cuerpos",
+                "Para recibir lástima de los gobernantes de las ciudades",
+                "Para cumplir ritos ascéticos impuestos por los sabios",
+                "Para demostrar superioridad física sobre los perseguidores"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 4:10: «llevando en el cuerpo siempre por todas partes la muerte de Jesús, para que también la vida de Jesús se manifieste en nuestros cuerpos»."
+        },
+        {
+            reference: "2 Corintios 4:17",
+            question: "Según 2 Corintios 4:17, ¿qué produce en nosotros esta leve tribulación momentánea?",
+            options: [
+                "Produce en nosotros un cada vez más excelente y eterno peso de gloria",
+                "Una angustia sin fin y desesperanza terrenal",
+                "El olvido de las promesas del Señor",
+                "Un castigo perpetuo sin recompensa"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 4:17: «Porque esta leve tribulación momentánea produce en nosotros un cada vez más excelente y eterno peso de gloria»."
         },
         {
             reference: "2 Corintios 4:18",
@@ -1502,6 +1994,18 @@ const ESGRIMA_QUIZ_DATA = {
             ],
             correctIndex: 0,
             explanation: "2 Corintios 5:7: «(porque por fe andamos, no por vista)»."
+        },
+        {
+            reference: "2 Corintios 5:9",
+            question: "Según 2 Corintios 5:9, ¿qué procuramos ardientemente, ya sea presentes en el cuerpo o ausentes de él?",
+            options: [
+                "Por tanto procuramos también, o ausentes o presentes, serle agradables",
+                "Procuramos acumular riquezas en Corinto",
+                "Procuramos evitar toda persecución humana",
+                "Procuramos ser alabados por los sabios de Acaya"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 5:9: «Por tanto procuramos también, o ausentes o presentes, serle agradables»."
         },
         {
             reference: "2 Corintios 5:10",
@@ -1552,6 +2056,18 @@ const ESGRIMA_QUIZ_DATA = {
             explanation: "2 Corintios 5:21: «Al que no conoció pecado, por nosotros lo hizo pecado, para que nosotros fuésemos hechos justicia de Dios en él»."
         },
         {
+            reference: "2 Corintios 6:1",
+            question: "Según 2 Corintios 6:1, como colaboradores de Dios, ¿a qué exhorta Pablo a los creyentes?",
+            options: [
+                "A que no recibáis en vano la gracia de Dios",
+                "A que compitan por cargos eclesiásticos",
+                "A que guarden los ritos ceremoniales antiguos",
+                "A que juzguen con severidad a los débiles"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 6:1: «Así, pues, nosotros, como colaboradores juntamente con él, os exhortamos también a que no recibáis en vano la gracia de Dios»."
+        },
+        {
             reference: "2 Corintios 6:2",
             question: "According to 2 Corintios 6:2, ¿cuándo es el tiempo aceptable y el día de salvación?",
             options: [
@@ -1562,6 +2078,30 @@ const ESGRIMA_QUIZ_DATA = {
             ],
             correctIndex: 0,
             explanation: "2 Corintios 6:2: «He aquí ahora el tiempo aceptable; he aquí ahora el día de salvación»."
+        },
+        {
+            reference: "2 Corintios 6:3",
+            question: "Según 2 Corintios 6:3, ¿por qué razón cuidaba Pablo de no dar a nadie ningún motivo de tropiezo?",
+            options: [
+                "Para que nuestro ministerio no sea vituperado",
+                "Para ser aplaudido por las autoridades de Roma",
+                "Para ganar más dinero en sus viajes",
+                "Para no tener que rendir cuentas a nadie"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 6:3: «No damos a nadie ningún motivo de tropiezo, para que nuestro ministerio no sea vituperado»."
+        },
+        {
+            reference: "2 Corintios 6:12",
+            question: "Según 2 Corintios 6:12, ¿dónde estaban verdaderamente estrechos o restringidos los corintios en su afecto?",
+            options: [
+                "No estáis estrechos en nosotros, pero sí estáis estrechos en vuestro propio corazón",
+                "En sus recursos económicos para el templo",
+                "En sus conocimientos filosóficos y retóricos",
+                "En los límites geográficos de su ciudad"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 6:12: «No estáis estrechos en nosotros, pero sí estáis estrechos en vuestro propio corazón»."
         },
         {
             reference: "2 Corintios 6:14",
@@ -1600,6 +2140,18 @@ const ESGRIMA_QUIZ_DATA = {
             explanation: "2 Corintios 6:18: «Y seré para vosotros por Padre, y vosotros me seréis hijos e hijas, dice el Señor Todopoderoso»."
         },
         {
+            reference: "2 Corintios 7:1",
+            question: "Según 2 Corintios 7:1, teniendo tales promesas divinas, ¿a qué nos llama Pablo?",
+            options: [
+                "Limpiémonos de toda contaminación de carne y de espíritu, perfeccionando la santidad en el temor de Dios",
+                "Exijamos honores y reverencia de las naciones",
+                "Aislemos nuestras familias de toda conversación humana",
+                "Descuidemos las responsabilidades del cuerpo presente"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 7:1: «Así que, amados, puesto que tenemos tales promesas, limpiémonos de toda contaminación de carne y de espíritu, perfeccionando la santidad en el temor de Dios»."
+        },
+        {
             reference: "2 Corintios 7:10",
             question: "Según 2 Corintios 7:10, ¿cuál es la diferencia crucial entre la tristeza que es según Dios y la tristeza del mundo?",
             options: [
@@ -1612,6 +2164,42 @@ const ESGRIMA_QUIZ_DATA = {
             explanation: "2 Corintios 7:10: «Porque la tristeza que es según Dios produce arrepentimiento para salvación... pero la tristeza del mundo produce muerte»."
         },
         {
+            reference: "2 Corintios 7:12",
+            question: "Según 2 Corintios 7:12, ¿cuál fue el propósito primordial por el cual Pablo les escribió acerca del agravio?",
+            options: [
+                "Para que se os hiciese manifiesta nuestra solicitud que tenemos por vosotros delante de Dios",
+                "Para que castigaran severamente al ofensor en tribunales públicos",
+                "Para exigir una indemnización de plata para la iglesia",
+                "Para cortar relaciones apostólicas con Acaya"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 7:12: «Así que, aunque os escribí, no fue por causa del que cometió el agravio, ni por causa del que lo padeció, sino para que se os hiciese manifiesta nuestra solicitud que tenemos por vosotros delante de Dios»."
+        },
+        {
+            reference: "2 Corintios 7:15",
+            question: "Según 2 Corintios 7:15, ¿por qué el cariño de Tito hacia los corintios era aún más abundante?",
+            options: [
+                "Cuando se acuerda de la obediencia de todos vosotros, de cómo le recibisteis con temor y temblor",
+                "Porque le entregaron grandes regalos y dinero",
+                "Porque le nombraron juez supremo de la asamblea",
+                "Porque defendieron su nombre ante los filósofos"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 7:15: «Y su cariño para con vosotros es aun más abundante, cuando se acuerda de la obediencia de todos vosotros, de cómo le recibisteis con temor y temblor»."
+        },
+        {
+            reference: "2 Corintios 8:3-4",
+            question: "Según 2 Corintios 8:3-4, ¿cómo dieron los hermanos de Macedonia su ofrenda para los santos?",
+            options: [
+                "Conforme a sus fuerzas, y aun más allá de sus fuerzas, pidiéndonos con muchos ruegos el privilegio de participar en este servicio",
+                "Con quejas y obligados por decretos formales",
+                "Dieron solo de lo que les sobraba en abundancia",
+                "Exigieron que se les devolviese con intereses"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 8:3-4: «Pues doy testimonio de que con agrado han dado conforme a sus fuerzas, y aun más allá de sus fuerzas, pidiéndonos con muchos ruegos que les concediésemos el privilegio de participar en este servicio para los santos»."
+        },
+        {
             reference: "2 Corintios 8:9",
             question: "Según 2 Corintios 8:9, ¿qué maravillosa gracia demostró nuestro Señor Jesucristo?",
             options: [
@@ -1622,6 +2210,18 @@ const ESGRIMA_QUIZ_DATA = {
             ],
             correctIndex: 0,
             explanation: "2 Corintios 8:9: «Porque ya conocéis la gracia de nuestro Señor Jesucristo, que por amor a vosotros se hizo pobre, siendo rico, para que vosotros con su pobreza fueseis enriquecidos»."
+        },
+        {
+            reference: "2 Corintios 8:15",
+            question: "Según 2 Corintios 8:15, ¿qué cita de las Escrituras utiliza Pablo para ilustrar la igualdad fraternal en el dar?",
+            options: [
+                "El que recogió mucho, no tuvo más, y el que poco, no tuvo menos",
+                "El rico gobierna sobre el pobre en todo tiempo",
+                "Cada uno guarde para sí su propio grano",
+                "El diezmo es obligatorio para los gentiles"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 8:15: «como está escrito: El que recogió mucho, no tuvo más, y el que poco, no tuvo menos»."
         },
         {
             reference: "2 Corintios 8:21",
