@@ -1681,288 +1681,288 @@ const ESGRIMA_QUIZ_DATA = {
     5: [
         {
             reference: "2 Corintios 1:3",
-            question: "Según 2 Corintios 1:3, ¿con qué dos títulos alaba Pablo a Dios?",
+            question: "Según 2 Corintios 1:3, ¿con qué dos títulos llenos de consuelo describe Pablo a Dios?",
             options: [
                 "Padre de misericordias y Dios de toda consolación",
-                "Juez de las naciones y Señor de los ejércitos",
-                "Creador del universo y Legislador de Israel",
-                "Rey de reyes y Señor de señores"
+                "Juez inflexible y Señor de las naciones",
+                "Creador del universo y Legislador de la ley",
+                "Gobernante supremo y Rey de reyes"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 1:3: «Bendito sea el Dios y Padre de nuestro Señor Jesucristo, Padre de misericordias y Dios de toda consolación»."
         },
         {
             reference: "2 Corintios 1:4",
-            question: "Según 2 Corintios 1:4, ¿para qué nos consuela Dios en todas nuestras tribulaciones?",
+            question: "Según 2 Corintios 1:4, ¿cuál es el propósito de Dios al consolarnos en nuestras dificultades?",
             options: [
-                "Para que podamos también nosotros consolar a los que están en cualquier tribulación, por medio de la consolación con que nosotros somos consolados por Dios",
-                "Para que nos jactemos de no sufrir nunca más",
-                "Para que vivamos apartados de la sociedad",
-                "Para que nos consideremos superiores a los afligidos"
+                "Para que podamos consolar a otros con el mismo consuelo que recibimos de Dios",
+                "Para librarnos de cualquier aflicción futura en esta vida",
+                "Para que nos sintamos superiores a los que sufren",
+                "Para aislarnos de los problemas de los demás"
             ],
             correctIndex: 0,
-            explanation: "2 Corintios 1:4: «el cual nos consuela en todas nuestras tribulaciones, para que podamos también nosotros consolar a los que están en cualquier tribulación...»."
+            explanation: "2 Corintios 1:4: «el cual nos consuela en todas nuestras tribulaciones, para que podamos también nosotros consolar a los que están en cualquier tribulación, por medio de la consolación con que nosotros somos consolados por Dios»."
         },
         {
             reference: "2 Corintios 1:8",
-            question: "Según 2 Corintios 1:8, ¿en qué lugar experimentó Pablo una tribulación tan desmedida que perdió la esperanza de conservar la vida?",
+            question: "Según 2 Corintios 1:8, ¿en qué región geográfica sufrió Pablo una prueba tan severa que casi perdió la esperanza de vivir?",
             options: [
-                "En Asia",
-                "En Roma",
-                "En Jerusalén",
-                "En Atenas"
+                "En la provincia de Asia",
+                "En la ciudad de Roma",
+                "En Judea",
+                "En la isla de Chipre"
             ],
             correctIndex: 0,
-            explanation: "2 Corintios 1:8: «Porque hermanos, no queremos que ignoréis acerca de nuestra tribulación que nos sobrevino en Asia...»."
+            explanation: "2 Corintios 1:8: «Porque hermanos, no queremos que ignoréis acerca de nuestra tribulación que nos sobrevino en Asia; pues fuimos abrumados sobremanera más allá de nuestras fuerzas, de tal modo que aun perdimos la esperanza de conservar la vida»."
         },
         {
             reference: "2 Corintios 1:9",
-            question: "According to 2 Corintios 1:9, ¿para qué tuvieron los apóstoles en sí mismos sentencia de muerte?",
+            question: "Según 2 Corintios 1:9, ¿qué lección espiritual aprendieron los apóstoles al sentirse al borde de la muerte?",
             options: [
-                "Para que no confiásemos en nosotros mismos, sino en Dios que resucita a los muertos",
-                "Para que abandonaran el ministerio apostólico",
-                "Para pagar por sus pecados pasados",
-                "Para ser admirados por su valentía humana"
+                "A no confiar en sus propias fuerzas, sino en Dios que resucita a los muertos",
+                "A abandonar los viajes misioneros peligrosos",
+                "A buscar la protección de los ejércitos romanos",
+                "A no volver a predicar en lugares hostiles"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 1:9: «Pero tuvimos en nosotros mismos sentencia de muerte, para que no confiásemos en nosotros mismos, sino en Dios que resucita a los muertos»."
         },
         {
             reference: "2 Corintios 1:16",
-            question: "Según 2 Corintios 1:16, ¿cuál era el itinerario original de viaje que Pablo planeaba realizar pasando por Corinto?",
+            question: "Según 2 Corintios 1:16, ¿cuál era la ruta de viaje que Pablo había planeado originalmente?",
             options: [
-                "Pasar por ellos a Macedonia, volver de Macedonia a Corinto, y ser encaminado a Judea",
-                "Navegar directo a Roma y luego a España",
-                "Permanecer en Éfeso y no volver jamás a Acaya",
-                "Viajar a Galacia y luego a Antioquía"
+                "Pasar por Corinto hacia Macedonia, regresar luego a Corinto y de allí ser despedido hacia Judea",
+                "Viajar directamente de Éfeso a Roma por mar",
+                "Permanecer en Atenas y no volver a Corinto",
+                "Ir a Galacia y luego a las costas de Antioquía"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 1:16: «y por vosotros pasar a Macedonia, y desde Macedonia venir otra vez a vosotros, y ser encaminado por vosotros a Judea»."
         },
         {
             reference: "2 Corintios 1:20",
-            question: "Según 2 Corintios 1:20, ¿cómo son todas las promesas de Dios en Cristo?",
+            question: "Según 2 Corintios 1:20, ¿qué afirmación hace Pablo sobre el cumplimiento de las promesas de Dios en Cristo?",
             options: [
-                "Son en él Sí, y en él Amén, por medio de nosotros, para la gloria de Dios",
-                "Son dudosas y dependen del mérito humano",
-                "Son temporales y solo para la nación de Israel",
-                "Son difíciles de entender y sin cumplimiento seguro"
+                "Que en Cristo todas las promesas de Dios son «Sí» y «Amén»",
+                "Que son dudosas y dependen de nuestras obras",
+                "Que eran válidas únicamente para el pueblo del Antiguo Pacto",
+                "Que se cumplirán solo después del fin del mundo"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 1:20: «porque todas las promesas de Dios son en él Sí, y en él Amén, por medio de nosotros, para la gloria de Dios»."
         },
         {
             reference: "2 Corintios 1:22",
-            question: "Según 2 Corintios 1:22, ¿qué ha puesto Dios en nuestros corazones como sello y garantía?",
+            question: "Según 2 Corintios 1:22, ¿qué ha puesto Dios en nuestros corazones como sello y garantía de lo que vendrá?",
             options: [
-                "Nos selló, y nos dio las arras del Espíritu en nuestros corazones",
-                "Un diploma de honor apostólico",
-                "La promesa de prosperidad material",
-                "Un mandamiento grabado en tablas de piedra"
+                "El Espíritu Santo como arras (garantía) en nuestros corazones",
+                "Un mandamiento escrito en tablas de piedra",
+                "La promesa de riquezas y honores terrenales",
+                "Un certificado de conducta intachable"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 1:22: «el cual también nos ha sellado, y nos ha dado las arras del Espíritu en nuestros corazones»."
         },
         {
             reference: "2 Corintios 2:4",
-            question: "According to 2 Corintios 2:4, ¿con qué sentimientos y de qué manera escribió Pablo su carta anterior a los corintios?",
+            question: "Según 2 Corintios 2:4, ¿con qué sentimientos y propósito les escribió Pablo su carta anterior?",
             options: [
-                "Por la mucha tribulación y angustia del corazón os escribí con muchas lágrimas, para que supieseis cuán grande es el amor que os tengo",
-                "Con ira y deseo de venganza",
-                "Con indiferencia y frialdad",
-                "Con soberbia para demostrar su poderío"
+                "Con gran angustia y muchas lágrimas, no para entristecerlos sino para mostrarles su profundo amor",
+                "Con enojo para imponer su autoridad apostólica",
+                "Con indiferencia ante los problemas de la iglesia",
+                "Para cortar definitivamente la relación con la asamblea"
             ],
             correctIndex: 0,
-            explanation: "2 Corintios 2:4: «Porque por la mucha tribulación y angustia del corazón os escribí con muchas lágrimas...»."
+            explanation: "2 Corintios 2:4: «Porque por la mucha tribulación y angustia del corazón os escribí con muchas lágrimas, no para que fueseis contristados, sino para que supieseis cuán grande es el amor que os tengo»."
         },
         {
             reference: "2 Corintios 2:7",
-            question: "Según 2 Corintios 2:7, ¿qué debían hacer con el hermano arrepentido para que no sea consumido de tristeza?",
+            question: "Según 2 Corintios 2:7, ¿cómo debía la iglesia tratar al hermano que se había arrepentido de su falta?",
             options: [
-                "Más bien debéis perdonarle y consolarle, para que no sea consumido de demasiada tristeza",
-                "Expulsarle permanentemente de la asamblea sin misericordia",
-                "Exigirle un tributo monetario como restitución",
-                "Hacer pública su falta en toda la provincia de Acaya"
+                "Perdonarlo y consolarlo para que no se hunda en una tristeza excesiva",
+                "Mantenerlo apartado permanentemente de la comunión",
+                "Exigirle una compensación económica",
+                "Publicar sus errores en otras iglesias como escarmiento"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 2:7: «así que, al contrario, vosotros más bien debéis perdonarle y consolarle, para que no sea consumido de demasiada tristeza»."
         },
         {
             reference: "2 Corintios 2:14",
-            question: "Según 2 Corintios 2:14, ¿a quién da gracias Pablo, quien siempre nos lleva en triunfo en Cristo Jesús?",
+            question: "Según 2 Corintios 2:14, ¿qué victoria y testimonio concede Dios a sus siervos a través de Cristo?",
             options: [
-                "A Dios, el cual nos lleva siempre en triunfo en Cristo Jesús, y por medio de nosotros manifiesta el olor de su conocimiento",
-                "A las autoridades de Macedonia por su apoyo",
-                "A los filósofos de Corinto por su clemencia",
-                "A los ejércitos del imperio romano"
+                "Nos lleva siempre en triunfo y esparce por medio de nosotros el aroma de su conocimiento",
+                "Nos libra de sufrir persecución en las ciudades",
+                "Nos concede triunfos políticos y militares sobre las naciones",
+                "Nos garantiza aprobación unánime de toda la sociedad"
             ],
             correctIndex: 0,
-            explanation: "2 Corintios 2:14: «Mas a Dios gracias, el cual nos lleva siempre en triunfo en Cristo Jesús...»."
+            explanation: "2 Corintios 2:14: «Mas a Dios gracias, el cual nos lleva siempre en triunfo en Cristo Jesús, y por medio de nosotros manifiesta en todo lugar el olor de su conocimiento»."
         },
         {
             reference: "2 Corintios 2:15",
-            question: "According to 2 Corintios 2:15, ¿qué somos para Dios respecto a los que se salvan y a los que se pierden?",
+            question: "Según 2 Corintios 2:15, ¿qué representamos los creyentes para Dios delante del mundo?",
             options: [
-                "Grato olor de Cristo en los que se salvan, y en los que se pierden",
-                "Jueces inflexibles de las naciones",
-                "Maestros de retórica para Acaya",
-                "Siervos de las leyes ceremoniales"
+                "Somos el grato aroma de Cristo, tanto entre los que se salvan como entre los que se pierden",
+                "Somos jueces encargados de condenar a las naciones",
+                "Somos maestros de filosofía terrenal",
+                "Somos siervos de las leyes ceremoniales antiguas"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 2:15: «Porque para Dios somos grato olor de Cristo en los que se salvan, y en los que se pierden»."
         },
         {
             reference: "2 Corintios 3:2",
-            question: "Según 2 Corintios 3:2, ¿qué carta son los propios creyentes para el testimonio de Pablo?",
+            question: "Según 2 Corintios 3:2, ¿cuál es la mejor «carta de recomendación» del ministerio de Pablo?",
             options: [
-                "Nuestras cartas sois vosotros, escritas en nuestros corazones, conocidas y leídas por todos los hombres",
-                "Cartas escritas con tinta en papiros de Roma",
-                "Documentos sellados por el concilio de Jerusalén",
-                "Escritos guardados en arcas secretas"
+                "La propia vida de los creyentes, una carta grabada en el corazón y leída por todos",
+                "Un documento oficial sellado por el concilio de Jerusalén",
+                "Las cartas de elogio de los gobernantes de Acaya",
+                "Los títulos académicos recibidos en Tarso"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 3:2: «Nuestras cartas sois vosotros, escritas en nuestros corazones, conocidas y leídas por todos los hombres»."
         },
         {
             reference: "2 Corintios 3:3",
-            question: "Según 2 Corintios 3:3, ¿cómo y dónde está escrita la carta de Cristo que son los creyentes?",
+            question: "Según 2 Corintios 3:3, ¿cómo y en qué material está escrita la carta de Cristo en los creyentes?",
             options: [
-                "Escrita no con tinta, sino con el Espíritu del Dios vivo; no en tablas de piedra, sino en tablas de carne del corazón",
-                "Grabada en columnas de mármol del templo de Corinto",
-                "Escrita en pergaminos por los escribas de Jerusalén",
-                "Sellada con sellos imperiales en los registros de Acaya"
+                "No con tinta ni en tablas de piedra, sino por el Espíritu del Dios vivo en los corazones humanos",
+                "Con tinta indeleble en rollos sagrados de papiro",
+                "En columnas de mármol del templo de Corinto",
+                "En registros civiles de las autoridades romanas"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 3:3: «siendo manifiesto que sois carta de Cristo expedida por nosotros, escrita no con tinta, sino con el Espíritu del Dios vivo; no en tablas de piedra, sino en tablas de carne del corazón»."
         },
         {
             reference: "2 Corintios 3:5-6",
-            question: "According to 2 Corintios 3:5-6, ¿de dónde proviene nuestra suficiencia como ministros de un nuevo pacto?",
+            question: "Según 2 Corintios 3:5-6, ¿de dónde proviene nuestra capacidad ministerial y qué contraste hay entre la letra y el Espíritu?",
             options: [
-                "Nuestra competencia proviene de Dios, el cual nos hizo ministros competentes no de la letra, sino del espíritu; porque la letra mata, mas el espíritu vivifica",
-                "De nuestros títulos académicos bajo Gamaliel",
-                "De la aprobación de los gobernantes",
-                "De nuestra propia elocuencia y sabiduría humana"
+                "Nuestra suficiencia viene de Dios; la letra mata, pero el Espíritu da vida",
+                "Viene de nuestra propia inteligencia y elocuencia humana",
+                "La letra da salvación y el Espíritu impone castigo",
+                "Proviene de los méritos personales alcanzados por la ley"
             ],
             correctIndex: 0,
-            explanation: "2 Corintios 3:5-6: «nuestra competencia proviene de Dios... porque la letra mata, mas el espíritu vivifica»."
+            explanation: "2 Corintios 3:5-6: «no que seamos competentes por nosotros mismos para pensar algo como de nosotros mismos, sino que nuestra competencia proviene de Dios, el cual asimismo nos hizo ministros competentes de un nuevo pacto, no de la letra, sino del espíritu; porque la letra mata, mas el espíritu vivifica»."
         },
         {
             reference: "2 Corintios 3:9",
-            question: "Según 2 Corintios 3:9, ¿qué ministerio abundará mucho más en gloria en comparación con el ministerio de condenación?",
+            question: "Según 2 Corintios 3:9, ¿qué ministerio supera con creces en gloria al ministerio de condenación de la ley?",
             options: [
-                "Mucho más abundará en gloria el ministerio de justificación",
-                "El ministerio de los sacerdotes levitas",
-                "El ministerio de los jueces terrenales",
-                "El ministerio de los reyes de Judá"
+                "El ministerio de la justificación",
+                "El sacerdocio de la orden levítica",
+                "El gobierno terrenal de los reyes de Judá",
+                "Los tribunales de justicia humana"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 3:9: «Porque si el ministerio de condenación fue con gloria, mucho más abundará en gloria el ministerio de justificación»."
         },
         {
             reference: "2 Corintios 3:11",
-            question: "Según 2 Corintios 3:11, ¿qué comparación hace Pablo entre lo que perece y lo que permanece?",
+            question: "Según 2 Corintios 3:11, ¿qué comparación hace Pablo entre lo temporal del antiguo pacto y lo permanente del nuevo?",
             options: [
-                "Porque si lo que perece tuvo gloria, mucho más glorioso será lo que permanece",
-                "Lo que perece tiene mayor gloria que lo eterno",
-                "Ambos pactos tienen la misma duración y gloria",
-                "Lo que permanece no tiene gloria visible"
+                "Si lo que era pasajero tuvo gloria, mucho más glorioso es lo que permanece",
+                "Lo pasajero tiene más valor que lo eterno",
+                "Ambos pactos tienen idéntica duración y gloria",
+                "Lo que permanece carece de gloria visible"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 3:11: «Porque si lo que perece tuvo gloria, mucho más glorioso será lo que permanece»."
         },
         {
             reference: "2 Corintios 3:17",
-            question: "Según 2 Corintios 3:17, ¿qué bendición hay donde está el Espíritu del Señor?",
+            question: "Según 2 Corintios 3:17, ¿qué bendición y realidad existe donde está presente el Espíritu del Señor?",
             options: [
-                "Donde está el Espíritu del Señor, allí hay libertad",
-                "Allí hay servidumbre y temor de muerte",
-                "Allí hay riquezas de este mundo",
-                "Allí hay imposición de leyes humanas"
+                "Libertad",
+                "Temor y servidumbre a los ritos",
+                "Riquezas materiales garantizadas",
+                "Imposición de normas humanas rígidas"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 3:17: «Porque el Señor es el Espíritu; y donde está el Espíritu del Señor, allí hay libertad»."
         },
         {
             reference: "2 Corintios 4:3",
-            question: "Según 2 Corintios 4:3, ¿entre quiénes está encubierto el evangelio si llega a estar encubierto?",
+            question: "Según 2 Corintios 4:3, ¿para quiénes permanece oculto o velado el mensaje del evangelio?",
             options: [
-                "Entre los que se pierden está encubierto",
-                "Entre los apóstoles y profetas",
-                "Entre los que buscan la salvación con fe",
-                "Entre los ángeles en los cielos"
+                "Para los que se pierden (los incrédulos cegados)",
+                "Para los apóstoles y discípulos",
+                "Para quienes buscan con humildad a Dios",
+                "Para los ángeles en el cielo"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 4:3: «Pero si nuestro evangelio está aún encubierto, entre los que se pierden está encubierto»."
         },
         {
             reference: "2 Corintios 4:5",
-            question: "According to 2 Corintios 4:5, ¿a quién predicamos los siervos de Dios?",
+            question: "Según 2 Corintios 4:5, ¿a quién anuncian los apóstoles y cómo se consideran ellos mismos?",
             options: [
-                "No nos predicamos a nosotros mismos, sino a Jesucristo como Señor, y a nosotros como vuestros siervos por amor de Jesús",
-                "Predicamos nuestras propias virtudes y sufrimientos",
-                "Predicamos la gloria de la nación de Israel",
-                "Predicamos las opiniones de los sabios griegos"
+                "Proclaman a Jesucristo como Señor, y a ellos mismos como siervos por amor a Jesús",
+                "Se proclaman a sí mismos como líderes indiscutibles",
+                "Anuncian las doctrinas de los filósofos de Acaya",
+                "Promueven la grandeza histórica de la nación de Israel"
             ],
             correctIndex: 0,
-            explanation: "2 Corintios 4:5: «Porque no nos predicamos a nosotros mismos, sino a Jesucristo como Señor...»."
+            explanation: "2 Corintios 4:5: «Porque no nos predicamos a nosotros mismos, sino a Jesucristo como Señor, y a nosotros como vuestros siervos por amor de Jesús»."
         },
         {
             reference: "2 Corintios 4:7",
-            question: "Según 2 Corintios 4:7, ¿en qué recipiente tenemos este tesoro y para qué?",
+            question: "Según 2 Corintios 4:7, ¿por qué llevamos este glorioso tesoro espiritual en frágiles «vasos de barro»?",
             options: [
-                "Tenemos este tesoro en vasos de barro, para que la excelencia del poder sea de Dios, y no de nosotros",
-                "En copas de oro fino para ser admirados",
-                "En fortalezas de piedra inexpugnables",
-                "En libros sellados de la antigüedad"
+                "Para que se reconozca que el inmenso poder es de Dios y no procede de nosotros",
+                "Para que el mensaje permanezca oculto a las multitudes",
+                "Para que los creyentes vivan siempre con miedo",
+                "Para no tener responsabilidades en la congregación"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 4:7: «Pero tenemos este tesoro en vasos de barro, para que la excelencia del poder sea de Dios, y no de nosotros»."
         },
         {
             reference: "2 Corintios 4:8-9",
-            question: "According to 2 Corintios 4:8-9, ¿cuál es la gloriosa paradoja de la perseverancia apostólica?",
+            question: "Según 2 Corintios 4:8-9, ¿cómo describe Pablo la asombrosa resistencia de los siervos de Dios frente a las adversidades?",
             options: [
-                "Atribulados en todo, mas no angustiados; en apuros, mas no desesperados; perseguidos, mas no desamparados; derribados, pero no destruidos",
-                "Vencedores sin dolor, ricos sin pobreza y sanos sin enfermedad",
-                "Derrotados por el mundo y sin esperanza eterna",
-                "Exentos de toda persecución y dificultad"
+                "Apretados pero no aplastados, en apuros pero no desesperados, perseguidos pero no abandonados, derribados pero no destruidos",
+                "Vencedores sin dolor físico ni ningún tipo de sufrimiento",
+                "Completamente derrotados y sin esperanza de salir adelante",
+                "Protegidos en palacios sin enfrentar peligros reales"
             ],
             correctIndex: 0,
-            explanation: "2 Corintios 4:8-9: «atribulados en todo, mas no angustiados; en apuros, mas no desesperados...»."
+            explanation: "2 Corintios 4:8-9: «que estamos atribulados en todo, mas no angustiados; en apuros, mas no desesperados; perseguidos, mas no desamparados; derribados, pero no destruidos»."
         },
         {
             reference: "2 Corintios 4:10",
-            question: "Según 2 Corintios 4:10, ¿para qué llevaban los apóstoles la muerte de Jesús siempre en el cuerpo?",
+            question: "Según 2 Corintios 4:10, ¿con qué propósito los apóstoles llevan constantemente en el cuerpo la muerte de Jesús?",
             options: [
-                "Llevando en el cuerpo siempre por todas partes la muerte de Jesús, para que también la vida de Jesús se manifieste en nuestros cuerpos",
-                "Para recibir lástima de los gobernantes de las ciudades",
-                "Para cumplir ritos ascéticos impuestos por los sabios",
-                "Para demostrar superioridad física sobre los perseguidores"
+                "Para que también la vida de Jesús se manifieste en sus propios cuerpos",
+                "Para dar lástima a las autoridades civiles",
+                "Para practicar castigos corporales como mérito propio",
+                "Para demostrar superioridad física ante los enemigos"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 4:10: «llevando en el cuerpo siempre por todas partes la muerte de Jesús, para que también la vida de Jesús se manifieste en nuestros cuerpos»."
         },
         {
             reference: "2 Corintios 4:17",
-            question: "Según 2 Corintios 4:17, ¿qué produce en nosotros esta leve tribulación momentánea?",
+            question: "Según 2 Corintios 4:17, ¿qué efecto y recompensa eterna produce en nosotros el sufrimiento pasajero del presente?",
             options: [
-                "Produce en nosotros un cada vez más excelente y eterno peso de gloria",
-                "Una angustia sin fin y desesperanza terrenal",
-                "El olvido de las promesas del Señor",
-                "Un castigo perpetuo sin recompensa"
+                "Produce un eterno y extraordinario peso de gloria que supera todo límite",
+                "Una angustia prolongada que destruye la fe",
+                "El olvido total de las promesas de salvación",
+                "Un castigo perpetuo sin fruto alguno"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 4:17: «Porque esta leve tribulación momentánea produce en nosotros un cada vez más excelente y eterno peso de gloria»."
         },
         {
             reference: "2 Corintios 4:18",
-            question: "Según 2 Corintios 4:18, ¿en qué cosas ponemos nuestra mirada?",
+            question: "Según 2 Corintios 4:18, ¿hacia qué realidad debemos enfocar nuestra mirada y perspectiva?",
             options: [
-                "No mirando las cosas que se ven, sino las que no se ven; pues las cosas que se ven son temporales, pero las que no se ven son eternas",
-                "En las riquezas y palacios de Acaya",
-                "En los honores pasajeros de este siglo",
-                "En las circunstancias visibles del presente"
+                "Hacia las cosas invisibles y eternas, no hacia las visibles y temporales",
+                "Hacia las posesiones materiales que podemos acumular",
+                "Hacia el reconocimiento y fama terrenal pasajera",
+                "Hacia los problemas inmediatos del día a día"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 4:18: «no mirando nosotros las cosas que se ven, sino las que no se ven; pues las cosas que se ven son temporales, pero las que no se ven son eternas»."
@@ -1973,264 +1973,264 @@ const ESGRIMA_QUIZ_DATA = {
     6: [
         {
             reference: "2 Corintios 5:1",
-            question: "According to 2 Corintios 5:1, si nuestra morada terrestre se deshiere, ¿qué edificio tenemos de Dios en los cielos?",
+            question: "Según 2 Corintios 5:1, ¿qué certeza y morada tenemos de parte de Dios cuando este cuerpo terrenal se desgaste?",
             options: [
-                "Tenemos de Dios un edificio, una casa no hecha de manos, eterna, en los cielos",
+                "Una casa eterna en los cielos, construida por Dios y no por manos humanas",
                 "Una tumba perpetua en la tierra",
-                "Un recuerdo glorioso entre los hombres",
-                "Una morada terrenal reconstruida por hombres"
+                "Un simple recuerdo en la memoria de los hombres",
+                "Una reencarnación en otro cuerpo terrenal"
             ],
             correctIndex: 0,
-            explanation: "2 Corintios 5:1: «Porque sabemos que si nuestra morada terrestre, este tabernáculo, se deshiciere, tenemos de Dios un edificio...»."
+            explanation: "2 Corintios 5:1: «Porque sabemos que si nuestra morada terrestre, este tabernáculo, se deshiciere, tenemos de Dios un edificio, una casa no hecha de manos, eterna, en los cielos»."
         },
         {
             reference: "2 Corintios 5:7",
-            question: "Según 2 Corintios 5:7, ¿cómo andamos los creyentes en esta vida?",
+            question: "Según 2 Corintios 5:7, ¿cuál es el principio fundamental que guía la vida del creyente?",
             options: [
-                "Por fe andamos, no por vista",
-                "Por vista andamos y por señales visibles",
-                "Por los dictados de los filósofos de este siglo",
-                "Por las certezas terrenales del dinero"
+                "Vivimos por fe y no por lo que vemos (por vista)",
+                "Vivimos guiados por las apariencias del momento",
+                "Vivimos buscando señales visibles constantes",
+                "Vivimos según las opiniones de la sociedad"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 5:7: «(porque por fe andamos, no por vista)»."
         },
         {
             reference: "2 Corintios 5:9",
-            question: "Según 2 Corintios 5:9, ¿qué procuramos ardientemente, ya sea presentes en el cuerpo o ausentes de él?",
+            question: "Según 2 Corintios 5:9, ¿cuál es nuestra mayor aspiración, ya sea en esta vida terrenal o en la presencia del Señor?",
             options: [
-                "Por tanto procuramos también, o ausentes o presentes, serle agradables",
-                "Procuramos acumular riquezas en Corinto",
-                "Procuramos evitar toda persecución humana",
-                "Procuramos ser alabados por los sabios de Acaya"
+                "Serle siempre agradables al Señor",
+                "Acumular riquezas y comodidades",
+                "Evitar cualquier tipo de problema",
+                "Recibir el elogio y admiración de los hombres"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 5:9: «Por tanto procuramos también, o ausentes o presentes, serle agradables»."
         },
         {
             reference: "2 Corintios 5:10",
-            question: "According to 2 Corintios 5:10, ¿delante de qué tribunal es necesario que todos comparezcamos?",
+            question: "Según 2 Corintios 5:10, ¿ante quién compareceremos todos para rendir cuentas de lo hecho en el cuerpo?",
             options: [
-                "Del tribunal de Cristo, para que cada uno reciba según lo que haya hecho mientras estaba en el cuerpo",
-                "Del tribunal imperial del César en Roma",
-                "Del tribunal de los magistrados de Corinto",
-                "Del juicio secreto de las naciones"
+                "Ante el tribunal de Cristo, para recibir recompensa según lo que hayamos hecho, sea bueno o malo",
+                "Ante los tribunales de las leyes civiles romanas",
+                "Ante el juicio exclusivo de nuestros familiares",
+                "Ante la asamblea de los filósofos de Grecia"
             ],
             correctIndex: 0,
-            explanation: "2 Corintios 5:10: «Porque es necesario que todos nosotros comparezcamos ante el tribunal de Cristo...»."
+            explanation: "2 Corintios 5:10: «Porque es necesario que todos nosotros comparezcamos ante el tribunal de Cristo, para que cada uno reciba según lo que haya hecho mientras estaba en el cuerpo, sea bueno o sea malo»."
         },
         {
             reference: "2 Corintios 5:17",
-            question: "Según 2 Corintios 5:17, si alguno está en Cristo, ¿qué ocurre con su vida?",
+            question: "Según 2 Corintios 5:17, ¿qué gran transformación experimenta quien está unido a Cristo?",
             options: [
-                "Nueva criatura es; las cosas viejas pasaron; he aquí todas son hechas nuevas",
-                "Mejora ligeramente sus hábitos antiguos",
-                "Permanece bajo la condenación de sus faltas pasadas",
-                "Adquiere honores según la carne"
+                "Es una nueva creación: las cosas viejas quedaron atrás y todo fue hecho nuevo",
+                "Solo mejora un poco sus modales externos",
+                "Sigue atado a la condenación de sus errores del pasado",
+                "Adquiere privilegios políticos en la sociedad"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 5:17: «De modo que si alguno está en Cristo, nueva criatura es; las cosas viejas pasaron; he aquí todas son hechas nuevas»."
         },
         {
             reference: "2 Corintios 5:20",
-            question: "According to 2 Corintios 5:20, ¿qué título y misión tenemos en nombre de Cristo?",
+            question: "Según 2 Corintios 5:20, ¿qué misión y mensaje representamos en el mundo como embajadores de Cristo?",
             options: [
-                "Somos embajadores en nombre de Cristo: Os rogamos en nombre de Cristo: Reconciliaos con Dios",
-                "Somos jueces de las faltas ajenas",
-                "Somos señores sobre las naciones paganas",
-                "Somos defensores de leyes humanas"
+                "Rogar a las personas en nombre de Cristo: «Reconciliaos con Dios»",
+                "Imponer castigos y juicios sobre los no creyentes",
+                "Defender leyes y tradiciones humanas",
+                "Buscar posiciones de poder e influencia económica"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 5:20: «Así que, somos embajadores en nombre de Cristo, como si Dios rogase por medio de nosotros; os rogamos en nombre de Cristo: Reconciliaos con Dios»."
         },
         {
             reference: "2 Corintios 5:21",
-            question: "According to 2 Corintios 5:21, ¿qué hizo Dios con Aquel que no conoció pecado por nosotros?",
+            question: "Según 2 Corintios 5:21, ¿qué hizo Dios con Cristo para que nosotros pudiéramos ser justificados?",
             options: [
-                "Al que no conoció pecado, por nosotros lo hizo pecado, para que nosotros fuésemos hechos justicia de Dios en él",
-                "Lo libró de la muerte terrenal",
-                "Lo coronó rey terrenal en Jerusalén",
-                "Lo envió únicamente como maestro moral"
+                "Al que no cometió pecado, Dios lo trató como pecador por nosotros, para que en Él fuésemos hechos justicia de Dios",
+                "Lo libró de morir para que no sufriera aflicción",
+                "Lo envió únicamente como un maestro moral de buena conducta",
+                "Lo coronó de inmediato rey terrenal en Jerusalén"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 5:21: «Al que no conoció pecado, por nosotros lo hizo pecado, para que nosotros fuésemos hechos justicia de Dios en él»."
         },
         {
             reference: "2 Corintios 6:1",
-            question: "Según 2 Corintios 6:1, como colaboradores de Dios, ¿a qué exhorta Pablo a los creyentes?",
+            question: "Según 2 Corintios 6:1, como colaboradores de Dios, ¿a qué exhorta Pablo con urgencia a los creyentes?",
             options: [
-                "A que no recibáis en vano la gracia de Dios",
-                "A que compitan por cargos eclesiásticos",
-                "A que guarden los ritos ceremoniales antiguos",
-                "A que juzguen con severidad a los débiles"
+                "A no recibir en vano ni desaprovechar la gracia de Dios",
+                "A competir por los mejores cargos en la iglesia",
+                "A aislarse de toda relación con la sociedad",
+                "A juzgar con severidad las debilidades ajenas"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 6:1: «Así, pues, nosotros, como colaboradores juntamente con él, os exhortamos también a que no recibáis en vano la gracia de Dios»."
         },
         {
             reference: "2 Corintios 6:2",
-            question: "According to 2 Corintios 6:2, ¿cuándo es el tiempo aceptable y el día de salvación?",
+            question: "Según 2 Corintios 6:2, ¿cuándo es el momento oportuno para responder a la gracia y salvación de Dios?",
             options: [
-                "He aquí ahora el tiempo aceptable; he aquí ahora el día de salvación",
-                "En el siglo venidero tras muchas penitencias",
-                "Cuando hayamos alcanzado perfección sin faltas",
-                "Solo en los días festivos del calendario"
+                "Ahora es el tiempo favorable y el día de salvación",
+                "En el futuro cuando nos sintamos perfectos",
+                "Solo en días festivos y ceremoniales",
+                "Después de haber cumplido muchos años de penitencia"
             ],
             correctIndex: 0,
-            explanation: "2 Corintios 6:2: «He aquí ahora el tiempo aceptable; he aquí ahora el día de salvación»."
+            explanation: "2 Corintios 6:2: «Porque dice: En tiempo aceptable te he oído, y en día de salvación te he socorrido. He aquí ahora el tiempo aceptable; he aquí ahora el día de salvación»."
         },
         {
             reference: "2 Corintios 6:3",
-            question: "Según 2 Corintios 6:3, ¿por qué razón cuidaba Pablo de no dar a nadie ningún motivo de tropiezo?",
+            question: "Según 2 Corintios 6:3, ¿por qué cuidaba Pablo su testimonio evitando poner motivos de tropiezo?",
             options: [
-                "Para que nuestro ministerio no sea vituperado",
-                "Para ser aplaudido por las autoridades de Roma",
-                "Para ganar más dinero en sus viajes",
-                "Para no tener que rendir cuentas a nadie"
+                "Para que nadie pudiera desacreditar o criticar el ministerio",
+                "Para ganarse el aplauso de las autoridades romanas",
+                "Para evitar tener que trabajar manualmente",
+                "Para cobrar por sus predicaciones"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 6:3: «No damos a nadie ningún motivo de tropiezo, para que nuestro ministerio no sea vituperado»."
         },
         {
             reference: "2 Corintios 6:12",
-            question: "Según 2 Corintios 6:12, ¿dónde estaban verdaderamente estrechos o restringidos los corintios en su afecto?",
+            question: "Según 2 Corintios 6:12, ¿dónde residía la verdadera falta de afecto en la relación de los corintios con Pablo?",
             options: [
-                "No estáis estrechos en nosotros, pero sí estáis estrechos en vuestro propio corazón",
-                "En sus recursos económicos para el templo",
-                "En sus conocimientos filosóficos y retóricos",
-                "En los límites geográficos de su ciudad"
+                "En sus propios corazones, que estaban cerrados hacia él",
+                "En la distancia geográfica que los separaba",
+                "En la falta de recursos económicos de la congregación",
+                "En las diferencias culturales entre griegos y judíos"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 6:12: «No estáis estrechos en nosotros, pero sí estáis estrechos en vuestro propio corazón»."
         },
         {
             reference: "2 Corintios 6:14",
-            question: "According to 2 Corintios 6:14, ¿qué advertencia directa se da sobre las asociaciones espirituales?",
+            question: "Según 2 Corintios 6:14, ¿qué advertencia fundamental da Pablo sobre asociarse en «yugo desigual»?",
             options: [
-                "No os unáis en yugo desigual con los incrédulos; porque ¿qué compañerismo tiene la justicia con la injusticia?",
-                "Uníos a todos sin distinción de doctrina ni moral",
-                "Aislaos por completo en los desiertos",
-                "Comprometed la verdad para evitar conflictos"
+                "No unirse en yugo desigual con los no creyentes, pues la justicia no tiene comunión con la injusticia ni la luz con las tinieblas",
+                "Aislarse por completo de todo contacto humano en el trabajo",
+                "Aceptar cualquier creencia para mantener la paz social",
+                "Unirse únicamente con personas de alto estatus social"
             ],
             correctIndex: 0,
-            explanation: "2 Corintios 6:14: «No os unáis en yugo desigual con los incrédulos...»."
+            explanation: "2 Corintios 6:14: «No os unáis en yugo desigual con los incrédulos; porque ¿qué compañerismo tiene la justicia con la injusticia? ¿Y qué comunión la luz con las tinieblas?»."
         },
         {
             reference: "2 Corintios 6:16",
-            question: "According to 2 Corintios 6:16, ¿qué relación tiene el templo de Dios con los ídolos?",
+            question: "Según 2 Corintios 6:16, ¿por qué el pueblo de Dios no puede mezclarse con la idolatría?",
             options: [
-                "¿Y qué acuerdo hay entre el templo de Dios y los ídolos? Porque vosotros sois el templo del Dios viviente",
-                "Pueden coexistir pacíficamente en la misma ciudad",
-                "Los ídolos decoran la casa del Señor",
-                "El templo de Dios necesita aprobación de los sacerdotes paganos"
+                "Porque nosotros somos el templo del Dios viviente",
+                "Porque los ídolos tienen poderes reales en el cielo",
+                "Porque las leyes civiles de Roma lo prohibían",
+                "Porque los templos antiguos eran más costosos"
             ],
             correctIndex: 0,
-            explanation: "2 Corintios 6:16: «¿Y qué acuerdo hay entre el templo de Dios y los ídolos? Porque vosotros sois el templo del Dios viviente...»."
+            explanation: "2 Corintios 6:16: «¿Y qué acuerdo hay entre el templo de Dios y los ídolos? Porque vosotros sois el templo del Dios viviente, como Dios dijo: Habitaré y andaré entre ellos, y seré su Dios, y ellos serán mi pueblo»."
         },
         {
             reference: "2 Corintios 6:18",
-            question: "According to 2 Corintios 6:18, ¿qué promesa paternal nos da el Señor Todopoderoso?",
+            question: "Según 2 Corintios 6:18, ¿qué entrañable promesa de paternidad nos hace el Señor Todopoderoso?",
             options: [
-                "Y seré para vosotros por Padre, y vosotros me seréis hijos e hijas, dice el Señor Todopoderoso",
-                "Os concederé coronas de gloria terrenal en Corinto",
-                "Os libraré de tener que predicar el evangelio",
-                "Haré de vosotros gobernantes de las provincias romanas"
+                "«Seré para vosotros por Padre, y vosotros me seréis hijos e hijas»",
+                "«Os otorgaré coronas de oro y fama terrenal»",
+                "«Os libraré de cualquier esfuerzo en esta vida»",
+                "«Haré de vosotros gobernantes de las provincias»"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 6:18: «Y seré para vosotros por Padre, y vosotros me seréis hijos e hijas, dice el Señor Todopoderoso»."
         },
         {
             reference: "2 Corintios 7:1",
-            question: "Según 2 Corintios 7:1, teniendo tales promesas divinas, ¿a qué nos llama Pablo?",
+            question: "Según 2 Corintios 7:1, al tener tan grandes promesas divinas, ¿a qué compromiso de pureza estamos llamados?",
             options: [
-                "Limpiémonos de toda contaminación de carne y de espíritu, perfeccionando la santidad en el temor de Dios",
-                "Exijamos honores y reverencia de las naciones",
-                "Aislemos nuestras familias de toda conversación humana",
-                "Descuidemos las responsabilidades del cuerpo presente"
+                "A limpiarnos de toda contaminación de cuerpo y de espíritu, perfeccionando la santidad con reverencia a Dios",
+                "A exigir honores y reconocimientos públicos",
+                "A descuidar nuestras responsabilidades cotidianas",
+                "A juzgar y condenar a quienes no piensan igual"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 7:1: «Así que, amados, puesto que tenemos tales promesas, limpiémonos de toda contaminación de carne y de espíritu, perfeccionando la santidad en el temor de Dios»."
         },
         {
             reference: "2 Corintios 7:10",
-            question: "Según 2 Corintios 7:10, ¿cuál es la diferencia crucial entre la tristeza que es según Dios y la tristeza del mundo?",
+            question: "Según 2 Corintios 7:10, ¿cuál es la diferencia vital entre la tristeza según Dios y la tristeza del mundo?",
             options: [
-                "La tristeza que es según Dios produce arrepentimiento para salvación; pero la tristeza del mundo produce muerte",
-                "La tristeza del mundo santifica y la de Dios angustia",
-                "Ambas tristezas tienen el mismo resultado final",
-                "La tristeza de Dios es pasajera y sin arrepentimiento"
+                "La tristeza según Dios produce arrepentimiento para salvación; la del mundo solo produce muerte",
+                "La tristeza del mundo santifica y la de Dios genera angustia",
+                "Ambas tristezas tienen el mismo desenlace espiritual",
+                "La tristeza según Dios no requiere ningún cambio de conducta"
             ],
             correctIndex: 0,
-            explanation: "2 Corintios 7:10: «Porque la tristeza que es según Dios produce arrepentimiento para salvación... pero la tristeza del mundo produce muerte»."
+            explanation: "2 Corintios 7:10: «Porque la tristeza que es según Dios produce arrepentimiento para salvación, de que no hay que arrepentirse; pero la tristeza del mundo produce muerte»."
         },
         {
             reference: "2 Corintios 7:12",
-            question: "Según 2 Corintios 7:12, ¿cuál fue el propósito primordial por el cual Pablo les escribió acerca del agravio?",
+            question: "Según 2 Corintios 7:12, ¿cuál fue el propósito más profundo de Pablo al escribirles sobre la falta ocurrida?",
             options: [
-                "Para que se os hiciese manifiesta nuestra solicitud que tenemos por vosotros delante de Dios",
-                "Para que castigaran severamente al ofensor en tribunales públicos",
-                "Para exigir una indemnización de plata para la iglesia",
-                "Para cortar relaciones apostólicas con Acaya"
+                "Hacer evidente ante Dios el sincero amor y preocupación que los apóstoles tenían por la iglesia",
+                "Exigir el castigo público y humillante del ofensor",
+                "Cobrar una indemnización de dinero para la obra",
+                "Romper lazos fraternales con los creyentes de Acaya"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 7:12: «Así que, aunque os escribí, no fue por causa del que cometió el agravio, ni por causa del que lo padeció, sino para que se os hiciese manifiesta nuestra solicitud que tenemos por vosotros delante de Dios»."
         },
         {
             reference: "2 Corintios 7:15",
-            question: "Según 2 Corintios 7:15, ¿por qué el cariño de Tito hacia los corintios era aún más abundante?",
+            question: "Según 2 Corintios 7:15, ¿por qué motivo creció tanto el afecto de Tito hacia la iglesia de Corinto?",
             options: [
-                "Cuando se acuerda de la obediencia de todos vosotros, de cómo le recibisteis con temor y temblor",
-                "Porque le entregaron grandes regalos y dinero",
-                "Porque le nombraron juez supremo de la asamblea",
-                "Porque defendieron su nombre ante los filósofos"
+                "Al recordar la obediencia y el gran respeto con que todos lo recibieron",
+                "Porque le entregaron valiosos regalos de despedida",
+                "Porque lo eligieron como su líder principal",
+                "Porque lo defendieron en los tribunales civiles"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 7:15: «Y su cariño para con vosotros es aun más abundante, cuando se acuerda de la obediencia de todos vosotros, de cómo le recibisteis con temor y temblor»."
         },
         {
             reference: "2 Corintios 8:3-4",
-            question: "Según 2 Corintios 8:3-4, ¿cómo dieron los hermanos de Macedonia su ofrenda para los santos?",
+            question: "Según 2 Corintios 8:3-4, ¿cómo mostraron su generosidad los hermanos de Macedonia a pesar de su pobreza?",
             options: [
-                "Conforme a sus fuerzas, y aun más allá de sus fuerzas, pidiéndonos con muchos ruegos el privilegio de participar en este servicio",
-                "Con quejas y obligados por decretos formales",
-                "Dieron solo de lo que les sobraba en abundancia",
-                "Exigieron que se les devolviese con intereses"
+                "Dieron con gozo según sus posibilidades e incluso más allá de sus fuerzas, pidiendo el honor de colaborar para los santos",
+                "Dieron únicamente lo que les sobraba de sus ahorros",
+                "Colaboraron de mala gana obligados por los líderes",
+                "Pidieron que se les devolviera el dinero con intereses"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 8:3-4: «Pues doy testimonio de que con agrado han dado conforme a sus fuerzas, y aun más allá de sus fuerzas, pidiéndonos con muchos ruegos que les concediésemos el privilegio de participar en este servicio para los santos»."
         },
         {
             reference: "2 Corintios 8:9",
-            question: "Según 2 Corintios 8:9, ¿qué maravillosa gracia demostró nuestro Señor Jesucristo?",
+            question: "Según 2 Corintios 8:9, ¿en qué consistió el supremo acto de generosidad de nuestro Señor Jesucristo?",
             options: [
-                "Que por amor a vosotros se hizo pobre, siendo rico, para que vosotros con su pobreza fueseis enriquecidos",
-                "Que buscó reinar con pompa terrenal en Roma",
-                "Que exigió tributos de todos los necesitados",
-                "Que guardó sus riquezas en secreto"
+                "Siendo rico se hizo pobre por amor a nosotros, para enriquecernos espiritualmente a través de su pobreza",
+                "Buscó gobernar con lujos y honores en Roma",
+                "Exigió tributos a los más necesitados",
+                "Guardó en secreto sus riquezas divinas"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 8:9: «Porque ya conocéis la gracia de nuestro Señor Jesucristo, que por amor a vosotros se hizo pobre, siendo rico, para que vosotros con su pobreza fueseis enriquecidos»."
         },
         {
             reference: "2 Corintios 8:15",
-            question: "Según 2 Corintios 8:15, ¿qué cita de las Escrituras utiliza Pablo para ilustrar la igualdad fraternal en el dar?",
+            question: "Según 2 Corintios 8:15, ¿qué principio de equidad y ayuda mutua resalta Pablo usando la cita del maná?",
             options: [
-                "El que recogió mucho, no tuvo más, y el que poco, no tuvo menos",
-                "El rico gobierna sobre el pobre en todo tiempo",
-                "Cada uno guarde para sí su propio grano",
-                "El diezmo es obligatorio para los gentiles"
+                "«El que recogió mucho no tuvo más, y el que recogió poco no tuvo menos»",
+                "«El que tiene más debe acumular para sí mismo»",
+                "«Cada quien debe velar únicamente por su propio bienestar»",
+                "«La ayuda económica solo debe darse a cambio de favores»"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 8:15: «como está escrito: El que recogió mucho, no tuvo más, y el que poco, no tuvo menos»."
         },
         {
             reference: "2 Corintios 8:21",
-            question: "According to 2 Corintios 8:21, ¿cómo procura conducirse el apóstol en la administración de las ofrendas?",
+            question: "According to 2 Corintios 8:21, ¿con qué estándar de integridad se conducían en la administración de las ofrendas?",
             options: [
-                "Procurando hacer las cosas honradamente, no sólo delante del Señor sino también delante de los hombres",
-                "Manejando los recursos sin dar explicaciones a nadie",
-                "Delegando todo sin supervisión",
-                "Buscando únicamente la aprobación civil de Acaya"
+                "Procurando hacer las cosas con total honradez, tanto delante del Señor como ante los hombres",
+                "Manejando el dinero en secreto sin dar explicaciones",
+                "Delegando los fondos sin supervisión alguna",
+                "Buscando únicamente la aprobación de los gobernantes"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 8:21: «procurando hacer las cosas honradamente, no sólo delante del Señor sino también delante de los hombres»."
@@ -2241,360 +2241,360 @@ const ESGRIMA_QUIZ_DATA = {
     7: [
         {
             reference: "2 Corintios 9:6",
-            question: "Según 2 Corintios 9:6, ¿cuál es el principio de la siembra y la cosecha espiritual?",
+            question: "Según 2 Corintios 9:6, ¿cuál es la ley de la siembra y la cosecha en la generosidad cristiana?",
             options: [
-                "El que siembra escasamente, también segará escasamente; y el que siembra generosamente, generosamente también segará",
-                "El que no siembra nada, cosechará en abundancia",
-                "La siembra no tiene relación con los frutos recogidos",
-                "El que siembra poco recibirá más galardón que todos"
+                "El que siembra escasamente cosechará poco; el que siembra generosamente cosechará en abundancia",
+                "El que no siembra nada recibirá la mayor bendición",
+                "La cantidad de siembra no tiene ningún impacto en los frutos",
+                "Sembrar poco garantiza mayores recompensas espirituales"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 9:6: «Pero esto digo: El que siembra escasamente, también segará escasamente; y el que siembra generosamente, generosamente también segará»."
         },
         {
             reference: "2 Corintios 9:7",
-            question: "Según 2 Corintios 9:7, ¿cómo debe dar cada uno y a quién ama Dios?",
+            question: "Según 2 Corintios 9:7, ¿de qué manera debe dar cada persona y a quién ama Dios?",
             options: [
-                "Cada uno dé como propuso en su corazón: no con tristeza, ni por necesidad, porque Dios ama al dador alegre",
-                "Por obligación y bajo presión pública",
-                "Con pesar y murmuración constante",
-                "Para ser alabado por la congregación"
+                "De corazón, no con tristeza ni por obligación, porque Dios ama al dador alegre",
+                "Por presión social y para recibir elogios públicos",
+                "Con pesar y murmurando por el gasto realizado",
+                "Únicamente bajo amenazas de castigo"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 9:7: «Cada uno dé como propuso en su corazón: no con tristeza, ni por necesidad, porque Dios ama al dador alegre»."
         },
         {
             reference: "2 Corintios 9:8",
-            question: "Según 2 Corintios 9:8, ¿qué es poderoso Dios para hacer en nosotros?",
+            question: "Según 2 Corintios 9:8, ¿qué es poderoso Dios para concedernos con respecto a nuestras necesidades?",
             options: [
-                "Poderoso es Dios para hacer que abunde en vosotros toda gracia, a fin de que tengáis siempre en todas las cosas todo lo suficiente para toda buena obra",
-                "Para concedernos fama y lujos mundanos",
-                "Para librarnos de ayudar al prójimo",
-                "Para hacernos señores sobre los pobres"
+                "Hacer que sobreabunde toda gracia para tener siempre lo suficiente y poder apoyar toda buena obra",
+                "Otorgarnos riquezas extravagantes sin necesidad de trabajar",
+                "Eximirnos de cualquier deber hacia los pobres",
+                "Hacernos gobernantes con privilegios sobre los demás"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 9:8: «Y poderoso es Dios para hacer que abunde en vosotros toda gracia, a fin de que, teniendo siempre en todas las cosas todo lo suficiente, abundéis para toda buena obra»."
         },
         {
             reference: "2 Corintios 9:15",
-            question: "Según 2 Corintios 9:15, ¿por qué don da gracias a Dios el apóstol Pablo?",
+            question: "Según 2 Corintios 9:15, ¿por qué regalo supremo y maravilloso da gracias a Dios el apóstol Pablo?",
             options: [
-                "¡Gracias a Dios por su don inefable!",
-                "Por los tributos recibidos de Macedonia",
-                "Por la elocuencia de los maestros griegos",
-                "Por los títulos honoríficos concedidos"
+                "Por su don inefable (el incomparable regalo de Jesucristo)",
+                "Por las donaciones materiales recibidas de Macedonia",
+                "Por la fama alcanzada entre los filósofos de Grecia",
+                "Por los cargos honoríficos concedidos por la ciudad"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 9:15: «¡Gracias a Dios por su don inefable!»."
         },
         {
             reference: "2 Corintios 10:3-4",
-            question: "Según 2 Corintios 10:3-4, ¿cómo son las armas de nuestra milicia espiritual?",
+            question: "Según 2 Corintios 10:3-4, ¿cuál es el carácter y alcance de las armas con que luchamos espiritualmente?",
             options: [
-                "No son carnales, sino poderosas en Dios para la destrucción de fortalezas",
-                "Son espadas de hierro y lanzas de guerra romana",
-                "Son argumentos de elocuencia y filosofía humana",
-                "Son decretos emitidos por tribunales civiles"
+                "No son armas humanas ni materiales, sino poderosas en Dios para derribar fortalezas",
+                "Son espadas, lanzas e instrumentos de fuerza física",
+                "Son argumentos de elocuencia y filosofía terrenal",
+                "Son influencias políticas ante los tribunales romanos"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 10:3-4: «Pues aunque andamos en la carne, no militamos según la carne; porque las armas de nuestra milicia no son carnales, sino poderosas en Dios para la destrucción de fortalezas»."
         },
         {
             reference: "2 Corintios 10:6",
-            question: "Según 2 Corintios 10:6, ¿para qué estaban prontos los apóstoles y en qué momento?",
+            question: "Según 2 Corintios 10:6, ¿cuándo estaban preparados los apóstoles para disciplinar cualquier desobediencia?",
             options: [
-                "Estando prontos para castigar toda desobediencia, cuando vuestra obediencia sea perfecta",
-                "Para abandonar la ciudad de Corinto sin previo aviso",
-                "Para apelar inmediatamente al tribunal del César",
-                "Para exigir ofrendas obligatorias a los rebeldes"
+                "Cuando la obediencia de la iglesia estuviera plenamente afirmada y completa",
+                "Inmediatamente sin dar tiempo a la reflexión",
+                "Solo después de recibir una orden de los magistrados civiles",
+                "Cuando todos los miembros entregaran sus ofrendas"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 10:6: «y estando prontos para castigar toda desobediencia, cuando vuestra obediencia sea perfecta»."
         },
         {
             reference: "2 Corintios 10:7",
-            question: "Según 2 Corintios 10:7, ¿según qué miraban las cosas y qué debía considerar el que confiaba ser de Cristo?",
+            question: "Según 2 Corintios 10:7, ¿qué advertencia hace Pablo a quienes juzgan la autoridad espiritual superficialmente?",
             options: [
-                "Miráis las cosas según la apariencia; si alguno está confiado en que es de Cristo, considere que como él es de Cristo, así también nosotros somos de Cristo",
-                "Miraban según el juicio del Espíritu Santo sin equivocación",
-                "Consideraban que solo los corintios pertenecían al Señor",
-                "Miraban las cartas de recomendación del Sanedrín"
+                "No juzgar por las apariencias externas, recordando que los apóstoles pertenecen a Cristo tanto como cualquiera",
+                "Evaluar a las personas por sus títulos académicos y riquezas",
+                "Creer que solo los líderes de Corinto son verdaderamente de Cristo",
+                "Aceptar únicamente a quienes traen cartas de recomendación humanas"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 10:7: «Miráis las cosas según la apariencia. Si alguno está confiado en sí mismo que es de Cristo, esto también vuelva a considerar por sí mismo, que como él es de Cristo, así también nosotros somos de Cristo»."
         },
         {
             reference: "2 Corintios 10:10",
-            question: "Según 2 Corintios 10:10, ¿qué decían los detractores acerca de las cartas y de la presencia corporal de Pablo?",
+            question: "Según 2 Corintios 10:10, ¿qué crítica hacían los detractores sobre las cartas y la presencia física de Pablo?",
             options: [
-                "Las cartas son duras y fuertes; mas la presencia corporal débil, y la palabra menospreciable",
-                "Las cartas son confusas y la presencia imponente",
-                "Que hablaba con excesiva elocuencia filosófica",
-                "Que nunca enviaba cartas doctrinales auténticas"
+                "Que sus cartas eran duras y enérgicas, pero su presencia corporal débil y su oratoria poco impresionante",
+                "Que sus cartas eran confusas y su presencia imponente y aterradora",
+                "Que hablaba con excesiva vanidad y elocuencia",
+                "Que nunca escribía cartas con doctrina sólida"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 10:10: «Porque a la verdad, dicen, las cartas son duras y fuertes; mas la presencia corporal débil, y la palabra menospreciable»."
         },
         {
             reference: "2 Corintios 10:13",
-            question: "Según 2 Corintios 10:13, ¿cómo se gloriaba Pablo en lugar de gloriarse desmedidamente?",
+            question: "Según 2 Corintios 10:13, ¿cuál era el marco y límite que Pablo respetaba al evaluar su trabajo misionero?",
             options: [
-                "Conforme a la regla de la medida que Dios nos ha dado por medida, para llegar también hasta vosotros",
-                "En las obras y ministerios fundados por otros apóstoles",
-                "En su elocuencia personal ante los gobernadores",
-                "En su sabiduría secular y riquezas terrenales"
+                "No gloriarse desmedidamente, sino mantenerse dentro del campo de labor que Dios mismo les asignó",
+                "Apropiarse del fruto y trabajo de otros apóstoles",
+                "Jactarse de su prestigio e influencia personal",
+                "Compararse constantemente con los oradores griegos"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 10:13: «Pero nosotros no nos gloriaremos desmedidamente, sino conforme a la regla de la medida que Dios nos ha dado por medida, para llegar también hasta vosotros»."
         },
         {
             reference: "2 Corintios 10:16",
-            question: "Según 2 Corintios 10:16, ¿dónde anhelaban anunciar el evangelio sin entrar en la obra de otro?",
+            question: "Según 2 Corintios 10:16, ¿cuál era la meta misionera de Pablo respecto a nuevos territorios?",
             options: [
-                "En los lugares más allá de vosotros, sin entrar en la obra de otro para gloriarnos en lo que ya estaba preparado",
-                "Únicamente dentro de las sinagogas de Judea",
-                "En las ciudades donde otros ya habían edificado",
-                "En los palacios del emperador romano"
+                "Anunciar el evangelio en regiones más lejanas, sin atribuirse el trabajo ya iniciado por otros",
+                "Predicar únicamente en las sinagogas de Judea",
+                "Establecerse cómodamente donde otros ya habían fundado iglesias",
+                "Buscar únicamente las ciudades más ricas del imperio"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 10:16: «y que anunciaremos el evangelio en los lugares más allá de vosotros, sin entrar en la obra de otro para gloriarnos en lo que ya estaba preparado»."
         },
         {
             reference: "2 Corintios 10:17",
-            question: "Según 2 Corintios 10:17, ¿en quién debe gloriarse el que se gloría?",
+            question: "Según 2 Corintios 10:17, ¿en quién debe fundamentarse todo motivo de orgullo y alabanza?",
             options: [
-                "Mas el que se gloría, gloríese en el Señor",
-                "Gloríese en sus propias fuerzas y méritos",
-                "Gloríese en su linaje y títulos humanos",
-                "Gloríese en las alabanzas de la multitud"
+                "El que se gloría, que se gloríe únicamente en el Señor",
+                "En las propias capacidades y logros humanos",
+                "En la posición social y abolengo familiar",
+                "En el reconocimiento y aplauso de la multitud"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 10:17: «Mas el que se gloría, gloríese en el Señor»."
         },
         {
             reference: "2 Corintios 10:18",
-            question: "Según 2 Corintios 10:18, ¿quién es el verdaderamente aprobado?",
+            question: "Según 2 Corintios 10:18, ¿quién es la persona verdaderamente aprobada delante de Dios?",
             options: [
-                "No es aprobado el que se alaba a sí mismo, sino aquel a quien Dios alaba",
-                "Aquel que tiene más seguidores y aplausos",
-                "El que exhibe cartas de recomendación terrenales",
-                "El que nunca ha padecido debilidades ni vituperios"
+                "No quien se alaba a sí mismo, sino aquel a quien el Señor aprueba y elogia",
+                "Quien cuenta con mayor número de seguidores",
+                "Quien posee más cartas de recomendación humanas",
+                "Quien nunca ha enfrentado críticas ni oposiciones"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 10:18: «porque no es aprobado el que se alaba a sí mismo, sino aquel a quien Dios alaba»."
         },
         {
             reference: "2 Corintios 11:2-3",
-            question: "Según 2 Corintios 11:2-3, ¿con qué celo cela Pablo a la iglesia y a quién teme que sean extraviados como Eva?",
+            question: "Según 2 Corintios 11:2-3, ¿cuál era el anhelo pastoral de Pablo y qué engaño temía para la iglesia?",
             options: [
-                "Os celo con celo de Dios para presentaros como una virgen pura a Cristo; temiendo que como la serpiente engañó a Eva, vuestros sentidos sean extraviados",
-                "Celo humano por mantener control sobre la congregación",
-                "Temor a las amenazas de las autoridades imperiales",
-                "Celo por preservar los ritos ceremoniales antiguos"
+                "Presentarla como una novia pura a Cristo, temiendo que sean extraviados de la sincera fidelidad tal como Eva fue engañada",
+                "Controlar todas las decisiones personales de los creyentes",
+                "Preservar ritos ceremoniales antiguos a toda costa",
+                "Evitar que la iglesia creciera hacia otras regiones"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 11:2-3: «Porque os celo con celo de Dios; pues os he desposado con un solo esposo, para presentaros como una virgen pura a Cristo. Pero temo que como la serpiente con su astucia engañó a Eva, vuestros sentidos sean de alguna manera extraviados de la sincera fidelidad a Cristo»."
         },
         {
             reference: "2 Corintios 11:6",
-            question: "Según 2 Corintios 11:6, ¿en qué reconoce Pablo que podía ser tosco, pero en qué no lo era?",
+            question: "Según 2 Corintios 11:6, ¿qué reconoce Pablo sobre su oratoria y qué defiende con seguridad?",
             options: [
-                "Aunque sea tosco en la palabra, no lo soy en el conocimiento; en todo y por todo os lo hemos demostrado",
-                "Tosco en el conocimiento teológico pero refinado en la oratoria",
-                "Tosco en el carácter pero débil en la doctrina",
-                "Tosco en la disciplina pero tolerante con el pecado"
+                "Aunque no fuera un orador elocuente o refinado, no carecía de conocimiento de la verdad",
+                "Que era ignorante en doctrina pero un gran maestro de retórica",
+                "Que carecía tanto de palabras como de conocimiento",
+                "Que utilizaba trucos de oratoria para convencer a la multitud"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 11:6: «Pues aunque sea tosco en la palabra, no lo soy en el conocimiento; en todo y por todo os lo hemos demostrado»."
         },
         {
             reference: "2 Corintios 11:9",
-            question: "Según 2 Corintios 11:9, ¿quiénes suplieron lo que le faltaba a Pablo para no ser gravoso a Corinto?",
+            question: "Según 2 Corintios 11:9, ¿cómo cubrió Pablo sus necesidades mientras predicaba el evangelio en Corinto?",
             options: [
-                "Lo suplieron los hermanos que vinieron de Macedonia, guardándose de serles gravoso",
-                "Los magistrados y cónsules de la ciudad",
-                "Los mercaderes del puerto de Cencrea",
-                "Los recaudadores de impuestos de Galacia"
+                "Con la ayuda que le trajeron los hermanos de Macedonia, cuidando de no ser una carga económica para ellos",
+                "Cobrando un sueldo obligatorio a cada familia de Corinto",
+                "Pidiendo subsidios a los magistrados de la ciudad",
+                "Viviendo de préstamos comerciales en Cencrea"
             ],
             correctIndex: 0,
-            explanation: "2 Corintios 11:9: «pues lo que me faltaba, lo suplieron los hermanos que vinieron de Macedonia, y en todo me guardé y me guardaré de seros gravoso»."
+            explanation: "2 Corintios 11:9: «Y cuando estaba entre vosotros y tuve necesidad, a ninguno fui carga, pues lo que me faltaba, lo suplieron los hermanos que vinieron de Macedonia, y en todo me guardé y me guardaré de seros gravoso»."
         },
         {
             reference: "2 Corintios 11:10",
-            question: "Según 2 Corintios 11:10, ¿en qué regiones no se le impediría a Pablo este motivo de gloria?",
+            question: "According to 2 Corintios 11:10, ¿en qué territorio afirmó Pablo que nadie le impediría el orgullo de predicar gratuitamente?",
             options: [
-                "En las regiones de Acaya",
-                "En las islas de Creta y Chipre",
-                "En la provincia de Capadocia",
-                "En las costas de Alejandría"
+                "En todas las regiones de Acaya",
+                "En la isla de Creta",
+                "En las costas de Egipto",
+                "En las ciudades de Galacia"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 11:10: «Por la verdad de Cristo que está en mí, que no se me impedirá esta mi gloria en las regiones de Acaya»."
         },
         {
             reference: "2 Corintios 11:13-14",
-            question: "Según 2 Corintios 11:13-14, ¿cómo describe Pablo a los falsos obreros y cómo se disfraza Satanás?",
+            question: "Según 2 Corintios 11:13-14, ¿cómo desenmascara Pablo a los falsos apóstoles y qué táctica usa Satanás?",
             options: [
-                "Son falsos apóstoles, obreros fraudulentos; y el mismo Satanás se disfraza como ángel de luz",
-                "Son ministros sinceros pero con poca experiencia",
-                "Satanás se presenta siempre como una bestia tenebrosa",
-                "Son profetas aprobados por el concilio de Jerusalén"
+                "Son obreros engañosos que fingen ser apóstoles de Cristo, tal como Satanás se disfraza de ángel de luz",
+                "Son líderes sinceros pero con poca preparación teológica",
+                "Satanás se manifiesta siempre de forma aterradora e inconfundible",
+                "Son mensajeros aprobados por los apóstoles de Jerusalén"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 11:13-14: «Porque éstos son falsos apóstoles, obreros fraudulentos, que se disfrazan como apóstoles de Cristo. Y no es maravilla, porque el mismo Satanás se disfraza como ángel de luz»."
         },
         {
             reference: "2 Corintios 11:21-22",
-            question: "Según 2 Corintios 11:21-22, ¿qué responde Pablo respecto a su identidad y linaje ante quienes presumen?",
+            question: "Según 2 Corintios 11:21-22, ¿qué afirma Pablo sobre sus raíces e identidad frente a los rivales que presumían?",
             options: [
-                "¿Son hebreos? Yo también. ¿Son israelitas? Yo también. ¿Son descendientes de Abraham? También yo",
-                "Reconoce que él no tenía ascendencia israelita",
-                "Afirma que el linaje no tenía ningún valor histórico",
-                "Dice que solo los apóstoles de Jerusalén eran hebreos"
+                "Que él es igualmente hebreo, israelita y descendiente de Abraham",
+                "Que renunció a su linaje y no tenía ascendencia judía",
+                "Que sus opositores tenían mejor linaje espiritual que él",
+                "Que el origen familiar era la única garantía de salvación"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 11:22: «¿Son hebreos? Yo también. ¿Son israelitas? Yo también. ¿Son descendientes de Abraham? También yo»."
         },
         {
             reference: "2 Corintios 11:23",
-            question: "Según 2 Corintios 11:23, ¿de qué maneras demostró Pablo ser más ministro de Cristo?",
+            question: "Según 2 Corintios 11:23, ¿cuáles son las credenciales de sufrimiento que demuestran que Pablo sirvió más a Cristo?",
             options: [
-                "En trabajos más abundante; en azotes sin número; en cárceles más; en peligros de muerte muchas veces",
-                "En honores recibidos y posiciones de poder eclesial",
-                "En riquezas acumuladas y templos construidos",
-                "En banquetes y reconocimientos públicos de las autoridades"
+                "Mucho más trabajo, mayores encarcelamientos, incontables azotes y frecuentes peligros de muerte",
+                "Posiciones de prestigio en los templos y honores públicos",
+                "Grandes sumas de dinero acumuladas y bienes personales",
+                "Una vida tranquila y libre de cualquier persecución"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 11:23: «¿Son ministros de Cristo? (Como si estuviera loco hablo.) Yo más; en trabajos más abundante; en azotes sin número; en cárceles más; en peligros de muerte muchas veces»."
         },
         {
             reference: "2 Corintios 11:24-25",
-            question: "Según 2 Corintios 11:24-25, ¿cuántos azotes de los judíos, cuántas veces azotado con varas y cuántos naufragios sufrió Pablo?",
+            question: "According to 2 Corintios 11:24-25, ¿cuáles son los castigos físicos y peligros que Pablo enumera en su trayectoria?",
             options: [
-                "De los judíos cinco veces 39 azotes; tres veces azotado con varas; una vez apedreado; tres veces naufragio (una noche y un día en alta mar)",
-                "Diez veces azotado y un solo naufragio",
-                "Nunca fue encarcelado ni azotado",
-                "Dos veces apedreado en Atenas"
+                "Cinco veces 39 azotes de los judíos, tres veces golpeado con varas, una vez apedreado y tres naufragios",
+                "Diez veces en prisión y ningún naufragio",
+                "Una vida protegida sin agresiones físicas",
+                "Castigado únicamente con multas económicas"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 11:24-25: «De los judíos cinco veces he recibido cuarenta azotes menos uno. Tres veces he sido azotado con varas; una vez apedreado; tres veces he padecido naufragio; una noche y un día he estado como náufrago en alta mar»."
         },
         {
             reference: "2 Corintios 11:30",
-            question: "Según 2 Corintios 11:30, si es necesario gloriarse, ¿en qué se gloriará Pablo?",
+            question: "Según 2 Corintios 11:30, si es necesario presumir de algo, ¿cuál es el único motivo en el que Pablo elige gloriarse?",
             options: [
-                "Me gloriaré en lo que es de mi debilidad",
-                "En sus grandes riquezas y posesiones",
-                "En su dominio sobre los gentiles",
-                "En sus victorias políticas en Acaya"
+                "En las cosas que muestran su propia debilidad",
+                "En sus grandes riquezas e influencia social",
+                "En su elocuencia frente a los sabios de Acaya",
+                "En el número de discípulos que lo siguen"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 11:30: «Si es necesario gloriarse, me gloriaré en lo que es de mi debilidad»."
         },
         {
             reference: "2 Corintios 11:32-33",
-            question: "Según 2 Corintios 11:32-33, ¿cómo escapó Pablo en Damasco del gobernador del rey Aretas?",
+            question: "Según 2 Corintios 11:32-33, ¿cómo logró escapar Pablo de la persecución del gobernador en Damasco?",
             options: [
-                "Fue descolgado del muro en un canasto por una ventana, y escapó de sus manos",
-                "Disfrazado de soldado romano por la puerta principal",
-                "Mediante un salvoconducto firmado por los magistrados",
-                "A través de un túnel subterráneo bajo el palacio"
+                "Fue descolgado del muro en una canasta a través de una ventana",
+                "Salió disfrazado de soldado romano por la puerta principal",
+                "Presentó un salvoconducto firmado por las autoridades",
+                "Escapó por túneles secretos bajo el palacio"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 11:32-33: «En Damasco, el gobernador de la provincia del rey Aretas guardaba la ciudad de los damascenos para prenderme; y fui descolgado del muro en un canasto por una ventana, y escapé de sus manos»."
         },
         {
             reference: "2 Corintios 12:2-4",
-            question: "Según 2 Corintios 12:2-4, ¿hace cuántos años fue arrebatado el hombre en Cristo hasta el tercer cielo (al paraíso)?",
+            question: "Según 2 Corintios 12:2-4, ¿qué experiencia espiritual vivió el creyente mencionado hace catorce años?",
             options: [
-                "Hace catorce años; fue arrebatado al paraíso, donde oyó palabras inefables que no le es dado al hombre expresar",
-                "Hace siete años en la ciudad de Jerusalén",
-                "Durante su infancia en Tarso de Cilicia",
-                "Ayer en una visión pública en Corinto"
+                "Fue arrebatado hasta el tercer cielo (el paraíso) y escuchó palabras inexpresables que no es lícito al hombre pronunciar",
+                "Tuvo un sueño sobre la caída del imperio romano",
+                "Recibió una visión para construir un templo monumental",
+                "Fue transportado físicamente a la ciudad de Tarso"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 12:2-4: «Conozco a un hombre en Cristo, que hace catorce años... fue arrebatado hasta el tercer cielo... al paraíso, donde oyó palabras inefables que no le es dado al hombre expresar»."
         },
         {
             reference: "2 Corintios 12:5",
-            question: "Según 2 Corintios 12:5, ¿de qué se gloriaría Pablo respecto a sí mismo?",
+            question: "Según 2 Corintios 12:5, ¿de qué decidió Pablo gloriarse respecto a su propia persona?",
             options: [
-                "De mí mismo en nada me gloriaré, sino en mis debilidades",
-                "En sus grandes revelaciones místicas y conocimientos",
-                "En haber fundado más iglesias que todos los demás",
-                "En sus títulos de fariseo instruido por Gamaliel"
+                "Únicamente de sus debilidades y limitaciones",
+                "De sus visiones místicas extraordinarias",
+                "De haber fundado iglesias en toda Grecia",
+                "De su intachable formación bajo Gamaliel"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 12:5: «De tal hombre me gloriaré; pero de mí mismo en nada me gloriaré, sino en mis debilidades»."
         },
         {
             reference: "2 Corintios 12:7",
-            question: "Según 2 Corintios 12:7, para no enaltecerse por la grandeza de las revelaciones, ¿qué le fue dado a Pablo?",
+            question: "Según 2 Corintios 12:7, ¿qué dificultad permitió Dios en la vida de Pablo para protegerlo del orgullo por tantas revelaciones?",
             options: [
-                "Me fue dado un aguijón en mi carne, un mensajero de Satanás que me abofetee, para que no me enaltezca sobremanera",
-                "Una enfermedad mortal que lo postró",
-                "Una orden de arresto en Macedonia",
-                "La pérdida de su ciudadanía romana"
+                "Un aguijón en la carne, un mensajero de Satanás que lo abofeteara para mantenerlo humilde",
+                "Una enfermedad mortal que lo retiró del ministerio",
+                "La pérdida total de sus posesiones materiales",
+                "El rechazo permanente de todas las iglesias"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 12:7: «Y para que la grandeza de las revelaciones no me exaltase desmedidamente, me fue dado un aguijón en mi carne, un mensajero de Satanás que me abofetee, para que no me enaltezca sobremanera»."
         },
         {
             reference: "2 Corintios 12:8-9",
-            question: "Según 2 Corintios 12:8-9, tras rogar tres veces al Señor que quitase el aguijón, ¿qué le respondió Cristo?",
+            question: "Según 2 Corintios 12:8-9, ¿cuál fue la respuesta de Cristo cuando Pablo le rogó tres veces que le quitara el aguijón?",
             options: [
-                "Bástate mi gracia; porque mi poder se perfecciona en la debilidad",
-                "Te libraré de toda molestia inmediatamente",
-                "Debes ayunar cuarenta días más",
-                "No has tenido suficiente fe para ser sano"
+                "«Bástate mi gracia; porque mi poder se perfecciona en la debilidad»",
+                "«Te quitaré toda molestia inmediatamente»",
+                "«Debes hacer más ayunos para ser escuchado»",
+                "«Tu oración no tiene suficiente fe»"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 12:9: «Y me ha dicho: Bástate mi gracia; porque mi poder se perfecciona en la debilidad. Por tanto, de buena gana me gloriaré más bien en mis debilidades, para que repose sobre mí el poder de Cristo»."
         },
         {
             reference: "2 Corintios 12:14",
-            question: "Según 2 Corintios 12:14, ¿por qué no sería gravoso Pablo a los corintios en su tercera visita?",
+            question: "Según 2 Corintios 12:14, ¿por qué no sería Pablo una carga económica en su tercera visita a Corinto?",
             options: [
-                "No os seré gravoso, porque no busco lo vuestro, sino a vosotros, pues no deben atesorar los hijos para los padres, sino los padres para los hijos",
-                "Porque había recibido una cuantiosa herencia en Tarso",
-                "Porque los magistrados de Acaya pagarían sus gastos",
-                "Porque solo permanecería unas pocas horas"
+                "Porque no busca los bienes materiales de ellos sino a ellos mismos, tal como los padres ahorran para los hijos y no al revés",
+                "Porque había recibido una gran fortuna en Macedonia",
+                "Porque los magistrados pagarían su estancia",
+                "Porque solo se quedaría por unas pocas horas"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 12:14: «He aquí, por tercera vez estoy preparado para ir a vosotros; y no os seré gravoso, porque no busco lo vuestro, sino a vosotros, pues no deben atesorar los hijos para los padres, sino los padres para los hijos»."
         },
         {
             reference: "2 Corintios 12:15",
-            question: "Según 2 Corintios 12:15, ¿con qué amor y entrega estaba dispuesto Pablo a desgastarse por la iglesia?",
+            question: "According to 2 Corintios 12:15, ¿con qué grado de entrega y amor estaba dispuesto Pablo a desgastarse por los creyentes?",
             options: [
-                "Con el mayor placer gastaré lo mío, y aun yo mismo me gastaré del todo por amor de vuestras almas, aunque amándoos más, sea amado menos",
-                "Exigiendo compensación material por cada sermón",
-                "Solo si era tratado con los mayores honores eclesiásticos",
-                "Con amargura y reproche constante por su frialdad"
+                "Con el mayor agrado gastaría sus recursos e incluso su propia vida por ellos, aun si amándolos más fuera amado menos",
+                "Solo si la iglesia le garantizaba un sueldo fijo",
+                "Exigiendo reconocimientos públicos en cada visita",
+                "Con resentimiento por la frialdad de su trato"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 12:15: «Y yo con el mayor placer gastaré lo mío, y aun yo mismo me gastaré del todo por amor de vuestras almas, aunque amándoos más, sea amado menos»."
         },
         {
             reference: "2 Corintios 12:18",
-            question: "Según 2 Corintios 12:18, ¿a quién envió Pablo a Corinto y con qué testimonio de integridad?",
+            question: "Según 2 Corintios 12:18, ¿qué testimonio de honradez compartían Pablo y Tito al servir a la iglesia?",
             options: [
-                "Rogué a Tito, y envié con él al hermano. ¿Os engañó acaso Tito? ¿No hemos procedido con el mismo espíritu y en las mismas pisadas?",
-                "Envió a Bernabé para recaudar fondos privados",
-                "Envió mensajeros anónimos sin instrucciones claras",
-                "Envió emisarios a exigir tributos para Galacia"
+                "Que procedieron con el mismo espíritu íntegro y siguieron exactamente las mismas pisadas de rectitud",
+                "Que Tito recaudó fondos privados para beneficio propio",
+                "Que actuaron sin normas claras ni supervisión",
+                "Que buscaron ventajas económicas en Acaya"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 12:18: «Rogué a Tito, y envié con él al hermano. ¿Os engañó acaso Tito? ¿No hemos procedido con el mismo espíritu y en las mismas pisadas?»."
         },
         {
             reference: "2 Corintios 12:21",
-            question: "Según 2 Corintios 12:21, ¿qué temía Pablo tener que hacer al volver si hallaba a los que pecaron sin arrepentirse?",
+            question: "Según 2 Corintios 12:21, ¿cuál era la gran preocupación y dolor de Pablo al volver a visitarlos?",
             options: [
-                "Temía que Dios lo humillase entre ellos y tuviese que llorar por los que no se han arrepentido de la inmundicia, fornicación y lascivia",
-                "Temía que los corintios lo expulsasen de la ciudad",
-                "Temía tener que clausurar permanentemente la congregación",
-                "Temía perder su salario apostólico de Acaya"
+                "Tener que lamentarse por muchos que habían pecado de impureza e inmoralidad y todavía no se habían arrepentido",
+                "Ser rechazado por las autoridades civiles de la ciudad",
+                "No recaudar suficientes fondos para su viaje a Roma",
+                "Perder su prestigio ante los sabios de Grecia"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 12:21: «que cuando vuelva, me humille Dios entre vosotros, y quizá tenga que llorar por muchos de los que antes han pecado, y no se han arrepentido de la inmundicia y fornicación y lascivia que han cometido»."
@@ -2605,84 +2605,84 @@ const ESGRIMA_QUIZ_DATA = {
     8: [
         {
             reference: "2 Corintios 13:1",
-            question: "Según 2 Corintios 13:1, ¿por boca de cuántos testigos se decidirá todo asunto en la tercera visita de Pablo?",
+            question: "Según 2 Corintios 13:1, ¿cuál es la norma bíblica para verificar y resolver cualquier asunto o acusación?",
             options: [
                 "Por boca de dos o de tres testigos se decidirá todo asunto",
-                "Por el juicio de un solo magistrado de Acaya",
-                "Por votación popular de toda la asamblea de Corinto",
-                "Por decisión secreta de los ancianos de Jerusalén"
+                "Por la decisión unilateral de un solo líder",
+                "Por votación popular de toda la asamblea",
+                "Por la opinión de los magistrados civiles"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 13:1: «Esta es la tercera vez que voy a vosotros. Por boca de dos o de tres testigos se decidirá todo asunto»."
         },
         {
             reference: "2 Corintios 13:5",
-            question: "Según 2 Corintios 13:5, ¿a qué examen vital exhorta Pablo a cada creyente?",
+            question: "Según 2 Corintios 13:5, ¿a qué autoexamen vital exhorta Pablo a cada creyente?",
             options: [
-                "Examinaos a vosotros mismos si estáis en la fe; probaos a vosotros mismos. ¿O no os conocéis a vosotros mismos, que Jesucristo está en vosotros, a menos que estéis reprobados?",
-                "Examinad las faltas y pecados de vuestros vecinos",
-                "Contad cuántas ofrendas habéis entregado en el templo",
-                "Comprobad si tenéis la aprobación de los gobernadores romanos"
+                "A examinarse a sí mismos para comprobar si están firmes en la fe y si Cristo vive en ellos",
+                "A vigilar y criticar la conducta de los demás",
+                "A calcular cuántas obras buenas han realizado",
+                "A buscar la aprobación y elogio de la sociedad"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 13:5: «Examinaos a vosotros mismos si estáis en la fe; probaos a vosotros mismos. ¿O no os conocéis a vosotros mismos, que Jesucristo está en vosotros, a menos que estéis reprobados?»."
         },
         {
             reference: "2 Corintios 13:7",
-            question: "Según 2 Corintios 13:7, ¿qué ora Pablo a Dios respecto a las acciones de los creyentes?",
+            question: "Según 2 Corintios 13:7, ¿cuál es la oración de los apóstoles con respecto a la conducta de los corintios?",
             options: [
-                "Oramos a Dios que ninguna cosa mala hagáis; no para que nosotros aparezcamos aprobados, sino para que vosotros hagáis lo bueno",
-                "Que alcancen grandes riquezas materiales en Acaya",
-                "Que derroten a todos sus opositores en los tribunales",
-                "Que le envíen cartas de elogio a Macedonia"
+                "Que no hagan ninguna cosa mala, sino que practiquen lo que es bueno y recto",
+                "Que acumulen grandes riquezas en la provincia",
+                "Que derroten a todos sus rivales en los debates",
+                "Que les envíen cartas de recomendación a Macedonia"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 13:7: «Y oramos a Dios que ninguna cosa mala hagáis; no para que nosotros aparezcamos aprobados, sino para que vosotros hagáis lo bueno, aunque nosotros seamos como reprobados»."
         },
         {
             reference: "2 Corintios 13:11",
-            question: "Según 2 Corintios 13:11, ¿cuáles son las exhortaciones finales para que el Dios de paz y de amor esté con nosotros?",
+            question: "According to 2 Corintios 13:11, ¿cuáles son las actitudes fraternales que aseguran que el Dios de amor y de paz esté con nosotros?",
             options: [
-                "Tened gozo, perfeccionaos, consolaos, sed de un mismo parecer, y vivid en paz; y el Dios de paz y de amor estará con vosotros",
-                "Disputad con los que difieren y separaos de la asamblea",
-                "Buscad el honor propio y la revancha personal",
-                "Aislaos de toda comunión eclesial"
+                "Tener gozo, buscar la madurez espiritual, animarse unos a otros, vivir en armonía y mantener la paz",
+                "Discutir constantemente sobre doctrinas menores",
+                "Buscar el beneficio propio antes que el de la comunidad",
+                "Aislarse de la comunión con los demás creyentes"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 13:11: «Por lo demás, hermanos, tened gozo, perfeccionaos, consolaos, sed de un mismo parecer, y vivid en paz; y el Dios de paz y de amor estará con vosotros»."
         },
         {
             reference: "2 Corintios 13:12",
-            question: "Según 2 Corintios 13:12, ¿cómo instruye Pablo que se saluden los unos a los otros?",
+            question: "Según 2 Corintios 13:12, ¿con qué expresión de afecto fraternal debían saludarse en la iglesia?",
             options: [
-                "Saludaos los unos a los otros con ósculo santo",
-                "Con reverencias formales de estilo romano",
-                "Con apretón de manos en silencio",
-                "Únicamente mediante cartas selladas"
+                "Con ósculo santo (saludo de sincero afecto y respeto cristiano)",
+                "Con una reverencia formal de estilo romano",
+                "Con un apretón de manos distante y silencioso",
+                "Únicamente a través de cartas escritas"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 13:12: «Saludaos los unos a los otros con ósculo santo»."
         },
         {
             reference: "2 Corintios 13:13",
-            question: "Según 2 Corintios 13:13, ¿quiénes envían saludos a la iglesia de Corinto?",
+            question: "Según 2 Corintios 13:13, ¿quiénes envían saludos fraternales a la iglesia de Corinto?",
             options: [
-                "Todos los santos os saludan",
-                "Únicamente los apóstoles de Judea",
+                "Todos los santos (toda la comunidad de creyentes)",
+                "Únicamente los apóstoles de Jerusalén",
                 "Los magistrados de Acaya y Macedonia",
-                "Solamente la familia de Estéfanas"
+                "Solamente los parientes de Pablo"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 13:13: «Todos los santos os saludan»."
         },
         {
             reference: "2 Corintios 13:14",
-            question: "Según 2 Corintios 13:14, ¿cuál es la bendición apostólica trinitaria con la que finaliza la epístola?",
+            question: "Según 2 Corintios 13:14, ¿cuál es la bendición trinitaria con la que concluye la segunda epístola a los Corintios?",
             options: [
-                "La gracia del Señor Jesucristo, el amor de Dios, y la comunión del Espíritu Santo sean con todos vosotros. Amén",
-                "La paz del imperio romano y la salud corporal sean con vosotros",
-                "El favor de los gobernadores y la prosperidad terrenal os acompañen",
-                "La sabiduría de los filósofos y el honor de Acaya sea vuestra porción"
+                "La gracia del Señor Jesucristo, el amor de Dios el Padre y la comunión del Espíritu Santo",
+                "La paz del imperio romano y la salud física",
+                "El éxito en los negocios y la prosperidad terrenal",
+                "La sabiduría de los filósofos y el honor humano"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 13:14: «La gracia del Señor Jesucristo, el amor de Dios, y la comunión del Espíritu Santo sean con todos vosotros. Amén»."
