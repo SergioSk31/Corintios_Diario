@@ -2239,9 +2239,85 @@ const ESGRIMA_QUIZ_DATA = {
 
     // DÍA 7: 2ª de Corintios 9 al 12
     7: [
+        // Cap 9:1
+        {
+            reference: "2 Corintios 9:1",
+            question: "Según 2 Corintios 9:1, ¿por qué consideraba Pablo casi innecesario escribirles detalladamente sobre la ayuda a los creyentes?",
+            options: [
+                "Porque conocía su buena disposición y compromiso previo para ayudar",
+                "Porque los creyentes de Jerusalén ya no necesitaban ningún apoyo",
+                "Porque las autoridades de Acaya habían asumido los gastos",
+                "Porque no confiaba en la administración de la iglesia local"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 9:1: «Cuanto a la ministración para los santos, es por demás que yo os escriba»."
+        },
+        {
+            reference: "2 Corintios 9:1",
+            question: "¿A qué servicio o ministerio específico se refiere Pablo en 2 Corintios 9:1?",
+            options: [
+                "A la ayuda y ofrenda solidaria para los santos necesitados",
+                "Al servicio de la predicación en las plazas públicas",
+                "A la construcción de un nuevo templo en Acaya",
+                "Al debate doctrinal con los filósofos griegos"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 9:1: «Cuanto a la ministración para los santos, es por demás que yo os escriba»."
+        },
+        // Cap 9:2
+        {
+            reference: "2 Corintios 9:2",
+            question: "Según 2 Corintios 9:2, ¿de qué se enorgullecía Pablo ante los hermanos de Macedonia sobre Acaya?",
+            options: [
+                "De que llevaban desde el año anterior preparados y dispuestos a colaborar",
+                "De que poseían mayores riquezas materiales que cualquier otra iglesia",
+                "De que nunca habían cometido ningún error doctrinal",
+                "De que habían enviado delegados a Roma"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 9:2: «pues conozco vuestra buena voluntad, de la cual yo me glorío entre los de Macedonia, que Acaya está preparada desde el año pasado; y vuestro celo ha estimulado a la mayoría»."
+        },
+        {
+            reference: "2 Corintios 9:2",
+            question: "Según 2 Corintios 9:2, ¿qué efecto positivo provocó el entusiasmo y celo de los corintios en los demás?",
+            options: [
+                "Estimuló e inspiró a la gran mayoría a sumarse y dar generosamente",
+                "Provocó envidia y división entre las provincias",
+                "Hizo que los líderes descansaran de sus labores",
+                "Causó que cancelaran la colecta en Macedonia"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 9:2: «y vuestro celo ha estimulado a la mayoría»."
+        },
+        // Cap 9:5
+        {
+            reference: "2 Corintios 9:5",
+            question: "Según 2 Corintios 9:5, ¿por qué envió Pablo a los hermanos antes de su llegada a Corinto?",
+            options: [
+                "Para coordinar con anticipación la ofrenda prometida y que estuviera lista a tiempo",
+                "Para fiscalizar las finanzas privadas de cada miembro",
+                "Para recaudar impuestos en favor de los magistrados",
+                "Para suspender la recolección si había escasez"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 9:5: «Por tanto, tuve por necesario exhortar a los hermanos que fuesen primero a vosotros, y preparasen primero vuestra generosidad antes prometida»."
+        },
+        {
+            reference: "2 Corintios 9:5",
+            question: "Según 2 Corintios 9:5, ¿cómo debía entregarse la ofrenda para reflejar su verdadero espíritu cristiano?",
+            options: [
+                "Como muestra de generosidad voluntaria y no como una exigencia forzada",
+                "Como una obligación impuesta bajo amenaza de expulsión",
+                "En secreto sin registrar los recursos entregados",
+                "A cambio de recibir puestos de liderazgo en la congregación"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 9:5: «para que esté presta como de generosidad, y no como de exigencia nuestra»."
+        },
+        // Cap 9:6
         {
             reference: "2 Corintios 9:6",
-            question: "Según 2 Corintios 9:6, ¿cuál es la ley de la siembra y la cosecha en la generosidad cristiana?",
+            question: "Según 2 Corintios 9:6, ¿cuál es el principio bíblico de la siembra y la cosecha al compartir?",
             options: [
                 "El que siembra escasamente cosechará poco; el que siembra generosamente cosechará en abundancia",
                 "El que no siembra nada recibirá la mayor bendición",
@@ -2252,29 +2328,93 @@ const ESGRIMA_QUIZ_DATA = {
             explanation: "2 Corintios 9:6: «Pero esto digo: El que siembra escasamente, también segará escasamente; y el que siembra generosamente, generosamente también segará»."
         },
         {
+            reference: "2 Corintios 9:6",
+            question: "En 2 Corintios 9:6, ¿con qué actividad cotidiana compara Pablo el acto de dar con generosidad?",
+            options: [
+                "Con la siembra y la siega de una cosecha",
+                "Con la construcción de un edificio de piedra",
+                "Con una carrera de atletas en el estadio",
+                "Con la navegación en altamar"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 9:6: «El que siembra escasamente, también segará escasamente; y el que siembra generosamente, generosamente también segará»."
+        },
+        // Cap 9:7
+        {
             reference: "2 Corintios 9:7",
             question: "Según 2 Corintios 9:7, ¿de qué manera debe dar cada persona y a quién ama Dios?",
             options: [
-                "De corazón, no con tristeza ni por obligación, porque Dios ama al dador alegre",
-                "Por presión social y para recibir elogios públicos",
+                "De corazón y con alegría, porque Dios ama al dador alegre",
+                "Por presión social para recibir elogios de los demás",
                 "Con pesar y murmurando por el gasto realizado",
-                "Únicamente bajo amenazas de castigo"
+                "Únicamente bajo amenazas y exigencias externas"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 9:7: «Cada uno dé como propuso en su corazón: no con tristeza, ni por necesidad, porque Dios ama al dador alegre»."
         },
         {
+            reference: "2 Corintios 9:7",
+            question: "Según 2 Corintios 9:7, ¿qué dos malas actitudes debemos evitar totalmente al momento de ofrendar?",
+            options: [
+                "Dar con tristeza o por obligación impuesta",
+                "Dar con gozo y con fe",
+                "Dar con generosidad y prontitud",
+                "Dar de acuerdo con lo propuesto en el corazón"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 9:7: «no con tristeza, ni por necesidad, porque Dios ama al dador alegre»."
+        },
+        // Cap 9:8
+        {
             reference: "2 Corintios 9:8",
             question: "Según 2 Corintios 9:8, ¿qué es poderoso Dios para concedernos con respecto a nuestras necesidades?",
             options: [
-                "Hacer que sobreabunde toda gracia para tener siempre lo suficiente y poder apoyar toda buena obra",
-                "Otorgarnos riquezas extravagantes sin necesidad de trabajar",
+                "Hacer que sobreabunde toda gracia para tener siempre lo suficiente y apoyar toda buena obra",
+                "Otorgarnos riquezas desmedidas sin necesidad de esforzarnos",
                 "Eximirnos de cualquier deber hacia los pobres",
                 "Hacernos gobernantes con privilegios sobre los demás"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 9:8: «Y poderoso es Dios para hacer que abunde en vosotros toda gracia, a fin de que, teniendo siempre en todas las cosas todo lo suficiente, abundéis para toda buena obra»."
         },
+        {
+            reference: "2 Corintios 9:8",
+            question: "Según 2 Corintios 9:8, ¿cuál es el propósito principal por el que Dios nos bendice con suficiencia?",
+            options: [
+                "Para que tengamos para compartir y abundar en toda buena obra",
+                "Para acumular bienes exclusivamente para nuestro propio disfrute",
+                "Para vanagloriarnos de nuestra posición frente a los demás",
+                "Para dejar de trabajar y vivir ociosos"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 9:8: «a fin de que, teniendo siempre en todas las cosas todo lo suficiente, abundéis para toda buena obra»."
+        },
+        // Cap 9:12
+        {
+            reference: "2 Corintios 9:12",
+            question: "Según 2 Corintios 9:12, además de suplir las necesidades de los creyentes, ¿qué fruto espiritual produce el servicio de ofrenda?",
+            options: [
+                "Despierta abundantes acciones de gracias a Dios",
+                "Otorga reconocimiento político en la región de Acaya",
+                "Elimina cualquier debate doctrinal futuro",
+                "Aumenta el patrimonio material de los apóstoles"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 9:12: «porque la ministración de este servicio no solamente suple lo que a los santos falta, sino que también abunda en muchas acciones de gracias a Dios»."
+        },
+        {
+            reference: "2 Corintios 9:12",
+            question: "Según 2 Corintios 9:12, ¿cuáles son los dos grandes resultados de compartir solidariamente con los santos?",
+            options: [
+                "Cubre lo que les falta materialmente y genera gratitud a Dios",
+                "Garantiza puestos de mando y fama pública",
+                "Cancela deudas financieras personales de los líderes",
+                "Exonera a la iglesia de impuestos romanos"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 9:12: «porque la ministración de este servicio no solamente suple lo que a los santos falta, sino que también abunda en muchas acciones de gracias a Dios»."
+        },
+        // Cap 9:15
         {
             reference: "2 Corintios 9:15",
             question: "Según 2 Corintios 9:15, ¿por qué regalo supremo y maravilloso da gracias a Dios el apóstol Pablo?",
@@ -2288,6 +2428,45 @@ const ESGRIMA_QUIZ_DATA = {
             explanation: "2 Corintios 9:15: «¡Gracias a Dios por su don inefable!»."
         },
         {
+            reference: "2 Corintios 9:15",
+            question: "En 2 Corintios 9:15, ¿qué significa que el don de Dios sea «inefable»?",
+            options: [
+                "Que es tan grandioso y sublime que no se puede describir con palabras",
+                "Que es un don temporal que pronto desaparecerá",
+                "Que fue otorgado únicamente a los líderes religiosos",
+                "Que tiene un costo monetario incalculable"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 9:15: «¡Gracias a Dios por su don inefable!»."
+        },
+
+        // Cap 10:1
+        {
+            reference: "2 Corintios 10:1",
+            question: "Según 2 Corintios 10:1, ¿apelando a qué virtudes y ejemplo de Cristo rogaba Pablo a los corintios?",
+            options: [
+                "Por la mansedumbre y la ternura de Cristo",
+                "Por la severidad de la ley mosaica",
+                "Por la elocuencia de los filósofos atenienses",
+                "Por el poder político de las autoridades"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 10:1: «Yo Pablo os ruego por la mansedumbre y ternura de Cristo, yo que presente ciertamente soy humilde entre vosotros, mas ausente soy osado para con vosotros»."
+        },
+        {
+            reference: "2 Corintios 10:1",
+            question: "Según 2 Corintios 10:1, ¿cómo contrastaban algunos la actitud de Pablo estando presente frente a cuando estaba ausente?",
+            options: [
+                "Que en persona parecía humilde y reservado, pero por carta se mostraba enérgico y audaz",
+                "Que en persona era prepotente y por carta tímido",
+                "Que nunca se atrevía a corregir a nadie",
+                "Que cambiaba de opinión constantemente"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 10:1: «yo que presente ciertamente soy humilde entre vosotros, mas ausente soy osado para con vosotros»."
+        },
+        // Cap 10:3-4
+        {
             reference: "2 Corintios 10:3-4",
             question: "Según 2 Corintios 10:3-4, ¿cuál es el carácter y alcance de las armas con que luchamos espiritualmente?",
             options: [
@@ -2300,6 +2479,19 @@ const ESGRIMA_QUIZ_DATA = {
             explanation: "2 Corintios 10:3-4: «Pues aunque andamos en la carne, no militamos según la carne; porque las armas de nuestra milicia no son carnales, sino poderosas en Dios para la destrucción de fortalezas»."
         },
         {
+            reference: "2 Corintios 10:3-4",
+            question: "Según 2 Corintios 10:3-4, aunque vivimos en este cuerpo terrenal, ¿cómo NO debemos batallar espiritualmente?",
+            options: [
+                "No militamos ni peleamos con los métodos del mundo (según la carne)",
+                "No debemos orar en momentos de debilidad",
+                "No debemos apoyarnos en las promesas divinas",
+                "No debemos congregarnos con otros hermanos"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 10:3: «Pues aunque andamos en la carne, no militamos según la carne»."
+        },
+        // Cap 10:6
+        {
             reference: "2 Corintios 10:6",
             question: "Según 2 Corintios 10:6, ¿cuándo estaban preparados los apóstoles para disciplinar cualquier desobediencia?",
             options: [
@@ -2311,6 +2503,7 @@ const ESGRIMA_QUIZ_DATA = {
             correctIndex: 0,
             explanation: "2 Corintios 10:6: «y estando prontos para castigar toda desobediencia, cuando vuestra obediencia sea perfecta»."
         },
+        // Cap 10:7
         {
             reference: "2 Corintios 10:7",
             question: "Según 2 Corintios 10:7, ¿qué advertencia hace Pablo a quienes juzgan la autoridad espiritual superficialmente?",
@@ -2324,6 +2517,44 @@ const ESGRIMA_QUIZ_DATA = {
             explanation: "2 Corintios 10:7: «Miráis las cosas según la apariencia. Si alguno está confiado en sí mismo que es de Cristo, esto también vuelva a considerar por sí mismo, que como él es de Cristo, así también nosotros somos de Cristo»."
         },
         {
+            reference: "2 Corintios 10:7",
+            question: "Según 2 Corintios 10:7, si una persona confía en que pertenece a Cristo, ¿qué debe reconocer también de los demás?",
+            options: [
+                "Que los demás siervos de Dios también pertenecen a Cristo en igual medida",
+                "Que solo ella posee la plenitud del Espíritu",
+                "Que tiene el derecho de menospreciar a otros ministerios",
+                "Que nadie más puede predicar con autoridad"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 10:7: «que como él es de Cristo, así también nosotros somos de Cristo»."
+        },
+        // Cap 10:8
+        {
+            reference: "2 Corintios 10:8",
+            question: "Según 2 Corintios 10:8, ¿con qué propósito otorgó el Señor la autoridad ministerial y apostólica a Pablo?",
+            options: [
+                "Para edificar y hacer crecer a la iglesia, no para destruirla",
+                "Para imponer castigos económicos y tributos personales",
+                "Para gobernar sobre las ciudades de Acaya como juez secular",
+                "Para destruir y expulsar a todos los miembros con dudas"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 10:8: «Porque aunque me gloríe algo más todavía de nuestra autoridad, la cual el Señor nos dio para edificación y no para vuestra destrucción, no me avergonzaré»."
+        },
+        {
+            reference: "2 Corintios 10:8",
+            question: "En 2 Corintios 10:8, ¿para qué fin NO fue otorgada la autoridad de Dios en el liderazgo cristiano?",
+            options: [
+                "No para destrucción ni perjuicio de los creyentes",
+                "No para predicar las buenas nuevas de salvación",
+                "No para enseñar la doctrina de los apóstoles",
+                "No para animar a los miembros en la fe"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 10:8: «la cual el Señor nos dio para edificación y no para vuestra destrucción»."
+        },
+        // Cap 10:10
+        {
             reference: "2 Corintios 10:10",
             question: "Según 2 Corintios 10:10, ¿qué crítica hacían los detractores sobre las cartas y la presencia física de Pablo?",
             options: [
@@ -2335,6 +2566,7 @@ const ESGRIMA_QUIZ_DATA = {
             correctIndex: 0,
             explanation: "2 Corintios 10:10: «Porque a la verdad, dicen, las cartas son duras y fuertes; mas la presencia corporal débil, y la palabra menospreciable»."
         },
+        // Cap 10:13
         {
             reference: "2 Corintios 10:13",
             question: "Según 2 Corintios 10:13, ¿cuál era el marco y límite que Pablo respetaba al evaluar su trabajo misionero?",
@@ -2347,6 +2579,7 @@ const ESGRIMA_QUIZ_DATA = {
             correctIndex: 0,
             explanation: "2 Corintios 10:13: «Pero nosotros no nos gloriaremos desmedidamente, sino conforme a la regla de la medida que Dios nos ha dado por medida, para llegar también hasta vosotros»."
         },
+        // Cap 10:16
         {
             reference: "2 Corintios 10:16",
             question: "Según 2 Corintios 10:16, ¿cuál era la meta misionera de Pablo respecto a nuevos territorios?",
@@ -2359,6 +2592,7 @@ const ESGRIMA_QUIZ_DATA = {
             correctIndex: 0,
             explanation: "2 Corintios 10:16: «y que anunciaremos el evangelio en los lugares más allá de vosotros, sin entrar en la obra de otro para gloriarnos en lo que ya estaba preparado»."
         },
+        // Cap 10:17
         {
             reference: "2 Corintios 10:17",
             question: "Según 2 Corintios 10:17, ¿en quién debe fundamentarse todo motivo de orgullo y alabanza?",
@@ -2372,6 +2606,19 @@ const ESGRIMA_QUIZ_DATA = {
             explanation: "2 Corintios 10:17: «Mas el que se gloría, gloríese en el Señor»."
         },
         {
+            reference: "2 Corintios 10:17",
+            question: "En 2 Corintios 10:17, ¿cuál es el único orgullo y satisfacción legítima para el creyente?",
+            options: [
+                "Reconocer y exaltar lo que el Señor ha hecho, no nuestros méritos propios",
+                "Contar la cantidad de seguidores en las redes y ciudades",
+                "Presumir de nuestras posesiones materiales",
+                "Hacer alarde de títulos académicos ante los demás"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 10:17: «Mas el que se gloría, gloríese en el Señor»."
+        },
+        // Cap 10:18
+        {
             reference: "2 Corintios 10:18",
             question: "Según 2 Corintios 10:18, ¿quién es la persona verdaderamente aprobada delante de Dios?",
             options: [
@@ -2384,10 +2631,24 @@ const ESGRIMA_QUIZ_DATA = {
             explanation: "2 Corintios 10:18: «porque no es aprobado el que se alaba a sí mismo, sino aquel a quien Dios alaba»."
         },
         {
+            reference: "2 Corintios 10:18",
+            question: "Según 2 Corintios 10:18, ¿por qué carece de verdadero valor la autoalabanza humana?",
+            options: [
+                "Porque el valor real proviene del testimonio y la aprobación de Dios",
+                "Porque los hombres siempre dicen la verdad absoluta",
+                "Porque nadie tiene defectos en esta vida",
+                "Porque las leyes civiles prohíben hablar bien de uno mismo"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 10:18: «porque no es aprobado el que se alaba a sí mismo, sino aquel a quien Dios alaba»."
+        },
+
+        // Cap 11:2-3
+        {
             reference: "2 Corintios 11:2-3",
             question: "Según 2 Corintios 11:2-3, ¿cuál era el anhelo pastoral de Pablo y qué engaño temía para la iglesia?",
             options: [
-                "Presentarla como una novia pura a Cristo, temiendo que sean extraviados de la sincera fidelidad tal como Eva fue engañada",
+                "Presentarla como una novia pura a Cristo, temiendo que sean extraviados tal como Eva fue engañada",
                 "Controlar todas las decisiones personales de los creyentes",
                 "Preservar ritos ceremoniales antiguos a toda costa",
                 "Evitar que la iglesia creciera hacia otras regiones"
@@ -2396,10 +2657,23 @@ const ESGRIMA_QUIZ_DATA = {
             explanation: "2 Corintios 11:2-3: «Porque os celo con celo de Dios; pues os he desposado con un solo esposo, para presentaros como una virgen pura a Cristo. Pero temo que como la serpiente con su astucia engañó a Eva, vuestros sentidos sean de alguna manera extraviados de la sincera fidelidad a Cristo»."
         },
         {
-            reference: "2 Corintios 11:6",
-            question: "Según 2 Corintios 11:6, ¿qué reconoce Pablo sobre su oratoria y qué defiende con seguridad?",
+            reference: "2 Corintios 11:3",
+            question: "Según 2 Corintios 11:3, ¿de qué virtud fundamental temía Pablo que los corintios fuesen desviados por falsas enseñanzas?",
             options: [
-                "Aunque no fuera un orador elocuente o refinado, no carecía de conocimiento de la verdad",
+                "De la sincera fidelidad y devoción pura a Cristo",
+                "Del cumplimiento de los ritos del templo de Jerusalén",
+                "Del estudio de la filosofía clásica de Grecia",
+                "De la búsqueda de honores en el imperio romano"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 11:3: «vuestros sentidos sean de alguna manera extraviados de la sincera fidelidad a Cristo»."
+        },
+        // Cap 11:6
+        {
+            reference: "2 Corintios 11:6",
+            question: "Según 2 Corintios 11:6, ¿qué reconoce Pablo sobre su oratoria y qué defiende con total seguridad?",
+            options: [
+                "Aunque no fuera un orador refinado, no carecía de conocimiento de la verdad",
                 "Que era ignorante en doctrina pero un gran maestro de retórica",
                 "Que carecía tanto de palabras como de conocimiento",
                 "Que utilizaba trucos de oratoria para convencer a la multitud"
@@ -2407,11 +2681,12 @@ const ESGRIMA_QUIZ_DATA = {
             correctIndex: 0,
             explanation: "2 Corintios 11:6: «Pues aunque sea tosco en la palabra, no lo soy en el conocimiento; en todo y por todo os lo hemos demostrado»."
         },
+        // Cap 11:9
         {
             reference: "2 Corintios 11:9",
             question: "Según 2 Corintios 11:9, ¿cómo cubrió Pablo sus necesidades mientras predicaba el evangelio en Corinto?",
             options: [
-                "Con la ayuda que le trajeron los hermanos de Macedonia, cuidando de no ser una carga económica para ellos",
+                "Con la ayuda que le trajeron los hermanos de Macedonia, cuidando de no ser una carga económica",
                 "Cobrando un sueldo obligatorio a cada familia de Corinto",
                 "Pidiendo subsidios a los magistrados de la ciudad",
                 "Viviendo de préstamos comerciales en Cencrea"
@@ -2419,9 +2694,10 @@ const ESGRIMA_QUIZ_DATA = {
             correctIndex: 0,
             explanation: "2 Corintios 11:9: «Y cuando estaba entre vosotros y tuve necesidad, a ninguno fui carga, pues lo que me faltaba, lo suplieron los hermanos que vinieron de Macedonia, y en todo me guardé y me guardaré de seros gravoso»."
         },
+        // Cap 11:10
         {
             reference: "2 Corintios 11:10",
-            question: "According to 2 Corintios 11:10, ¿en qué territorio afirmó Pablo que nadie le impediría el orgullo de predicar gratuitamente?",
+            question: "Según 2 Corintios 11:10, ¿en qué territorio afirmó Pablo que nadie le impediría el gozo de predicar gratuitamente?",
             options: [
                 "En todas las regiones de Acaya",
                 "En la isla de Creta",
@@ -2431,6 +2707,7 @@ const ESGRIMA_QUIZ_DATA = {
             correctIndex: 0,
             explanation: "2 Corintios 11:10: «Por la verdad de Cristo que está en mí, que no se me impedirá esta mi gloria en las regiones de Acaya»."
         },
+        // Cap 11:13-14
         {
             reference: "2 Corintios 11:13-14",
             question: "Según 2 Corintios 11:13-14, ¿cómo desenmascara Pablo a los falsos apóstoles y qué táctica usa Satanás?",
@@ -2444,6 +2721,19 @@ const ESGRIMA_QUIZ_DATA = {
             explanation: "2 Corintios 11:13-14: «Porque éstos son falsos apóstoles, obreros fraudulentos, que se disfrazan como apóstoles de Cristo. Y no es maravilla, porque el mismo Satanás se disfraza como ángel de luz»."
         },
         {
+            reference: "2 Corintios 11:14",
+            question: "En 2 Corintios 11:14, ¿de qué manera suele disfrazarse Satanás para engañar a los creyentes?",
+            options: [
+                "Disfrazándose de ángel de luz",
+                "Como un monstruo visible e imponente",
+                "Como un recaudador de impuestos romanos",
+                "Como un soldado con armadura visible"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 11:14: «Y no es maravilla, porque el mismo Satanás se disfraza como ángel de luz»."
+        },
+        // Cap 11:21-22
+        {
             reference: "2 Corintios 11:21-22",
             question: "Según 2 Corintios 11:21-22, ¿qué afirma Pablo sobre sus raíces e identidad frente a los rivales que presumían?",
             options: [
@@ -2455,6 +2745,7 @@ const ESGRIMA_QUIZ_DATA = {
             correctIndex: 0,
             explanation: "2 Corintios 11:22: «¿Son hebreos? Yo también. ¿Son israelitas? Yo también. ¿Son descendientes de Abraham? También yo»."
         },
+        // Cap 11:23
         {
             reference: "2 Corintios 11:23",
             question: "Según 2 Corintios 11:23, ¿cuáles son las credenciales de sufrimiento que demuestran que Pablo sirvió más a Cristo?",
@@ -2467,9 +2758,10 @@ const ESGRIMA_QUIZ_DATA = {
             correctIndex: 0,
             explanation: "2 Corintios 11:23: «¿Son ministros de Cristo? (Como si estuviera loco hablo.) Yo más; en trabajos más abundante; en azotes sin número; en cárceles más; en peligros de muerte muchas veces»."
         },
+        // Cap 11:24-25
         {
             reference: "2 Corintios 11:24-25",
-            question: "According to 2 Corintios 11:24-25, ¿cuáles son los castigos físicos y peligros que Pablo enumera en su trayectoria?",
+            question: "Según 2 Corintios 11:24-25, ¿cuáles son los castigos físicos y peligros que Pablo enumera en su trayectoria?",
             options: [
                 "Cinco veces 39 azotes de los judíos, tres veces golpeado con varas, una vez apedreado y tres naufragios",
                 "Diez veces en prisión y ningún naufragio",
@@ -2480,10 +2772,23 @@ const ESGRIMA_QUIZ_DATA = {
             explanation: "2 Corintios 11:24-25: «De los judíos cinco veces he recibido cuarenta azotes menos uno. Tres veces he sido azotado con varas; una vez apedreado; tres veces he padecido naufragio; una noche y un día he estado como náufrago en alta mar»."
         },
         {
+            reference: "2 Corintios 11:25",
+            question: "Según 2 Corintios 11:25, ¿cuántas veces padeció naufragio el apóstol Pablo durante sus viajes misioneros?",
+            options: [
+                "Tres veces padeció naufragio",
+                "Solamente una vez en toda su vida",
+                "Cinco veces consecutivas",
+                "Nunca estuvo en peligro en el mar"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 11:25: «Tres veces he sido azotado con varas; una vez apedreado; tres veces he padecido naufragio; una noche y un día he estado como náufrago en alta mar»."
+        },
+        // Cap 11:30
+        {
             reference: "2 Corintios 11:30",
             question: "Según 2 Corintios 11:30, si es necesario presumir de algo, ¿cuál es el único motivo en el que Pablo elige gloriarse?",
             options: [
-                "En las cosas que muestran su propia debilidad",
+                "En las cosas que muestran su propia debilidad y dependencia de Dios",
                 "En sus grandes riquezas e influencia social",
                 "En su elocuencia frente a los sabios de Acaya",
                 "En el número de discípulos que lo siguen"
@@ -2491,11 +2796,12 @@ const ESGRIMA_QUIZ_DATA = {
             correctIndex: 0,
             explanation: "2 Corintios 11:30: «Si es necesario gloriarse, me gloriaré en lo que es de mi debilidad»."
         },
+        // Cap 11:32-33
         {
             reference: "2 Corintios 11:32-33",
             question: "Según 2 Corintios 11:32-33, ¿cómo logró escapar Pablo de la persecución del gobernador en Damasco?",
             options: [
-                "Fue descolgado del muro en una canasta a través de una ventana",
+                "Fue descolgado del muro de la ciudad en una canasta a través de una ventana",
                 "Salió disfrazado de soldado romano por la puerta principal",
                 "Presentó un salvoconducto firmado por las autoridades",
                 "Escapó por túneles secretos bajo el palacio"
@@ -2503,11 +2809,13 @@ const ESGRIMA_QUIZ_DATA = {
             correctIndex: 0,
             explanation: "2 Corintios 11:32-33: «En Damasco, el gobernador de la provincia del rey Aretas guardaba la ciudad de los damascenos para prenderme; y fui descolgado del muro en un canasto por una ventana, y escapé de sus manos»."
         },
+
+        // Cap 12:2-4
         {
             reference: "2 Corintios 12:2-4",
             question: "Según 2 Corintios 12:2-4, ¿qué experiencia espiritual vivió el creyente mencionado hace catorce años?",
             options: [
-                "Fue arrebatado hasta el tercer cielo (el paraíso) y escuchó palabras inexpresables que no es lícito al hombre pronunciar",
+                "Fue arrebatado hasta el tercer cielo (el paraíso) y escuchó palabras inexpresables",
                 "Tuvo un sueño sobre la caída del imperio romano",
                 "Recibió una visión para construir un templo monumental",
                 "Fue transportado físicamente a la ciudad de Tarso"
@@ -2515,6 +2823,19 @@ const ESGRIMA_QUIZ_DATA = {
             correctIndex: 0,
             explanation: "2 Corintios 12:2-4: «Conozco a un hombre en Cristo, que hace catorce años... fue arrebatado hasta el tercer cielo... al paraíso, donde oyó palabras inefables que no le es dado al hombre expresar»."
         },
+        {
+            reference: "2 Corintios 12:4",
+            question: "En 2 Corintios 12:4, ¿qué escuchó el apóstol cuando fue llevado al paraíso?",
+            options: [
+                "Palabras inexpresables que a ningún hombre le está permitido pronunciar",
+                "Una profecía con fechas exactas del fin del mundo",
+                "Instrucciones para cobrar diezmos en Acaya",
+                "Cánticos fúnebres sobre los reyes de la tierra"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 12:4: «que fue arrebatado al paraíso, donde oyó palabras inefables que no le es dado al hombre expresar»."
+        },
+        // Cap 12:5
         {
             reference: "2 Corintios 12:5",
             question: "Según 2 Corintios 12:5, ¿de qué decidió Pablo gloriarse respecto a su propia persona?",
@@ -2527,6 +2848,7 @@ const ESGRIMA_QUIZ_DATA = {
             correctIndex: 0,
             explanation: "2 Corintios 12:5: «De tal hombre me gloriaré; pero de mí mismo en nada me gloriaré, sino en mis debilidades»."
         },
+        // Cap 12:7
         {
             reference: "2 Corintios 12:7",
             question: "Según 2 Corintios 12:7, ¿qué dificultad permitió Dios en la vida de Pablo para protegerlo del orgullo por tantas revelaciones?",
@@ -2540,6 +2862,19 @@ const ESGRIMA_QUIZ_DATA = {
             explanation: "2 Corintios 12:7: «Y para que la grandeza de las revelaciones no me exaltase desmedidamente, me fue dado un aguijón en mi carne, un mensajero de Satanás que me abofetee, para que no me enaltezca sobremanera»."
         },
         {
+            reference: "2 Corintios 12:7",
+            question: "Según 2 Corintios 12:7, ¿cuál era la función protectora que cumplía el «aguijón en la carne» en la vida de Pablo?",
+            options: [
+                "Evitar que se enorgulleciera o se enalteciera desmedidamente por las revelaciones",
+                "Impedir que realizara nuevos viajes misioneros",
+                "Obligarlo a renunciar al apostolado",
+                "Hacer que dependiera del dinero de los corintios"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 12:7: «para que la grandeza de las revelaciones no me exaltase desmedidamente... para que no me enaltezca sobremanera»."
+        },
+        // Cap 12:8-9
+        {
             reference: "2 Corintios 12:8-9",
             question: "Según 2 Corintios 12:8-9, ¿cuál fue la respuesta de Cristo cuando Pablo le rogó tres veces que le quitara el aguijón?",
             options: [
@@ -2552,10 +2887,23 @@ const ESGRIMA_QUIZ_DATA = {
             explanation: "2 Corintios 12:9: «Y me ha dicho: Bástate mi gracia; porque mi poder se perfecciona en la debilidad. Por tanto, de buena gana me gloriaré más bien en mis debilidades, para que repose sobre mí el poder de Cristo»."
         },
         {
+            reference: "2 Corintios 12:9",
+            question: "Según 2 Corintios 12:9, ¿dónde y en qué condiciones se perfecciona y manifiesta con mayor fuerza el poder de Cristo?",
+            options: [
+                "En la debilidad humana",
+                "En el poder militar y político",
+                "En la acumulación de grandes riquezas",
+                "En el aplauso y aprobación de las multitudes"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 12:9: «Bástate mi gracia; porque mi poder se perfecciona en la debilidad»."
+        },
+        // Cap 12:14
+        {
             reference: "2 Corintios 12:14",
             question: "Según 2 Corintios 12:14, ¿por qué no sería Pablo una carga económica en su tercera visita a Corinto?",
             options: [
-                "Porque no busca los bienes materiales de ellos sino a ellos mismos, tal como los padres ahorran para los hijos y no al revés",
+                "Porque no busca los bienes materiales de ellos sino a ellos mismos, como los padres proveen a los hijos",
                 "Porque había recibido una gran fortuna en Macedonia",
                 "Porque los magistrados pagarían su estancia",
                 "Porque solo se quedaría por unas pocas horas"
@@ -2563,11 +2911,12 @@ const ESGRIMA_QUIZ_DATA = {
             correctIndex: 0,
             explanation: "2 Corintios 12:14: «He aquí, por tercera vez estoy preparado para ir a vosotros; y no os seré gravoso, porque no busco lo vuestro, sino a vosotros, pues no deben atesorar los hijos para los padres, sino los padres para los hijos»."
         },
+        // Cap 12:15
         {
             reference: "2 Corintios 12:15",
-            question: "According to 2 Corintios 12:15, ¿con qué grado de entrega y amor estaba dispuesto Pablo a desgastarse por los creyentes?",
+            question: "Según 2 Corintios 12:15, ¿con qué grado de entrega y amor pastoral estaba dispuesto Pablo a desgastarse por los creyentes?",
             options: [
-                "Con el mayor agrado gastaría sus recursos e incluso su propia vida por ellos, aun si amándolos más fuera amado menos",
+                "Con el mayor agrado gastaría sus recursos e incluso su propia vida por ellos, aun si fuera amado menos",
                 "Solo si la iglesia le garantizaba un sueldo fijo",
                 "Exigiendo reconocimientos públicos en cada visita",
                 "Con resentimiento por la frialdad de su trato"
@@ -2575,6 +2924,7 @@ const ESGRIMA_QUIZ_DATA = {
             correctIndex: 0,
             explanation: "2 Corintios 12:15: «Y yo con el mayor placer gastaré lo mío, y aun yo mismo me gastaré del todo por amor de vuestras almas, aunque amándoos más, sea amado menos»."
         },
+        // Cap 12:18
         {
             reference: "2 Corintios 12:18",
             question: "Según 2 Corintios 12:18, ¿qué testimonio de honradez compartían Pablo y Tito al servir a la iglesia?",
@@ -2587,11 +2937,12 @@ const ESGRIMA_QUIZ_DATA = {
             correctIndex: 0,
             explanation: "2 Corintios 12:18: «Rogué a Tito, y envié con él al hermano. ¿Os engañó acaso Tito? ¿No hemos procedido con el mismo espíritu y en las mismas pisadas?»."
         },
+        // Cap 12:21
         {
             reference: "2 Corintios 12:21",
             question: "Según 2 Corintios 12:21, ¿cuál era la gran preocupación y dolor de Pablo al volver a visitarlos?",
             options: [
-                "Tener que lamentarse por muchos que habían pecado de impureza e inmoralidad y todavía no se habían arrepentido",
+                "Tener que lamentarse por muchos que habían pecado y todavía no se habían arrepentido",
                 "Ser rechazado por las autoridades civiles de la ciudad",
                 "No recaudar suficientes fondos para su viaje a Roma",
                 "Perder su prestigio ante los sabios de Grecia"
@@ -2603,9 +2954,10 @@ const ESGRIMA_QUIZ_DATA = {
 
     // DÍA 8: 2ª de Corintios 13
     8: [
+        // Cap 13:1
         {
             reference: "2 Corintios 13:1",
-            question: "Según 2 Corintios 13:1, ¿cuál es la norma bíblica para verificar y resolver cualquier asunto o acusación?",
+            question: "Según 2 Corintios 13:1, ¿cuál es la norma bíblica para verificar y resolver con justicia cualquier asunto o acusación?",
             options: [
                 "Por boca de dos o de tres testigos se decidirá todo asunto",
                 "Por la decisión unilateral de un solo líder",
@@ -2616,8 +2968,46 @@ const ESGRIMA_QUIZ_DATA = {
             explanation: "2 Corintios 13:1: «Esta es la tercera vez que voy a vosotros. Por boca de dos o de tres testigos se decidirá todo asunto»."
         },
         {
+            reference: "2 Corintios 13:1",
+            question: "En 2 Corintios 13:1, ¿cuántas veces señala Pablo que iba ya preparado para visitar a los creyentes de Corinto?",
+            options: [
+                "Por tercera vez",
+                "Por primera vez",
+                "Por quinta vez",
+                "Por última vez antes de retirarse"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 13:1: «Esta es la tercera vez que voy a vosotros. Por boca de dos o de tres testigos se decidirá todo asunto»."
+        },
+        // Cap 13:2
+        {
+            reference: "2 Corintios 13:2",
+            question: "Según 2 Corintios 13:2, ¿qué firme advertencia hace Pablo a quienes persistían en el pecado si volvía a visitarlos?",
+            options: [
+                "Que si iba otra vez, no sería indulgente ni pasaría por alto la falta",
+                "Que abandonaría el ministerio y no regresaría jamás",
+                "Que los denunciaría ante los tribunales romanos",
+                "Que los perdonaría automáticamente sin exigir arrepentimiento"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 13:2: «He dicho antes, y ahora digo otra vez como si estuviera presente, y ahora ausente lo escribo a los que antes pecaron, y a todos los demás, que si voy otra vez, no seré indulgente»."
+        },
+        {
+            reference: "2 Corintios 13:2",
+            question: "En 2 Corintios 13:2, ¿hacia quiénes iba dirigida especialmente la advertencia apostólica de no ser indulgente?",
+            options: [
+                "Hacia los que antes habían pecado y continuaban sin arrepentirse",
+                "Hacia los miembros más nuevos de la congregación",
+                "Hacia los recaudadores de impuestos de Acaya",
+                "Hacia los mensajeros enviados desde Macedonia"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 13:2: «ahora ausente lo escribo a los que antes pecaron, y a todos los demás, que si voy otra vez, no seré indulgente»."
+        },
+        // Cap 13:5
+        {
             reference: "2 Corintios 13:5",
-            question: "Según 2 Corintios 13:5, ¿a qué autoexamen vital exhorta Pablo a cada creyente?",
+            question: "Según 2 Corintios 13:5, ¿a qué examen personal vital exhorta Pablo a cada creyente?",
             options: [
                 "A examinarse a sí mismos para comprobar si están firmes en la fe y si Cristo vive en ellos",
                 "A vigilar y criticar la conducta de los demás",
@@ -2627,6 +3017,19 @@ const ESGRIMA_QUIZ_DATA = {
             correctIndex: 0,
             explanation: "2 Corintios 13:5: «Examinaos a vosotros mismos si estáis en la fe; probaos a vosotros mismos. ¿O no os conocéis a vosotros mismos, que Jesucristo está en vosotros, a menos que estéis reprobados?»."
         },
+        {
+            reference: "2 Corintios 13:5",
+            question: "En 2 Corintios 13:5, ¿cuál es la verdad espiritual esencial que todo creyente sincero debe conocer de sí mismo?",
+            options: [
+                "Que Jesucristo está y vive verdaderamente en vosotros",
+                "Que nunca cometerá ningún error humano",
+                "Que es superior a los hermanos de otras iglesias",
+                "Que no necesita orar ni congregarse"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 13:5: «¿O no os conocéis a vosotros mismos, que Jesucristo está en vosotros, a menos que estéis reprobados?»."
+        },
+        // Cap 13:7
         {
             reference: "2 Corintios 13:7",
             question: "Según 2 Corintios 13:7, ¿cuál es la oración de los apóstoles con respecto a la conducta de los corintios?",
@@ -2639,18 +3042,32 @@ const ESGRIMA_QUIZ_DATA = {
             correctIndex: 0,
             explanation: "2 Corintios 13:7: «Y oramos a Dios que ninguna cosa mala hagáis; no para que nosotros aparezcamos aprobados, sino para que vosotros hagáis lo bueno, aunque nosotros seamos como reprobados»."
         },
+        // Cap 13:11
         {
             reference: "2 Corintios 13:11",
-            question: "According to 2 Corintios 13:11, ¿cuáles son las actitudes fraternales que aseguran que el Dios de amor y de paz esté con nosotros?",
+            question: "Según 2 Corintios 13:11, ¿cuáles son las actitudes fraternales que aseguran que el Dios de amor y de paz esté con nosotros?",
             options: [
-                "Tener gozo, buscar la madurez espiritual, animarse unos a otros, vivir en armonía y mantener la paz",
-                "Discutir constantemente sobre doctrinas menores",
+                "Tener gozo, buscar la madurez espiritual, animarse mutuamente, vivir en armonía y estar en paz",
+                "Discutir constantemente sobre opiniones humanas",
                 "Buscar el beneficio propio antes que el de la comunidad",
                 "Aislarse de la comunión con los demás creyentes"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 13:11: «Por lo demás, hermanos, tened gozo, perfeccionaos, consolaos, sed de un mismo parecer, y vivid en paz; y el Dios de paz y de amor estará con vosotros»."
         },
+        {
+            reference: "2 Corintios 13:11",
+            question: "Según 2 Corintios 13:11, ¿qué maravillosa promesa se cumple cuando la iglesia vive en armonía y paz?",
+            options: [
+                "El Dios de paz y de amor estará con vosotros",
+                "Todos los ciudadanos de Acaya se convertirán al instante",
+                "La iglesia no tendrá necesidad de trabajar",
+                "Desaparecerán todos los problemas cotidianos"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 13:11: «sed de un mismo parecer, y vivid en paz; y el Dios de paz y de amor estará con vosotros»."
+        },
+        // Cap 13:12
         {
             reference: "2 Corintios 13:12",
             question: "Según 2 Corintios 13:12, ¿con qué expresión de afecto fraternal debían saludarse en la iglesia?",
@@ -2663,6 +3080,7 @@ const ESGRIMA_QUIZ_DATA = {
             correctIndex: 0,
             explanation: "2 Corintios 13:12: «Saludaos los unos a los otros con ósculo santo»."
         },
+        // Cap 13:13
         {
             reference: "2 Corintios 13:13",
             question: "Según 2 Corintios 13:13, ¿quiénes envían saludos fraternales a la iglesia de Corinto?",
@@ -2675,6 +3093,7 @@ const ESGRIMA_QUIZ_DATA = {
             correctIndex: 0,
             explanation: "2 Corintios 13:13: «Todos los santos os saludan»."
         },
+        // Cap 13:14
         {
             reference: "2 Corintios 13:14",
             question: "Según 2 Corintios 13:14, ¿cuál es la bendición trinitaria con la que concluye la segunda epístola a los Corintios?",
@@ -2683,6 +3102,18 @@ const ESGRIMA_QUIZ_DATA = {
                 "La paz del imperio romano y la salud física",
                 "El éxito en los negocios y la prosperidad terrenal",
                 "La sabiduría de los filósofos y el honor humano"
+            ],
+            correctIndex: 0,
+            explanation: "2 Corintios 13:14: «La gracia del Señor Jesucristo, el amor de Dios, y la comunión del Espíritu Santo sean con todos vosotros. Amén»."
+        },
+        {
+            reference: "2 Corintios 13:14",
+            question: "En la bendición apostólica de 2 Corintios 13:14, ¿qué aspecto vital se destaca de parte del Espíritu Santo?",
+            options: [
+                "La comunión y compañía constante con todos los creyentes",
+                "El juicio sobre las naciones paganas",
+                "La entrega de cartas de recomendación",
+                "La prosperidad material y monetaria"
             ],
             correctIndex: 0,
             explanation: "2 Corintios 13:14: «La gracia del Señor Jesucristo, el amor de Dios, y la comunión del Espíritu Santo sean con todos vosotros. Amén»."
